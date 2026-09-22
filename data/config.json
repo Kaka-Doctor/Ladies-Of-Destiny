@@ -1,0 +1,19 @@
+{
+  "_readme": "THE config file for the Ladies of Destiny agent. pageId/pageName/igUserId/igUsername/pageAccessToken are AUTO-FILLED the first time a valid token is provided (paste a fresh Graph API Explorer token into data/meta-token.txt and push, or run the workflow once). To change posting time: edit 'slots' (EAT). To pause: set autoPost=false.",
+  "metaUserToken": "",
+  "appId": "1396184215347531",
+  "appSecret": "c2e2387de1cefa6b8c95a963b49f5c6d",
+  "pageId": "",
+  "pageNameHint": "Ladies Of Destiny",
+  "pageName": "",
+  "pageUsername": "",
+  "platforms": "facebook,instagram",
+  "timezone": "Africa/Dar_es_Salaam",
+  "slots": "10:00",
+  "graceMinutes": 240,
+  "scheduleDays": 3,
+  "boldHeading": true,
+  "pageAccessToken": "",
+  "igUserId": "",
+  "igUsername": ""
+}
