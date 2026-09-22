@@ -43,10 +43,23 @@
           "id": "122190442208938552"
         }
       }
+    },
+    "2026-09-25": {
+      "10:00": {
+        "status": "scheduled",
+        "publishTime": "2026-09-25T07:00:00.000Z",
+        "at": "2026-09-22T21:40:04.984Z",
+        "photo": "WhatsApp Image 2026-08-02 at 11dvszdvc.50.12 PM.jpeg",
+        "caption": "𝗙𝗨𝗡𝗚𝗨𝗔 𝗠𝗢𝗬𝗢 𝗪𝗔𝗞𝗢 𝗞𝗪𝗔 𝗠𝗨𝗡𝗚𝗨: 𝗡𝗚𝗨𝗩𝗨 𝗬𝗔 𝗠𝗔𝗢𝗠𝗕𝗜!\n\nBinti zangu wapendwa, je, umewahi kujiuliza ni jinsi gani unaweza kuwa karibu zaidi na Mungu kila siku? Jibu ni rahisi: kupitia maombi! Maombi si tu orodha ya maombi yetu, bali ni mazungumzo matamu na Baba yetu wa mbinguni anayetupenda sana.\n\nKila hofu, kila ndoto, kila furaha au huzuni uliyo nayo, unaweza kumweleza Yeye. Mungu anatamani kusikia sauti yako na kukujibu, si kwa maneno tu bali kwa matendo makuu maishani mwako. Usiache kutoa mizigo yako kwake.\n\nKumbuka, hata maombi mafupi yanayotoka moyoni yana nguvu kubwa ya kubadilisha hali. Jipe moyo na uombe bila kukoma, ukiamini kwamba Mungu yupo na anakusikia. Endelea kuang'aa, binti wa Mungu!\n\n\"Msijisumbue kwa neno lolote; bali katika kila neno kwa kuomba na kusihi pamoja na shukrani, haja zenu na zijulikane mbele za Mungu. Na amani ya Mungu, ipitayo akili zote, itawalinda mioyo yenu na mawazo yenu katika Kristo Yesu.\" Wafilipi 4:6-7\n\n#MaombiYanajibu #OngeaNaMungu #NguvuYaMaombi #LadiesOfDestiny #MabintiWenyeHatima",
+        "lang": "sw",
+        "fb": {
+          "id": "122190503018938552"
+        }
+      }
     }
   },
   "rotation": {
-    "photo": 3,
+    "photo": 4,
     "fallbackEn": 1,
     "fallbackSw": 0
   },
@@ -83,6 +96,13 @@
       "date": "2026-09-24",
       "slot": "10:00",
       "message": "10:00 FB half pre-scheduled via Meta (publishes 2026-09-24T07:00:00.000Z, English) — \"WhatsApp Image 2026-08-02 at 11.dfsadvs50.31 PM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
+    },
+    {
+      "ts": "2026-09-22T21:40:04.984Z",
+      "level": "info",
+      "date": "2026-09-25",
+      "slot": "10:00",
+      "message": "10:00 FB half pre-scheduled via Meta (publishes 2026-09-25T07:00:00.000Z, Kiswahili) — \"WhatsApp Image 2026-08-02 at 11dvszdvc.50.12 PM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
     }
   ]
 }
