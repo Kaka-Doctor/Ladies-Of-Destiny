@@ -448,29 +448,50 @@ function buildPersonaPrompt(lang, avoidList) {
 }
 
 /** Ask Gemini for today's post in `lang`. Returns null (→ fallback) on any
- *  failure so posting never depends on Gemini being reachable. */
+ *  failure so posting never depends on Gemini being reachable.
+ *  Retries once (8s apart): gemini-2.5-flash occasionally returns HTTP 200
+ *  with an empty body (thinking budget quirk / transient throttle) — seen
+ *  live 2026-09-22 during 3-in-a-row horizon bookings. */
 async function geminiGeneratePost(lang, state) {
   const key = String(process.env.GEMINI_API_KEY ?? '').trim()
   if (!key) return null
   const model = String(process.env.GEMINI_MODEL ?? GEMINI_MODEL_DEFAULT).trim() || GEMINI_MODEL_DEFAULT
   const prompt = buildPersonaPrompt(lang, recentHeadings(state))
-  try {
+  const callOnce = async () => {
     const res = await fetch(
       `${GEMINI_URL}/${encodeURIComponent(model)}:generateContent?key=${encodeURIComponent(key)}`,
       {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] }),
+        body: JSON.stringify({
+          contents: [{ parts: [{ text: prompt }] }],
+          // generous budget: 2.5-flash counts thinking tokens against it
+          generationConfig: { maxOutputTokens: 8192, temperature: 1 },
+        }),
         signal: AbortSignal.timeout(60000),
       }
     )
     const json = await res.json().catch(() => ({}))
     const text = String(json?.candidates?.[0]?.content?.parts?.map((p) => p.text ?? '').join('') ?? '').trim()
-    if (!res.ok || !text) throw new Error(json?.error?.message ?? `HTTP ${res.status}`)
+    if (!res.ok || !text) {
+      const reason = json?.candidates?.[0]?.finishReason
+      throw new Error(json?.error?.message ?? (reason ? `empty output (finishReason ${reason})` : `HTTP ${res.status}`))
+    }
     // validation: both brand hashtags, a sane length, multi-block structure
     const newlines = (text.match(/\n/g) ?? []).length
     if (!text.includes('#LadiesOfDestiny') || !text.includes('#MabintiWenyeHatima') || text.length < 250 || text.length > 2000 || newlines < 4) {
       throw new Error('output failed validation (hashtags/length/structure)')
+    }
+    return text
+  }
+  try {
+    let text = ''
+    try {
+      text = await callOnce()
+    } catch (first) {
+      log(`[gemini] first attempt failed (${first.message}) — retrying once in 8s`)
+      await new Promise((r) => setTimeout(r, 8000))
+      text = await callOnce()
     }
     log(`[gemini] caption written with Google Gemini (${model}, ${lang === 'sw' ? 'Kiswahili' : 'English'})`)
     return text
