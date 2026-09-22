@@ -811,7 +811,16 @@ async function main() {
   try {
     ;({ page, via, tokenFromFile, userToken, sourceToken } = await connect(cfg))
   } catch (e) {
-    if (!ARG_DRY) throw e
+    if (!ARG_DRY) {
+      if (String(e.message).startsWith('No working token yet')) {
+        // expected pre-setup state — stay GREEN so the heartbeat doesn't paint
+        // the Actions tab red while waiting for the one-time token paste
+        log(`[connect] ${e.message}`)
+        log('[connect] heartbeat keeps checking every 30 min — paste the token, push, and the next landed run connects, books the page and starts posting automatically. Use the dryRun button anytime to preview the plan.')
+        return
+      }
+      throw e
+    }
     log(`[connect] ${e.message}`)
     log('[dry-run] no Meta token yet — printing the content plan only (posting needs the one-time token paste)')
   }
