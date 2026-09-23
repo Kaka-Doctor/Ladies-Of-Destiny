@@ -58,7 +58,7 @@ The owner directive (2026-09-23): instead of Gemini freely choosing a theme, **t
 GitHub silently drops most scheduled runs on young accounts — this agent **never depends on GitHub firing at 10:00**:
 
 1. **Facebook — punctual by construction.** Every landed run pre-schedules the next 3 days on **Meta's own scheduler** (`scheduled_publish_time`), which publishes exactly at 10:00 EAT. One landed run every ~2 days is enough.
-2. **Instagram — catch-up, all day.** IG's API cannot schedule posts (re-verified live 2026-09-23: `scheduled_publish_time` is whitelist-gated — "(#3) User must be on whitelist"), so the first landed run after 10:00 publishes the IG half with the slot's pinned image + caption. The retry window is **10 hours** (10:00–20:00 EAT, `graceMinutes: 600`) — GitHub would have to drop ~20 consecutive fires for IG to miss a day.
+2. **Instagram — catch-up, soon after 10:00.** IG's API cannot schedule posts (re-verified live 2026-09-23: `scheduled_publish_time` is whitelist-gated — "(#3) User must be on whitelist"), so the first landed run after 10:00 publishes the IG half with the slot's pinned image + caption. Per the owner rule (2026-09-23: *"if it fails or it delays it may post some time soon after that, not just at any moment of the same day"*) the retry window is **90 minutes** (10:00–11:30 EAT, `graceMinutes: 90`) — with the every-30-min fires that gives up to three attempts (~10:15, ~10:45, ~11:15 EAT). Past 11:30 the day's IG half is **skipped** (the event log records a `partial` slot — the **force** button can still post it manually); IG never goes out at arbitrary times of day.
 3. **A failed IG attempt never closes a slot.** If an IG publish fails mid-window (network blip, container timeout), the slot stays open (`scheduled`, IG pending) and EVERY later landed run retries it until the window lapses. One transient error never costs a post.
 4. **No double-posting, ever.** Before retrying, the agent scans the live IG feed for a post already carrying this slot's caption — a publish that timed out but actually succeeded server-side (phantom) is adopted, not repeated. Manual posts of the same content are adopted too. Runs are also queued (workflow concurrency group) so two runs never race.
 5. **Heartbeat.** The workflow fires every 30 min (`:13`/`:43`, off-peak minutes), so drops cost nothing — only landed runs do work.
@@ -77,7 +77,7 @@ GitHub silently drops most scheduled runs on young accounts — this agent **nev
 |------|----|
 | Change posting time | `data/config.json` → `"slots": "10:00"` (EAT) |
 | Pause posting | `data/config.json` → `"autoPost": false` (pending Meta posts are cancelled too) |
-| IG retry window | `data/config.json` → `"graceMinutes": 600` (default 10 h — how long a missed IG half stays rescuable) |
+| IG retry window | `data/config.json` → `"graceMinutes": 90` (default 1.5 h — how long after slot time a missed IG half stays rescuable; past it, the **force** button is the only rescue) |
 | Add / replace images | Upload to `data/photos/` — new ones join the rotation automatically |
 | Change / reorder topics | Edit `data/topics.json` (one per day, in order, cycling) |
 | Restart the topic queue | `data/state.json` → `"rotation": { "topic": 0 }` |

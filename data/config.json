@@ -1,5 +1,5 @@
 {
-  "_readme": "THE config file for the Ladies of Destiny agent. pageId/pageName/igUserId/igUsername/pageAccessToken are AUTO-FILLED the first time a valid token is provided (paste a fresh Graph API Explorer token into data/meta-token.txt and push, or run the workflow once). To change posting time: edit 'slots' (EAT). To pause: set autoPost=false.",
+  "_readme": "THE config file for the Ladies of Destiny agent. pageId/pageName/igUserId/igUsername/pageAccessToken are AUTO-FILLED the first time a valid token is provided (paste a fresh Graph API Explorer token into data/meta-token.txt and push, or run the workflow once). To change posting time: edit 'slots' (EAT). To pause: set autoPost=false. IG catch-up window after slot time: graceMinutes (90 = IG retries until 1.5h past the slot, then that day's IG is skipped; use the force button to rescue it manually).",
   "metaUserToken": "",
   "appId": "1396184215347531",
   "appSecret": "c2e2387de1cefa6b8c95a963b49f5c6d",
@@ -10,7 +10,7 @@
   "platforms": "facebook,instagram",
   "timezone": "Africa/Dar_es_Salaam",
   "slots": "10:00",
-  "graceMinutes": 600,
+  "graceMinutes": 90,
   "scheduleDays": 3,
   "boldHeading": true,
   "pageAccessToken": "EAAT10ngyYUsBSlzVdp9xA1XOHIEhsJMU515zIlQNfdN1TEFU1evX3PS5DrPKO4FifxZCSP2TQDzmX7vvZAdVCagirnD4Sa2nFXLNZCrkB09xSnpHQ12D7WArdWBZBR3oHeQ7vSLPZBE0vIXzoFsE3ZBmqUxznW1AagaiPOBMusH1ZAwjm6BJA4QzSdUnpOY2bARdjSyzxtKV09AojLLhCqC",

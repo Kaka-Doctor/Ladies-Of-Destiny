@@ -40,11 +40,16 @@
  *  landed run PRE-SCHEDULES the next `scheduleDays` days with META'S OWN
  *  scheduled publishing (FB posts with scheduled_publish_time = exactly
  *  10:00 EAT, punctual by construction). Instagram halves are posted directly
- *  by landed runs in each slot's catch-up window — 10 hours by default
- *  (graceMinutes 600, owner rule 2026-09-23: "if it's time for posting it
- *  must post to both fb and IG"; IG's own API scheduling is dead —
- *  scheduled_publish_time is whitelist-gated "(#3) User must be on whitelist",
- *  re-verified live 2026-09-23). An IG attempt that FAILS mid-window (network
+ *  by landed runs SHORTLY AFTER slot time — the first landed fire after the
+ *  slot publishes IG (~10:15 EAT with the :13/:43 fires) — and retries stay
+ *  bounded to a SHORT window (graceMinutes 90 = 10:00–11:30 EAT; owner rule
+ *  2026-09-23: "if it fails or it delays it may post some time soon after
+ *  that, not just at any moment of the same day"; IG's own API scheduling is
+ *  dead — scheduled_publish_time is whitelist-gated "(#3) User must be on
+ *  whitelist", re-verified live 2026-09-23). Past the window the day's IG
+ *  half is SKIPPED (slot closes 'partial', event log records it — the force
+ *  button can still rescue it manually); IG is never posted at arbitrary
+ *  times of day. An IG attempt that FAILS mid-window (network
  *  blip, container timeout) leaves the slot OPEN ('scheduled', IG pending) so
  *  every later landed run retries it; before retrying, the live IG feed is
  *  scanned for a post already carrying the slot's caption (phantom publish or
