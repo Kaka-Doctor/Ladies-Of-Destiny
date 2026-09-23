@@ -40,9 +40,16 @@
  *  landed run PRE-SCHEDULES the next `scheduleDays` days with META'S OWN
  *  scheduled publishing (FB posts with scheduled_publish_time = exactly
  *  10:00 EAT, punctual by construction). Instagram halves are posted directly
- *  by landed runs in each slot's 4-hour catch-up window (IG's own API
- *  scheduling is dead — publish_time is silently ignored, verified live on
- *  the sister repos). Reconcile records permalinks once posts go live.
+ *  by landed runs in each slot's catch-up window — 10 hours by default
+ *  (graceMinutes 600, owner rule 2026-09-23: "if it's time for posting it
+ *  must post to both fb and IG"; IG's own API scheduling is dead —
+ *  scheduled_publish_time is whitelist-gated "(#3) User must be on whitelist",
+ *  re-verified live 2026-09-23). An IG attempt that FAILS mid-window (network
+ *  blip, container timeout) leaves the slot OPEN ('scheduled', IG pending) so
+ *  every later landed run retries it; before retrying, the live IG feed is
+ *  scanned for a post already carrying the slot's caption (phantom publish or
+ *  manual post) and adopted instead of double-posted. Reconcile records
+ *  permalinks once posts go live.
  *
  *  FIRST-RUN TOKEN SETUP (one paste, no JSON editing): drop a fresh Graph API
  *  Explorer user token into data/meta-token.txt and push — the next landed
@@ -641,6 +648,30 @@ async function minutesSinceLastIgPost(page, state) {
   return null
 }
 
+/** Robustness (owner rule 2026-09-23: "if it's time for posting it must post to
+ *  both fb and IG"): look for THIS slot's caption already live on the IG feed
+ *  before (re)publishing the IG half. Covers a media_publish timeout that
+ *  actually succeeded server-side (phantom post — a blind retry would
+ *  DOUBLE-post), and a manual post of the same content. Matches the first 100
+ *  caption chars (the bold heading line makes each slot's caption unique) and
+ *  only media newer than sinceMs. Returns { id, permalink } or null. */
+async function findMatchingIgPost(page, caption, sinceMs) {
+  if (!page.igUserId) return null
+  const key = String(caption ?? '').slice(0, 100).trim()
+  if (!key) return null
+  try {
+    const json = await graphGet(`${page.igUserId}/media`, { fields: 'id,timestamp,caption,permalink', limit: '10', access_token: page.pageToken })
+    for (const m of json.data ?? []) {
+      const ts = m.timestamp ? new Date(m.timestamp).getTime() : 0
+      if (sinceMs && ts && ts < sinceMs) continue
+      if (String(m.caption ?? '').slice(0, 100).trim() === key) {
+        return { id: String(m.id), permalink: String(m.permalink ?? '') }
+      }
+    }
+  } catch { /* unknown — do not block */ }
+  return null
+}
+
 // ── Publish (IG via Meta CDN, FB via binary upload or text-only feed post) ──
 async function publishInstagram(page, photoPath, caption) {
   const steps = []
@@ -1101,6 +1132,29 @@ async function main() {
       const photoPath = photoFile ? path.join(PHOTOS_DIR, photoFile) : null
       log(`[pick] caption: "${captionText.slice(0, 70).replace(/\n/g, ' ')}…" (${captionText.length} chars)`)
 
+      // ---- adopt an already-live IG twin BEFORE (re)publishing (robustness) ----
+      // a previous catch-up attempt may have timed out AFTER the post actually
+      // went out server-side (phantom) — or someone published this content
+      // manually. A blind retry would double-post; adopting closes the slot.
+      if (target.igOnly) {
+        const sinceMs = existing?.publishTime ? new Date(existing.publishTime).getTime() - 2 * 3600000 : Date.now() - 26 * 3600000
+        const adopt = await findMatchingIgPost(page, captionText, sinceMs)
+        if (adopt) {
+          const aday = state.days[dateKey] ?? {}
+          aday[target.label] = {
+            ...existing,
+            status: 'published',
+            at: existing?.publishTime ?? new Date().toISOString(),
+            ig: { id: adopt.id, permalink: adopt.permalink, adopted: true },
+          }
+          state.days[dateKey] = aday
+          recordEvent(state, { level: 'success', date: dateKey, slot: target.label, message: `${slotLabel}: IG half adopted from the live feed (caption match) — ${adopt.permalink || adopt.id}` })
+          await writeState(state)
+          log(`[adopt] this slot's caption is already live on IG (${adopt.permalink || adopt.id}) — adopted as the IG half, no new post`)
+          target = null
+        }
+      }
+
       // ---- duplicate guard (cross-runtime safety net) ----
       const guardMinutes = ARG_FORCE ? 3 : 30
       const lastAgo = target.igOnly
@@ -1141,40 +1195,70 @@ async function main() {
         if (!target.igOnly) log(`[post] FB: ${fbOk ? `✓ ${fbResult.permalink || fbResult.postId}` : `✗ ${fbResult.error}`}`)
 
         // ---- state update ----
+        // Robustness (owner rule 2026-09-23): an IG failure while the FB half is
+        // live (or in Meta's hands) must NOT close the slot. The record stays
+        // 'scheduled' with the pinned photo/caption and no ig.id — every later
+        // landed run retries the IG half until the grace window lapses
+        // (reconcile then closes it as 'partial'). One transient API failure
+        // (network blip, container timeout) never costs a slot.
         const day = state.days[dateKey] ?? {}
-        day[target.label] = {
-          status,
-          at: new Date().toISOString(),
-          publishTime: existing?.publishTime,
-          photo: photoFile ?? (existing?.photo ?? null),
-          caption: captionText,
-          lang: postLang,
-          topic: slotTopic ?? (existing?.topic ?? null),
-          ig: !photoPath
-            ? { skipped: !page.igUserId ? 'IG not linked' : 'no image yet' }
-            : igOk ? { id: igResult.postId, permalink: igResult.permalink } : { error: igResult.error },
-          fb: target.igOnly
-            ? (existing?.fb ?? { error: 'booking lost' })
-            : fbOk ? { id: fbResult.postId, permalink: fbResult.permalink } : { error: fbResult.error },
-        }
-        state.days[dateKey] = day
-        if (status !== 'failed' && photoFile && !target.igOnly) {
-          advancePhoto(state, photos) // one image per day; cycles when over
-        }
-        if (status !== 'failed' && !target.igOnly && slotTopic) {
-          advanceTopic(state, topics) // one topic per day; cycles every topics.length days
-        }
-        recordEvent(state, {
-          level: status === 'published' ? 'success' : 'error',
-          date: dateKey,
-          slot: target.label,
-          message: `${slotLabel}: ${status} — ${photoFile ? `"${photoFile}"` : 'text-only'} | ${postLang} | ${slotTopic ? `topic #${slotTopic.n} "${postLang === 'sw' ? slotTopic.sw : slotTopic.en}"` : 'no topic'} | IG ${igOk ? (photoPath ? '✓' : 'skipped (no image)') : `✗ ${igResult.error}`} | FB ${fbOk ? '✓' : `✗ ${fbResult.error}`}`,
-        })
-        await writeState(state)
-        log(`[state] saved — ${dateKey} ${target.label} = ${status}`)
+        if (!igOk && fbOk) {
+          day[target.label] = {
+            status: 'scheduled', // stays open: IG pending, FB fine
+            at: existing?.at ?? new Date().toISOString(),
+            publishTime: existing?.publishTime ?? new Date().toISOString(),
+            photo: photoFile ?? (existing?.photo ?? null),
+            caption: captionText,
+            lang: postLang,
+            topic: slotTopic ?? (existing?.topic ?? null),
+            ig: { error: igResult.error, retries: (existing?.ig?.retries ?? 0) + 1 },
+            fb: target.igOnly
+              ? (existing?.fb ?? { error: 'booking lost' })
+              : { id: fbResult.postId, permalink: fbResult.permalink },
+          }
+          state.days[dateKey] = day
+          // the live FB post consumed this content (non-igOnly case) — advance the
+          // rotation so the next slot does not reuse the same photo/topic
+          if (photoFile && !target.igOnly) advancePhoto(state, photos)
+          if (!target.igOnly && slotTopic) advanceTopic(state, topics)
+          recordEvent(state, { level: 'error', date: dateKey, slot: target.label, message: `${slotLabel}: IG half failed (${igResult.error}) — slot stays OPEN, later landed runs retry the IG half until the ${grace}-min window closes` })
+          await writeState(state)
+          log(`[state] saved — ${dateKey} ${target.label} = IG pending (retry ${existing?.ig?.retries ? existing.ig.retries + 1 : 1}; FB ${target.igOnly ? 'in Meta\u2019s hands' : 'live'})`)
+        } else {
+          day[target.label] = {
+            status,
+            at: new Date().toISOString(),
+            publishTime: existing?.publishTime,
+            photo: photoFile ?? (existing?.photo ?? null),
+            caption: captionText,
+            lang: postLang,
+            topic: slotTopic ?? (existing?.topic ?? null),
+            ig: !photoPath
+              ? { skipped: !page.igUserId ? 'IG not linked' : 'no image yet' }
+              : igOk ? { id: igResult.postId, permalink: igResult.permalink } : { error: igResult.error },
+            fb: target.igOnly
+              ? (existing?.fb ?? { error: 'booking lost' })
+              : fbOk ? { id: fbResult.postId, permalink: fbResult.permalink } : { error: fbResult.error },
+          }
+          state.days[dateKey] = day
+          if (status !== 'failed' && photoFile && !target.igOnly) {
+            advancePhoto(state, photos) // one image per day; cycles when over
+          }
+          if (status !== 'failed' && !target.igOnly && slotTopic) {
+            advanceTopic(state, topics) // one topic per day; cycles every topics.length days
+          }
+          recordEvent(state, {
+            level: status === 'published' ? 'success' : 'error',
+            date: dateKey,
+            slot: target.label,
+            message: `${slotLabel}: ${status} — ${photoFile ? `"${photoFile}"` : 'text-only'} | ${postLang} | ${slotTopic ? `topic #${slotTopic.n} "${postLang === 'sw' ? slotTopic.sw : slotTopic.en}"` : 'no topic'} | IG ${igOk ? (photoPath ? '✓' : 'skipped (no image)') : `✗ ${igResult.error}`} | FB ${fbOk ? '✓' : `✗ ${fbResult.error}`}`,
+          })
+          await writeState(state)
+          log(`[state] saved — ${dateKey} ${target.label} = ${status}`)
 
-        if (status === 'failed') {
-          throw new Error(`Slot ${slotLabel} ended as "${status}" — IG: ${igResult.error || 'ok'} | FB: ${fbResult.error || 'ok'}`)
+          if (status === 'failed') {
+            throw new Error(`Slot ${slotLabel} ended as "${status}" — IG: ${igResult.error || 'ok'} | FB: ${fbResult.error || 'ok'}`)
+          }
         }
       }
     }
