@@ -7,16 +7,22 @@ name: Ladies of Destiny Agent
 #  alternating daily: English one day, Kiswahili the next (owner rule
 #  2026-09-22).
 #
-#  GitHub's cron fires this workflow every 30 minutes around the clock at
-#  :13/:43 — but the timing barely matters. Every run that lands PRE-SCHEDULES
+#  GitHub's cron fires this workflow on TWO schedules:
+#    • "3 7 * * *"   — daily 10:03 EAT PUNCTUALITY fire: the first run after
+#      the 10:00 slot publishes the Instagram half at ~10:04-10:07 EAT (IG's
+#      own API scheduling is not available, so a landed run right after the
+#      slot is as close to 10:00 as GitHub can get; owner rule 2026-09-23:
+#      "if possible it would also post on ig at 10:00am").
+#    • "13,43 * * * *" — 30-min heartbeat around the clock (off-peak minutes
+#      — GitHub drops scheduled runs at peak minutes when Actions load is
+#      high). Retries for a missed IG half land on these fires within the
+#      90-min catch-up window (10:00-11:30 EAT, "graceMinutes" in
+#      data/config.json); past the window the day's IG half is skipped.
+#  Beyond that, the timing barely matters: every run that lands PRE-SCHEDULES
 #  the next "scheduleDays" days (default 3) with META'S OWN scheduled
 #  publishing — Meta's servers then publish each Facebook post exactly at
 #  10:00 EAT, no matter when or whether GitHub fires again. Instagram halves
-#  are posted by the first landed run after each slot time (IG's own API
-#  scheduling is not available), reusing the slot's pinned image + caption.
-#
-#  WHY OFF-PEAK MINUTES (:13/:43)? GitHub drops scheduled runs at peak minutes
-#  when Actions load is high.
+#  reuse the slot's pinned image + caption.
 #
 #  SETUP (once): 1) paste a fresh Graph API Explorer token into
 #  data/meta-token.txt and push — the next run finds the page, mints the
@@ -42,7 +48,8 @@ name: Ladies of Destiny Agent
 
 on:
   schedule:
-    - cron: "13,43 * * * *"
+    - cron: "3 7 * * *"    # daily 10:03 EAT punctuality fire for the IG half
+    - cron: "13,43 * * * *" # 30-min heartbeat (off-peak minutes)
   workflow_dispatch:
     inputs:
       dryRun:
