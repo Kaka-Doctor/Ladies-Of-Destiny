@@ -22,6 +22,13 @@
  *  pre-written fallback pool in data/fallback-captions.json keeps the page
  *  alive — posting never depends on Gemini being reachable.
  *
+ *  TOPIC QUEUE (owner directive 2026-09-23): the SYSTEM assigns one topic per
+ *  day from data/topics.json (the owner's 100-topic list, 8 categories) —
+ *  topic #1 on day 1, #2 on day 2, … cycling every 100 days. Gemini must write
+ *  about exactly that day's topic (SW days get the Swahili title, EN days the
+ *  English one). If data/topics.json is missing, the agent gracefully falls
+ *  back to Gemini's free theme choice.
+ *
  *  IMAGES: the owner uploads her own images to data/photos/ — the agent uses
  *  one per day in alphabetical order, cycling back to the first when the last
  *  is used ("use one image every day until they are over then you repeat").
@@ -61,6 +68,7 @@ const STATE_FILE = path.join(ROOT, 'data', 'state.json')
 const PHOTOS_DIR = path.join(ROOT, 'data', 'photos')
 const FALLBACK_FILE = path.join(ROOT, 'data', 'fallback-captions.json')
 const TOKEN_FILE = path.join(ROOT, 'data', 'meta-token.txt')
+const TOPICS_FILE = path.join(ROOT, 'data', 'topics.json')
 
 const GRAPH = 'https://graph.facebook.com/v21.0'
 const GEMINI_URL = 'https://generativelanguage.googleapis.com/v1beta/models'
@@ -294,6 +302,35 @@ function advancePhoto(state, jpgs) {
   if (jpgs.length > 0) state.rotation.photo = (Number(state.rotation.photo ?? 0) + 1) % jpgs.length
 }
 
+// ── Daily topic queue (data/topics.json — the owner's 100-topic list) ────────
+// One topic per day in file order, cycling every `topics.length` days.
+// SW days use the Swahili title, EN days the English one. Missing/empty file
+// → null → the persona falls back to free theme choice (graceful degrade).
+async function loadTopics() {
+  try {
+    const d = JSON.parse(await fs.readFile(TOPICS_FILE, 'utf-8'))
+    const list = Array.isArray(d) ? d : d.topics ?? []
+    return list
+      .filter((t) => t && t.en && t.sw)
+      .map((t, i) => ({
+        n: Number(t.n) || i + 1,
+        cat: String(t.cat ?? ''),
+        en: String(t.en),
+        sw: String(t.sw),
+      }))
+  } catch {
+    return []
+  }
+}
+
+function peekTopic(state, topics) {
+  return topics.length > 0 ? topics[Number(state.rotation.topic ?? 0) % topics.length] : null
+}
+
+function advanceTopic(state, topics) {
+  if (topics.length > 0) state.rotation.topic = (Number(state.rotation.topic ?? 0) + 1) % topics.length
+}
+
 // ── Fallback caption pool (used only without GEMINI_API_KEY / on Gemini failure)
 async function loadFallbacks() {
   try {
@@ -400,10 +437,15 @@ function recentHeadings(state, n = 6) {
 // ── Google Gemini — the "Lady of Destiny" caption writer ────────────────────
 /** Build the persona prompt in the requested language. The persona is the
  *  owner's ministry brief (2026-09-22), applied verbatim to structure, tone,
- *  themes, audience and hashtags. */
-function buildPersonaPrompt(lang, avoidList) {
+ *  audience and hashtags. When `topic` is given (data/topics.json queue), the
+ *  post MUST be about that exact topic — the free-choice menu is only the
+ *  graceful fallback when no topics file exists. */
+function buildPersonaPrompt(lang, avoidList, topic) {
   const avoid = avoidList.length > 0 ? avoidList.join(' | ') : 'none yet (this is your first post)'
   if (lang === 'sw') {
+    const topicLine = topic
+      ? `MADA YA LEO (andika kuhusu mada hii hasa, usibadilishe): "${topic.sw}".`
+      : 'Chagua mada moja kutoka: kumpenda Mungu, urembo wa ndani, lenzo, maombi, imani, usafi, hatima, ujasiri, kujithamini, utumishi, uongozi, wema, msamaha, kutembea kwa Roho.'
     return (
       'Wewe ni "Lady of Destiny" (Binti Mwenye Hatima ya Kimungu) — huduma ya Kikristo ya kuandika maudhui, inayojitolea ' +
       'kuhamasisha na kuwezesha binti (wanawake wachanga) na wasichana kumpenda Mungu kwa dhati, kuishi maisha ya usafi, ' +
@@ -418,8 +460,7 @@ function buildPersonaPrompt(lang, avoidList) {
       'Sauti: mpole, unaohamasisha, wa udugu (kama dada), wenye imani — jaa upendo, uchangamfu na uhamasishaji. ' +
       'Tumia lugha rahisi inayogusa moyo. Ongeza hima fupi kama "Umekaguliwa", "Endelea kuang\'aa", au "Mungu ana mpango wako". ' +
       'Epuka maelezo marefu ya teolojia — iwe mahudumio, ya karibu, yenye kiongozwa na Roho.\n\n' +
-      'Chagua mada moja kutoka: kumpenda Mungu, urembo wa ndani, lenzo, maombi, imani, usafi, hatima, ujasiri, kujithamini, ' +
-      'utumishi, uongozi, wema, msamaha, kutembea kwa Roho.\n\n' +
+      `${topicLine}\n\n` +
       'LUGHA: Andika chapisho NZIMA kwa Kiswahili sanifu — kichwa, ujumbe, andiko (toleo la Kiswahili la Biblia) na hashtag zote.\n\n' +
       `Mada/vichwa vya hivi karibuni (USIRUDIE): ${avoid}\n\n` +
       'Jibu na maandishi ya chapisho PEKEE — bila maelezo mengine kabla au baada, bila markdown, bila nyota, maandishi wazi tu.'
@@ -439,8 +480,10 @@ function buildPersonaPrompt(lang, avoidList) {
     'Tone: gentle, encouraging, sisterly, and faith-filled — speak with love, warmth, and inspiration. ' +
     'Use simple language that touches the heart. Add one short encouragement such as "You are chosen", "Keep shining", ' +
     'or "God has a plan for you". Avoid long theological explanations — make it devotional and relatable, personal and Spirit-led.\n\n' +
-    'Choose one theme from: love for God, inner beauty, purpose, prayer, faith, purity, destiny, courage, self-worth, ' +
-    'ministry, leadership, kindness, forgiveness, walking in the Spirit.\n\n' +
+    (topic
+      ? `TODAY'S ASSIGNED TOPIC (write about exactly this topic, do not swap it for another): "${topic.en}". Category: ${topic.cat || 'general'}.`
+      : 'Choose one theme from: love for God, inner beauty, purpose, prayer, faith, purity, destiny, courage, self-worth, ministry, leadership, kindness, forgiveness, walking in the Spirit.') +
+    '\n\n' +
     'LANGUAGE: Write the ENTIRE post in English — heading, message, scripture, and all hashtags.\n\n' +
     `Recent headings/themes (do NOT repeat them): ${avoid}\n\n` +
     'Output ONLY the post text — no explanations before or after, no markdown, no asterisks, plain text only.'
@@ -452,11 +495,11 @@ function buildPersonaPrompt(lang, avoidList) {
  *  Retries once (8s apart): gemini-2.5-flash occasionally returns HTTP 200
  *  with an empty body (thinking budget quirk / transient throttle) — seen
  *  live 2026-09-22 during 3-in-a-row horizon bookings. */
-async function geminiGeneratePost(lang, state) {
+async function geminiGeneratePost(lang, state, topic) {
   const key = String(process.env.GEMINI_API_KEY ?? '').trim()
   if (!key) return null
   const model = String(process.env.GEMINI_MODEL ?? GEMINI_MODEL_DEFAULT).trim() || GEMINI_MODEL_DEFAULT
-  const prompt = buildPersonaPrompt(lang, recentHeadings(state))
+  const prompt = buildPersonaPrompt(lang, recentHeadings(state), topic)
   const callOnce = async () => {
     const res = await fetch(
       `${GEMINI_URL}/${encodeURIComponent(model)}:generateContent?key=${encodeURIComponent(key)}`,
@@ -501,9 +544,11 @@ async function geminiGeneratePost(lang, state) {
   }
 }
 
-/** Final caption for a slot: Gemini (persona) → fallback pool → built-in. */
-async function captionForSlot(lang, state, fallbacks, boldEnabled) {
-  const gen = await geminiGeneratePost(lang, state)
+/** Final caption for a slot: Gemini (persona, on the day's assigned topic) →
+ *  fallback pool → built-in. The fallback pool stays topic-agnostic (used only
+ *  when Gemini is unavailable, so a down API never stops the page). */
+async function captionForSlot(lang, state, fallbacks, boldEnabled, topic) {
+  const gen = await geminiGeneratePost(lang, state, topic)
   if (gen) return { text: boldFirstHeading(gen, boldEnabled), source: 'gemini' }
   const fb = pickFallback(state, fallbacks, lang)
   if (fb) {
@@ -519,7 +564,7 @@ async function captionForSlot(lang, state, fallbacks, boldEnabled) {
 }
 
 // ── State (data/state.json, committed back by the workflow) ─────────────────
-const EMPTY_STATE = { version: 1, days: {}, rotation: { photo: 0, fallbackEn: 0, fallbackSw: 0 }, events: [] }
+const EMPTY_STATE = { version: 1, days: {}, rotation: { photo: 0, topic: 0, fallbackEn: 0, fallbackSw: 0 }, events: [] }
 async function readState() {
   try {
     const s = JSON.parse(await fs.readFile(STATE_FILE, 'utf-8'))
@@ -812,10 +857,12 @@ async function main() {
   if (ARG_CAPTION_TEST) {
     const state = await readState()
     const fallbacks = await loadFallbacks()
+    const topics = await loadTopics()
     const boldEnabled = cfg.boldHeading !== false
     for (const lang of ['en', 'sw']) {
-      const cap = await captionForSlot(lang, state, fallbacks, boldEnabled)
-      log(`\n=== ${lang === 'sw' ? 'Kiswahili' : 'English'} caption (source: ${cap.source}) ===\n${cap.text}\n`)
+      const topic = peekTopic(state, topics)
+      const cap = await captionForSlot(lang, state, fallbacks, boldEnabled, topic)
+      log(`\n=== ${lang === 'sw' ? 'Kiswahili' : 'English'} caption (source: ${cap.source}${topic ? ` | topic #${topic.n}: ${lang === 'sw' ? topic.sw : topic.en}` : ''}) ===\n${cap.text}\n`)
     }
     log('[caption-test] nothing published, state unchanged')
     return
@@ -889,10 +936,13 @@ async function main() {
 
   const { jpgs: photos, pending } = await getPhotos()
   const fallbacks = await loadFallbacks()
+  const topics = await loadTopics()
   const geminiReady = Boolean(String(process.env.GEMINI_API_KEY ?? '').trim())
   log(`[library] ${photos.length} image(s) in data/photos/ (used one per day, cycled when over)${pending.length > 0 ? `; ${pending.length} PNG/WebP will be converted to JPEG by the workflow's normalize step` : ''}`)
   log(`[library] captions: ${geminiReady ? 'Google Gemini live (GEMINI_API_KEY set) — the Lady of Destiny persona writes each post' : 'FALLBACK pool (GEMINI_API_KEY secret not set — add it in repo Settings → Secrets → Actions for live Gemini captions)'}, ${fallbacks.posts.filter((p) => p.lang === 'en').length} EN + ${fallbacks.posts.filter((p) => p.lang === 'sw').length} SW stored`)
   log(`[library] next slot language: ${nextSlotLang(state) === 'sw' ? 'Kiswahili' : 'English'} (daily alternation; a fresh repo starts with English)`)
+  const nextTopic = peekTopic(state, topics)
+  log(`[library] topics: ${nextTopic ? `${topics.length} assigned topics in data/topics.json — next: #${nextTopic.n} "${nextTopic.en}" / "${nextTopic.sw}" (${nextTopic.cat}); one per day, cycling every ${topics.length} days` : 'free theme choice (no data/topics.json — add the queue file to assign one topic per day)'}`)
   if (photos.length === 0) {
     log('[library] ⚠ data/photos/ is EMPTY — Facebook gets the caption as a text-only post; Instagram waits until images are uploaded (IG cannot post without an image)')
   }
@@ -976,7 +1026,9 @@ async function main() {
         }
       } else {
         const photo = peekPhoto(state, photos)
-        log(`[pick] slot ${target.label} on ${target.date ?? now.date} → language: ${slotLang(state, target.date ?? now.date, target.label) === 'sw' ? 'Kiswahili' : 'English'} → photo: ${photo ?? '(none — text-only FB post + IG skipped until images are uploaded)'} (rotation index ${Number(state.rotation.photo ?? 0) % Math.max(1, photos.length)} of ${photos.length})`)
+        const tLang = slotLang(state, target.date ?? now.date, target.label)
+        const tTopic = peekTopic(state, topics)
+        log(`[pick] slot ${target.label} on ${target.date ?? now.date} → language: ${tLang === 'sw' ? 'Kiswahili' : 'English'} → topic: ${tTopic ? `#${tTopic.n} "${tLang === 'sw' ? tTopic.sw : tTopic.en}" (${tTopic.cat})` : 'free theme'} → photo: ${photo ?? '(none — text-only FB post + IG skipped until images are uploaded)'} (rotation index ${Number(state.rotation.photo ?? 0) % Math.max(1, photos.length)} of ${photos.length})`)
         log(`[pick] caption: ${geminiReady ? 'to be written by Google Gemini (Lady of Destiny persona)' : 'fallback pool post (GEMINI_API_KEY not set)'} — heading auto-bolded for social media`)
         log('[dry-run] would publish now:')
         log(`  Facebook (${page.pageName || 'Ladies Of Destiny'}): ${photo ? 'photo upload with caption' : 'text-only feed post with caption'}`)
@@ -989,8 +1041,10 @@ async function main() {
       for (const h of horizon) {
         const lang = simPrevLang ?? slotLang(state, h.dk, h.slot.label)
         const photo = peekPhoto(state, photos)
-        log(`  ${h.dk} ${h.slot.label} → ${lang === 'sw' ? 'Kiswahili' : 'English'} → ${photo ? `"${photo}"` : 'text-only'} → FB at ${new Date(h.slotUnix).toISOString()} + IG on the next landed run after that`)
+        const topic = peekTopic(state, topics)
+        log(`  ${h.dk} ${h.slot.label} → ${lang === 'sw' ? 'Kiswahili' : 'English'} → topic: ${topic ? `#${topic.n} "${lang === 'sw' ? topic.sw : topic.en}"` : 'free theme'} → ${photo ? `"${photo}"` : 'text-only'} → FB at ${new Date(h.slotUnix).toISOString()} + IG on the next landed run after that`)
         if (photo) advancePhoto(state, photos)
+        advanceTopic(state, topics)
         simPrevLang = oppositeLang(lang)
       }
     }
@@ -1009,7 +1063,7 @@ async function main() {
     // with exactly this content; IG must match it, not advance the rotation.
     // If the slot was booked without a photo (photos folder was empty), re-check
     // the folder NOW — the owner may have uploaded images since.
-    let photoFile, captionText, postLang
+    let photoFile, captionText, postLang, slotTopic = null
     if (target.igOnly) {
       photoFile = existing?.photo ?? null
       captionText = existing?.caption
@@ -1037,9 +1091,10 @@ async function main() {
       const pickLang = slotLang(state, dateKey, target.label)
       postLang = pickLang
       photoFile = peekPhoto(state, photos)
-      const cap = await captionForSlot(pickLang, state, fallbacks, boldEnabled)
+      slotTopic = peekTopic(state, topics)
+      const cap = await captionForSlot(pickLang, state, fallbacks, boldEnabled, slotTopic)
       captionText = cap.text
-      log(`[pick] slot ${slotLabel} on ${dateKey} → language: ${postLang === 'sw' ? 'Kiswahili' : 'English'} (daily alternation) → photo: ${photoFile ?? '(none — text-only FB post)'} → caption source: ${cap.source}`)
+      log(`[pick] slot ${slotLabel} on ${dateKey} → language: ${postLang === 'sw' ? 'Kiswahili' : 'English'} (daily alternation) → topic: ${slotTopic ? `#${slotTopic.n} "${postLang === 'sw' ? slotTopic.sw : slotTopic.en}" (${slotTopic.cat})` : 'free theme (no data/topics.json)'} → photo: ${photoFile ?? '(none — text-only FB post)'} → caption source: ${cap.source}`)
     }
 
     if (target) {
@@ -1094,6 +1149,7 @@ async function main() {
           photo: photoFile ?? (existing?.photo ?? null),
           caption: captionText,
           lang: postLang,
+          topic: slotTopic ?? (existing?.topic ?? null),
           ig: !photoPath
             ? { skipped: !page.igUserId ? 'IG not linked' : 'no image yet' }
             : igOk ? { id: igResult.postId, permalink: igResult.permalink } : { error: igResult.error },
@@ -1105,11 +1161,14 @@ async function main() {
         if (status !== 'failed' && photoFile && !target.igOnly) {
           advancePhoto(state, photos) // one image per day; cycles when over
         }
+        if (status !== 'failed' && !target.igOnly && slotTopic) {
+          advanceTopic(state, topics) // one topic per day; cycles every topics.length days
+        }
         recordEvent(state, {
           level: status === 'published' ? 'success' : 'error',
           date: dateKey,
           slot: target.label,
-          message: `${slotLabel}: ${status} — ${photoFile ? `"${photoFile}"` : 'text-only'} | ${postLang} | IG ${igOk ? (photoPath ? '✓' : 'skipped (no image)') : `✗ ${igResult.error}`} | FB ${fbOk ? '✓' : `✗ ${fbResult.error}`}`,
+          message: `${slotLabel}: ${status} — ${photoFile ? `"${photoFile}"` : 'text-only'} | ${postLang} | ${slotTopic ? `topic #${slotTopic.n} "${postLang === 'sw' ? slotTopic.sw : slotTopic.en}"` : 'no topic'} | IG ${igOk ? (photoPath ? '✓' : 'skipped (no image)') : `✗ ${igResult.error}`} | FB ${fbOk ? '✓' : `✗ ${fbResult.error}`}`,
         })
         await writeState(state)
         log(`[state] saved — ${dateKey} ${target.label} = ${status}`)
@@ -1133,11 +1192,12 @@ async function main() {
   for (const h of horizon) {
     const hLang = slotLang(state, h.dk, h.slot.label)
     const hPhoto = peekPhoto(state, photos)
-    const cap = await captionForSlot(hLang, state, fallbacks, boldEnabled)
+    const hTopic = peekTopic(state, topics)
+    const cap = await captionForSlot(hLang, state, fallbacks, boldEnabled, hTopic)
     const hCaption = cap.text
     const hPhotoPath = hPhoto ? path.join(PHOTOS_DIR, hPhoto) : null
     const hISO = new Date(h.slotUnix).toISOString()
-    log(`[schedule] ${h.dk} ${h.slot.label} → language: ${hLang === 'sw' ? 'Kiswahili' : 'English'} → ${hPhoto ? `"${hPhoto}"` : 'text-only post'} → FB publishes at ${hISO}; IG half on the next landed run after that`)
+    log(`[schedule] ${h.dk} ${h.slot.label} → language: ${hLang === 'sw' ? 'Kiswahili' : 'English'} → topic: ${hTopic ? `#${hTopic.n} "${hLang === 'sw' ? hTopic.sw : hTopic.en}" (${hTopic.cat})` : 'free theme (no data/topics.json)'} → ${hPhoto ? `"${hPhoto}"` : 'text-only post'} → FB publishes at ${hISO}; IG half on the next landed run after that`)
     const fbS = await scheduleFacebookPost(page, hPhotoPath, hCaption, Math.floor(h.slotUnix / 1000))
     if (fbS.ok) {
       const day = state.days[h.dk] ?? {}
@@ -1148,11 +1208,13 @@ async function main() {
         photo: hPhoto,
         caption: hCaption,
         lang: hLang,
+        topic: hTopic ?? null,
         fb: { id: fbS.postId },
       }
       state.days[h.dk] = day
       if (hPhoto) advancePhoto(state, photos)
-      recordEvent(state, { level: 'info', date: h.dk, slot: h.slot.label, message: `${h.slot.label} FB half pre-scheduled via Meta (publishes ${hISO}, ${hLang === 'sw' ? 'Kiswahili' : 'English'}) — ${hPhoto ? `"${hPhoto}"` : 'text-only'}; IG half to be posted by a landed run in the catch-up window` })
+      advanceTopic(state, topics) // one topic per booked day, cycling every topics.length days
+      recordEvent(state, { level: 'info', date: h.dk, slot: h.slot.label, message: `${h.slot.label} FB half pre-scheduled via Meta (publishes ${hISO}, ${hLang === 'sw' ? 'Kiswahili' : 'English'}) — topic ${hTopic ? `#${hTopic.n} "${hTopic.en}" / "${hTopic.sw}" (${hTopic.cat})` : '(free choice)'}; ${hPhoto ? `"${hPhoto}"` : 'text-only'}; IG half to be posted by a landed run in the catch-up window` })
       scheduledCount++
     } else {
       recordEvent(state, { level: 'error', date: h.dk, slot: h.slot.label, message: `${h.slot.label} FB scheduling FAILED — ${fbS.error} (next run retries)` })

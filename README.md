@@ -2,6 +2,8 @@
 
 Posts **one devotional per day at 10:00 EAT** to the **Ladies Of Destiny** Facebook page **and** its Instagram account, with captions written by **Google Gemini** in the *Lady of Destiny (Binti Mwenye Hatima ya Kimungu)* persona — languages alternating daily: **English today → Kiswahili tomorrow**, forever.
 
+Each day's post is written about **one assigned topic** from [`data/topics.json`](data/topics.json) — the owner's list of 100 topics in 8 categories, used in order (topic #1 on day 1, #2 on day 2, …) and cycling every 100 days. Swahili days use the topic's Swahili title, English days the English one.
+
 The images are **yours**: upload them to `data/photos/` and the agent uses one per day, in alphabetical order, cycling back to the first when the last is used.
 
 ---
@@ -39,6 +41,18 @@ Same structure in Kiswahili on Swahili days (Gemini writes both). While `data/ph
 
 ---
 
+## Daily topic queue (`data/topics.json`)
+
+The owner directive (2026-09-23): instead of Gemini freely choosing a theme, **the system assigns one topic per day**.
+
+- The queue is `data/topics.json`: 100 topics, each `{ n, cat, en, sw }` — number, category, English title, Kiswahili title. Entries are used **in file order**, one per day (photo + topic advance together at booking time), cycling back to topic #1 after #100.
+- SW days → Gemini is told *"MADA YA LEO (andika kuhusu mada hii hasa): \<Swahili title\>"*; EN days → *"TODAY'S ASSIGNED TOPIC: \<English title\>"*. The rest of the persona (structure, tone, scripture, hashtags) is unchanged.
+- The day's topic is recorded in `data/state.json` (`topic` field) — you can always audit which topic each day used.
+- **Edit / reorder / extend** the queue any time: edit the JSON and commit. The counter (`rotation.topic` in `data/state.json`) is a position in the list, so removing an entry shifts the following days. Set `rotation.topic: 0` in `data/state.json` to restart the queue from topic #1.
+- If `data/topics.json` is missing, the agent gracefully falls back to Gemini's free theme choice — the queue never blocks posting.
+
+---
+
 ## How it stays reliable (copied from the proven sister repos)
 
 GitHub silently drops most scheduled runs on young accounts — this agent **never depends on GitHub firing at 10:00**:
@@ -60,6 +74,8 @@ GitHub silently drops most scheduled runs on young accounts — this agent **nev
 | Change posting time | `data/config.json` → `"slots": "10:00"` (EAT) |
 | Pause posting | `data/config.json` → `"autoPost": false` (pending Meta posts are cancelled too) |
 | Add / replace images | Upload to `data/photos/` — new ones join the rotation automatically |
+| Change / reorder topics | Edit `data/topics.json` (one per day, in order, cycling) |
+| Restart the topic queue | `data/state.json` → `"rotation": { "topic": 0 }` |
 | Check what is live | `node scripts/check-live-posts.mjs` locally (or read the latest run log) |
 | Different Gemini model | Repo **variable** `GEMINI_MODEL` (default `gemini-2.5-flash`) |
 
@@ -68,10 +84,12 @@ GitHub silently drops most scheduled runs on young accounts — this agent **nev
 ```
 data/config.json              ← the switch file (slots, timezone, pause, token — auto-filled)
 data/state.json               ← what was posted/scheduled each day (auto-committed)
+data/topics.json              ← the 100-topic queue (one assigned topic per day, in order)
 data/photos/                  ← YOUR images (one per day, alphabetical, cycling)
 data/fallback-captions.json   ← 10 EN + 10 SW stored posts (used only if Gemini is unreachable)
 data/meta-token.txt           ← one-paste token setup (cleared after first use)
 scripts/gh-agent.mjs          ← the agent
+scripts/topic-queue-surgery.mjs  ← one-off 2026-09-23 queue-start surgery (kept for the record)
 scripts/normalize-photos.js   ← auto-crops/converts any uploaded image to IG-safe JPEG
 scripts/gemini-selftest.mjs   ← the gemini-test button
 scripts/check-live-posts.mjs  ← read-only live check

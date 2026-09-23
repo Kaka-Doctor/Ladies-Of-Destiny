@@ -1,0 +1,605 @@
+{
+  "_readme": "Ladies of Destiny daily topic queue - 100 topics in 8 categories (owner-specified 2026-09-23). The AGENT assigns exactly ONE topic per day, in this fixed order, and cycles back to topic #1 after #100 - so a topic never repeats within 100 days. Order is round-robin across categories (consecutive days = different categories). 'en' title is used on English days, 'sw' (Kiswahili sanifu) on Swahili days. Gemini still writes each post freely around the assigned topic. Edit/reorder freely - the agent follows this file.",
+  "topics": [
+    {
+      "n": 1,
+      "cat": "IDENTITY & RELATIONSHIP WITH GOD",
+      "en": "Knowing Who You Are in Christ",
+      "sw": "Kujua Wewe Ni Nani Ndani ya Kristo"
+    },
+    {
+      "n": 2,
+      "cat": "CHRISTLIKE CHARACTER",
+      "en": "Becoming More Like Jesus Every Day",
+      "sw": "Kufanana na Yesu Zaidi Kila Siku"
+    },
+    {
+      "n": 3,
+      "cat": "LOVE & RELATIONSHIPS",
+      "en": "The Love of Jesus: Loving Beyond Feelings",
+      "sw": "Upendo wa Yesu: Kupenda Zaidi ya Hisia"
+    },
+    {
+      "n": 4,
+      "cat": "PURITY & WISDOM",
+      "en": "Purity of Heart, Mind and Actions",
+      "sw": "Usafi wa Moyo, Akili na Matendo"
+    },
+    {
+      "n": 5,
+      "cat": "LEADERSHIP & INFLUENCE",
+      "en": "Leading Like Jesus",
+      "sw": "Kuongoza Kama Yesu"
+    },
+    {
+      "n": 6,
+      "cat": "EDUCATION, WORK & PURPOSE",
+      "en": "Discovering Your God-Given Purpose",
+      "sw": "Kugundua Kusudi Lako la Kimungu"
+    },
+    {
+      "n": 7,
+      "cat": "DIGITAL LIFE & MODERN CULTURE",
+      "en": "Representing Jesus on Social Media",
+      "sw": "Kumwakilisha Yesu katika Mitandao ya Kijamii"
+    },
+    {
+      "n": 8,
+      "cat": "SERVICE & GOOD DEEDS",
+      "en": "Good Works That Point People to Jesus",
+      "sw": "Matendo Mema Yanayoelekeza Watu kwenda Yesu"
+    },
+    {
+      "n": 9,
+      "cat": "IDENTITY & RELATIONSHIP WITH GOD",
+      "en": "Understanding Your Value Through God's Eyes",
+      "sw": "Kuelewa Thamani Yako kwa Macho ya Mungu"
+    },
+    {
+      "n": 10,
+      "cat": "CHRISTLIKE CHARACTER",
+      "en": "The Beauty of a Good Heart",
+      "sw": "Urembo wa Moyo Mzuri"
+    },
+    {
+      "n": 11,
+      "cat": "LOVE & RELATIONSHIPS",
+      "en": "Loving People Who Are Different From You",
+      "sw": "Kupenda Watu Wanaotofautiana Nawe"
+    },
+    {
+      "n": 12,
+      "cat": "PURITY & WISDOM",
+      "en": "Guarding Your Mind in a Digital Generation",
+      "sw": "Kulinda Akili Yako katika Kizazi cha Kidijitali"
+    },
+    {
+      "n": 13,
+      "cat": "LEADERSHIP & INFLUENCE",
+      "en": "Servant Leadership",
+      "sw": "Uongozi wa Utumishi"
+    },
+    {
+      "n": 14,
+      "cat": "EDUCATION, WORK & PURPOSE",
+      "en": "Discovering and Developing Your Gifts",
+      "sw": "Kugundua na Kukuza Zawadi Zako"
+    },
+    {
+      "n": 15,
+      "cat": "DIGITAL LIFE & MODERN CULTURE",
+      "en": "Your Digital Footprint and Your Testimony",
+      "sw": "Nyayo Zako za Kidijitali na Ushuhuda Wako"
+    },
+    {
+      "n": 16,
+      "cat": "SERVICE & GOOD DEEDS",
+      "en": "Serving Without Expecting Recognition",
+      "sw": "Kutumikia bila Kutegemea Sifa"
+    },
+    {
+      "n": 17,
+      "cat": "IDENTITY & RELATIONSHIP WITH GOD",
+      "en": "Daughter of the King: Living From Your Identity",
+      "sw": "Binti wa Mfalme: Kuishi Katika Utambulisho Wako"
+    },
+    {
+      "n": 18,
+      "cat": "CHRISTLIKE CHARACTER",
+      "en": "Integrity: Being the Same Person Everywhere",
+      "sw": "Uadilifu: Kuwa Mtu Yuleyule Popote Ulipo"
+    },
+    {
+      "n": 19,
+      "cat": "LOVE & RELATIONSHIPS",
+      "en": "Kindness as a Lifestyle",
+      "sw": "Wema kama Mtindo wa Maisha"
+    },
+    {
+      "n": 20,
+      "cat": "PURITY & WISDOM",
+      "en": "Making Wise Choices About Relationships",
+      "sw": "Kufanya Maamuzi ya Hekima Kuhusu Mahusiano"
+    },
+    {
+      "n": 21,
+      "cat": "LEADERSHIP & INFLUENCE",
+      "en": "Leadership Begins With Character",
+      "sw": "Uongozi Huanza na Tabia"
+    },
+    {
+      "n": 22,
+      "cat": "EDUCATION, WORK & PURPOSE",
+      "en": "Excellence: Doing Everything as Unto the Lord",
+      "sw": "Ubora: Kufanya Kila Kitu Kama kwa Bwana"
+    },
+    {
+      "n": 23,
+      "cat": "DIGITAL LIFE & MODERN CULTURE",
+      "en": "What Should a Christian Girl Post Online?",
+      "sw": "Msichana wa Kikristo Anapaswa Kutuma Nini Mtandaoni?"
+    },
+    {
+      "n": 24,
+      "cat": "SERVICE & GOOD DEEDS",
+      "en": "Compassion in Action",
+      "sw": "Huruma katika Vitendo"
+    },
+    {
+      "n": 25,
+      "cat": "IDENTITY & RELATIONSHIP WITH GOD",
+      "en": "Knowing God Personally, Not Just Knowing About God",
+      "sw": "Kumjua Mungu Binafsi, si Kujua Habari Zake Tu"
+    },
+    {
+      "n": 26,
+      "cat": "CHRISTLIKE CHARACTER",
+      "en": "Honesty When Nobody Is Watching",
+      "sw": "Ukweli Wakati Hakuna Anayetazama"
+    },
+    {
+      "n": 27,
+      "cat": "LOVE & RELATIONSHIPS",
+      "en": "The Power of Encouraging Others",
+      "sw": "Nguvu ya Kuwahamasisha Wengine"
+    },
+    {
+      "n": 28,
+      "cat": "PURITY & WISDOM",
+      "en": "Understanding Your Emotions Without Being Controlled by Them",
+      "sw": "Kuelewa Hisia Zako bila Kuongozwa Nazo"
+    },
+    {
+      "n": 29,
+      "cat": "LEADERSHIP & INFLUENCE",
+      "en": "Influencing Others Without Losing Yourself",
+      "sw": "Kuwaathiri Wengine bila Kujipoteza"
+    },
+    {
+      "n": 30,
+      "cat": "EDUCATION, WORK & PURPOSE",
+      "en": "Discipline and Hard Work",
+      "sw": "Nidhamu na Kazi Ngumu"
+    },
+    {
+      "n": 31,
+      "cat": "DIGITAL LIFE & MODERN CULTURE",
+      "en": "Social Media Without Losing Your Identity",
+      "sw": "Mitandao ya Kijamii bila Kupoteza Utambulisho"
+    },
+    {
+      "n": 32,
+      "cat": "SERVICE & GOOD DEEDS",
+      "en": "Helping Those in Need",
+      "sw": "Kusaidia Walio katika Haja"
+    },
+    {
+      "n": 33,
+      "cat": "IDENTITY & RELATIONSHIP WITH GOD",
+      "en": "Loving God With All Your Heart",
+      "sw": "Kumpenda Mungu kwa Moyo Wako Wote"
+    },
+    {
+      "n": 34,
+      "cat": "CHRISTLIKE CHARACTER",
+      "en": "Humility: Strength Under Control",
+      "sw": "Unyenyekevu: Nguvu Iliyodhibitiwa"
+    },
+    {
+      "n": 35,
+      "cat": "LOVE & RELATIONSHIPS",
+      "en": "Forgiveness: Releasing Offenses",
+      "sw": "Msamaha: Kuachilia Yaliyokukosea"
+    },
+    {
+      "n": 36,
+      "cat": "PURITY & WISDOM",
+      "en": "Wisdom in Romantic Relationships",
+      "sw": "Hekima katika Mahusiano ya Kimapenzi"
+    },
+    {
+      "n": 37,
+      "cat": "LEADERSHIP & INFLUENCE",
+      "en": "Courageous Women Who Stand for Truth",
+      "sw": "Wanawake wa Ujasiri Wanaosimamia Kweli"
+    },
+    {
+      "n": 38,
+      "cat": "EDUCATION, WORK & PURPOSE",
+      "en": "Time Management and Stewardship",
+      "sw": "Kusimamia Muda na Yote Ulivyokabidhiwa"
+    },
+    {
+      "n": 39,
+      "cat": "DIGITAL LIFE & MODERN CULTURE",
+      "en": "Dealing With Comparison in the Digital Age",
+      "sw": "Kushughulikia Kujilinganisha katika Zama za Kidijitali"
+    },
+    {
+      "n": 40,
+      "cat": "SERVICE & GOOD DEEDS",
+      "en": "Being a Blessing Wherever You Go",
+      "sw": "Kuwa Baraka Popote Uendako"
+    },
+    {
+      "n": 41,
+      "cat": "IDENTITY & RELATIONSHIP WITH GOD",
+      "en": "The Power of a Consistent Prayer Life",
+      "sw": "Nguvu ya Maisha ya Maombi Yanayodumu"
+    },
+    {
+      "n": 42,
+      "cat": "CHRISTLIKE CHARACTER",
+      "en": "Self-Control in a World of Instant Gratification",
+      "sw": "Kujidhibiti katika Dunia ya Vitu vya Haraka"
+    },
+    {
+      "n": 43,
+      "cat": "LOVE & RELATIONSHIPS",
+      "en": "Dealing With Jealousy and Envy",
+      "sw": "Kushughulikia Wivu na Hasi"
+    },
+    {
+      "n": 44,
+      "cat": "PURITY & WISDOM",
+      "en": "Respect, Dignity and Godly Conduct",
+      "sw": "Heshima, Hadhi na Mwenendo wa Kiroho"
+    },
+    {
+      "n": 45,
+      "cat": "LEADERSHIP & INFLUENCE",
+      "en": "Leading Without Seeking Attention",
+      "sw": "Kuongoza bila Kutafuta Umaarufu"
+    },
+    {
+      "n": 46,
+      "cat": "EDUCATION, WORK & PURPOSE",
+      "en": "Balancing Faith, Education and Responsibilities",
+      "sw": "Kusawazisha Imani, Elimu na Majukumu"
+    },
+    {
+      "n": 47,
+      "cat": "DIGITAL LIFE & MODERN CULTURE",
+      "en": "Using Technology for God's Glory",
+      "sw": "Kutumia Teknolojia kwa Utukufu wa Mungu"
+    },
+    {
+      "n": 48,
+      "cat": "SERVICE & GOOD DEEDS",
+      "en": "Small Acts of Kindness With Great Impact",
+      "sw": "Matendo Madogo ya Wema Yenye Athari Kubwa"
+    },
+    {
+      "n": 49,
+      "cat": "IDENTITY & RELATIONSHIP WITH GOD",
+      "en": "Developing a Secret Place With God",
+      "sw": "Kujenga Chumba cha Siri na Mungu"
+    },
+    {
+      "n": 50,
+      "cat": "CHRISTLIKE CHARACTER",
+      "en": "Patience: Learning to Wait on God",
+      "sw": "Subira: Kujifunza Kusubiri Mungu"
+    },
+    {
+      "n": 51,
+      "cat": "LOVE & RELATIONSHIPS",
+      "en": "Avoiding Gossip and Destructive Talk",
+      "sw": "Kuepuka Soga na Maneno Yanayoharibu"
+    },
+    {
+      "n": 52,
+      "cat": "PURITY & WISDOM",
+      "en": "Knowing When to Say “No”",
+      "sw": "Kujua Wakati wa Kusema 'Hapana'"
+    },
+    {
+      "n": 53,
+      "cat": "LEADERSHIP & INFLUENCE",
+      "en": "How to Handle Leadership Responsibility",
+      "sw": "Jinsi ya Kubeba Wajibu wa Uongozi"
+    },
+    {
+      "n": 54,
+      "cat": "EDUCATION, WORK & PURPOSE",
+      "en": "Becoming a Lifelong Learner",
+      "sw": "Kuwa Mwanafunzi wa Maisha Yote"
+    },
+    {
+      "n": 55,
+      "cat": "DIGITAL LIFE & MODERN CULTURE",
+      "en": "Being Wise About Online Friendships",
+      "sw": "Kuwa Mwenye Hekima katika Urafiki wa Mtandaoni"
+    },
+    {
+      "n": 56,
+      "cat": "SERVICE & GOOD DEEDS",
+      "en": "Serving at Church and in the Community",
+      "sw": "Kutumikia Kanisani na katika Jamii"
+    },
+    {
+      "n": 57,
+      "cat": "IDENTITY & RELATIONSHIP WITH GOD",
+      "en": "Loving and Studying the Word of God",
+      "sw": "Kupenda na Kusoma Neno la Mungu"
+    },
+    {
+      "n": 58,
+      "cat": "CHRISTLIKE CHARACTER",
+      "en": "Faithfulness in Small Things",
+      "sw": "Uaminifu katika Mambo Madogo"
+    },
+    {
+      "n": 59,
+      "cat": "LOVE & RELATIONSHIPS",
+      "en": "Choosing Friends Wisely",
+      "sw": "Kuchagua Marafiki kwa Hekima"
+    },
+    {
+      "n": 60,
+      "cat": "PURITY & WISDOM",
+      "en": "Avoiding Toxic Influences",
+      "sw": "Kuepuka Ushawishi wa Haribifu"
+    },
+    {
+      "n": 61,
+      "cat": "LEADERSHIP & INFLUENCE",
+      "en": "Using Your Influence for God's Kingdom",
+      "sw": "Kutumia Ushawishi Wako kwa Ufalme wa Mungu"
+    },
+    {
+      "n": 62,
+      "cat": "EDUCATION, WORK & PURPOSE",
+      "en": "Using Your Talents to Serve Others",
+      "sw": "Kutumia Vipaji Vyako Kuwahudumia Wengine"
+    },
+    {
+      "n": 63,
+      "cat": "DIGITAL LIFE & MODERN CULTURE",
+      "en": "Protecting Your Attention in a Distracted Generation",
+      "sw": "Kulinda Uangalifu Wako katika Kizazi Chenye Usumbufu Wingi"
+    },
+    {
+      "n": 64,
+      "cat": "SERVICE & GOOD DEEDS",
+      "en": "Using Your Resources to Bless Others",
+      "sw": "Kutumia Rasilimali Zako Kuwabariki Wengine"
+    },
+    {
+      "n": 65,
+      "cat": "IDENTITY & RELATIONSHIP WITH GOD",
+      "en": "Hearing and Following the Voice of God",
+      "sw": "Kusikia na Kufuata Sauti ya Mungu"
+    },
+    {
+      "n": 66,
+      "cat": "CHRISTLIKE CHARACTER",
+      "en": "Responsibility and Accountability",
+      "sw": "Wajibu na Uwajibikaji"
+    },
+    {
+      "n": 67,
+      "cat": "LOVE & RELATIONSHIPS",
+      "en": "Being a Godly Friend",
+      "sw": "Kuwa Rafiki wa Kiroho"
+    },
+    {
+      "n": 68,
+      "cat": "PURITY & WISDOM",
+      "en": "Recovering From Poor Choices Through God's Grace",
+      "sw": "Kujiponya kutoka Maamuzi Mabaya kwa Neema ya Mungu"
+    },
+    {
+      "n": 69,
+      "cat": "LEADERSHIP & INFLUENCE",
+      "en": "Leading Your Generation Toward Christ",
+      "sw": "Kuongoza Kizazi Chako Kwenda Kristo"
+    },
+    {
+      "n": 70,
+      "cat": "EDUCATION, WORK & PURPOSE",
+      "en": "Christianity and Professional Excellence",
+      "sw": "Ukristo na Ubora wa Kitaalamu"
+    },
+    {
+      "n": 71,
+      "cat": "DIGITAL LIFE & MODERN CULTURE",
+      "en": "Entertainment, Media and Christian Values",
+      "sw": "Burudani, Vyombo vya Habari na Maadili ya Kikristo"
+    },
+    {
+      "n": 72,
+      "cat": "SERVICE & GOOD DEEDS",
+      "en": "Being Jesus' Hands and Feet",
+      "sw": "Kuwa Mikono na Miguu ya Yesu"
+    },
+    {
+      "n": 73,
+      "cat": "IDENTITY & RELATIONSHIP WITH GOD",
+      "en": "Walking by Faith in a Doubting Generation",
+      "sw": "Kutembea kwa Imani katika Kizazi Chenye Shaka"
+    },
+    {
+      "n": 74,
+      "cat": "CHRISTLIKE CHARACTER",
+      "en": "Keeping Your Word",
+      "sw": "Kushikilia Neno Lako"
+    },
+    {
+      "n": 75,
+      "cat": "LOVE & RELATIONSHIPS",
+      "en": "Setting Healthy Boundaries",
+      "sw": "Kuweka Mipaka ya Afya"
+    },
+    {
+      "n": 76,
+      "cat": "PURITY & WISDOM",
+      "en": "Becoming a Woman of Wisdom",
+      "sw": "Kuwa Mwanamke Mwenye Hekima"
+    },
+    {
+      "n": 77,
+      "cat": "LEADERSHIP & INFLUENCE",
+      "en": "Becoming a Solution, Not Just Identifying Problems",
+      "sw": "Kuwa Suluhisho, si Tu Kutambua Matatizo"
+    },
+    {
+      "n": 78,
+      "cat": "EDUCATION, WORK & PURPOSE",
+      "en": "Preparing Yourself for Future Responsibility",
+      "sw": "Kujiandaa kwa Wajibu Ujao"
+    },
+    {
+      "n": 79,
+      "cat": "DIGITAL LIFE & MODERN CULTURE",
+      "en": "Being a Light in Digital Spaces",
+      "sw": "Kuwa Mwanga katika Nafasi za Kidijitali"
+    },
+    {
+      "n": 80,
+      "cat": "SERVICE & GOOD DEEDS",
+      "en": "A Life That Makes a Difference",
+      "sw": "Maisha Yanayofanya Tofauti"
+    },
+    {
+      "n": 81,
+      "cat": "IDENTITY & RELATIONSHIP WITH GOD",
+      "en": "Trusting God When Life Does Not Make Sense",
+      "sw": "Kumtegemea Mungu Maisha Yanapokosa Maana"
+    },
+    {
+      "n": 82,
+      "cat": "CHRISTLIKE CHARACTER",
+      "en": "Handling Correction With Wisdom",
+      "sw": "Kupokea Marekebisho kwa Hekima"
+    },
+    {
+      "n": 83,
+      "cat": "LOVE & RELATIONSHIPS",
+      "en": "Respecting Parents and Elders",
+      "sw": "Kuheshimu Wazazi na Wazee"
+    },
+    {
+      "n": 84,
+      "cat": "LEADERSHIP & INFLUENCE",
+      "en": "Leadership Through Service",
+      "sw": "Uongozi kupitia Utumishi"
+    },
+    {
+      "n": 85,
+      "cat": "IDENTITY & RELATIONSHIP WITH GOD",
+      "en": "The Fear of God and the Wisdom It Produces",
+      "sw": "Kuogopa Mungu na Hekima Inayozalishwa"
+    },
+    {
+      "n": 86,
+      "cat": "CHRISTLIKE CHARACTER",
+      "en": "Learning From Your Mistakes",
+      "sw": "Kujifunza Kutokana na Makosa Yako"
+    },
+    {
+      "n": 87,
+      "cat": "LOVE & RELATIONSHIPS",
+      "en": "Dealing Wisely With Peer Pressure",
+      "sw": "Kushughulikia kwa Hekima Shinikizo la Marafiki"
+    },
+    {
+      "n": 88,
+      "cat": "LEADERSHIP & INFLUENCE",
+      "en": "Developing the Courage to Speak Up",
+      "sw": "Kuendeleza Ujasiri wa Kunena"
+    },
+    {
+      "n": 89,
+      "cat": "IDENTITY & RELATIONSHIP WITH GOD",
+      "en": "Holiness in a Generation of Compromise",
+      "sw": "Utakatifu katika Kizazi Chenye Maelewano Mabaya"
+    },
+    {
+      "n": 90,
+      "cat": "CHRISTLIKE CHARACTER",
+      "en": "A Teachable Spirit",
+      "sw": "Roho Iliyo Tayari Kujifunza"
+    },
+    {
+      "n": 91,
+      "cat": "LOVE & RELATIONSHIPS",
+      "en": "Conflict Resolution the Jesus Way",
+      "sw": "Kutatua Migogoro kwa Njia ya Yesu"
+    },
+    {
+      "n": 92,
+      "cat": "LEADERSHIP & INFLUENCE",
+      "en": "Mentoring and Helping Other Girls Grow",
+      "sw": "Kuwa Mwelekezi na Kuwasaidia Wasichana Wengine Kukua"
+    },
+    {
+      "n": 93,
+      "cat": "IDENTITY & RELATIONSHIP WITH GOD",
+      "en": "Living a Spirit-Led Life",
+      "sw": "Kuishi Maisha Yanayoongozwa na Roho"
+    },
+    {
+      "n": 94,
+      "cat": "CHRISTLIKE CHARACTER",
+      "en": "Contentment Instead of Constant Comparison",
+      "sw": "Kutosheka Badala ya Kujilinganisha Daima"
+    },
+    {
+      "n": 95,
+      "cat": "LOVE & RELATIONSHIPS",
+      "en": "Being a Peacemaker",
+      "sw": "Kuwa Mpatanishi"
+    },
+    {
+      "n": 96,
+      "cat": "LEADERSHIP & INFLUENCE",
+      "en": "Working With Others as a Team",
+      "sw": "Kufanya Kazi Pamoja kama Timu"
+    },
+    {
+      "n": 97,
+      "cat": "IDENTITY & RELATIONSHIP WITH GOD",
+      "en": "Keeping Your Fire for God Burning",
+      "sw": "Kufanya Moto Wako wa Mungu Uendelee Kuwaka"
+    },
+    {
+      "n": 98,
+      "cat": "CHRISTLIKE CHARACTER",
+      "en": "Courage to Stand for What Is Right",
+      "sw": "Ujasiri wa Kusimama kwa Haki"
+    },
+    {
+      "n": 99,
+      "cat": "LOVE & RELATIONSHIPS",
+      "en": "Showing Compassion to the Vulnerable",
+      "sw": "Kuonyesha Huruma kwa Wanyonge"
+    },
+    {
+      "n": 100,
+      "cat": "LEADERSHIP & INFLUENCE",
+      "en": "Leaving a Godly Legacy",
+      "sw": "Kuacha Urithi wa Kiroho"
+    }
+  ]
+}
