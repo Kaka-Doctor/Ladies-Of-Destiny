@@ -1162,10 +1162,12 @@ async function main() {
 
       // ---- duplicate guard (cross-runtime safety net) ----
       const guardMinutes = ARG_FORCE ? 3 : 30
-      const lastAgo = target.igOnly
-        ? await minutesSinceLastIgPost(page, state)
-        : await minutesSinceLastPost(page, state)
-      if (lastAgo !== null && lastAgo < guardMinutes) {
+      const lastAgo = target
+        ? (target.igOnly ? await minutesSinceLastIgPost(page, state) : await minutesSinceLastPost(page, state))
+        : null
+      if (!target) {
+        // the slot was closed via adoption above — nothing left to publish
+      } else if (lastAgo !== null && lastAgo < guardMinutes) {
         log(`[guard] a post went out ${lastAgo} min ago (< ${guardMinutes} min guard) — skipping to avoid double-posting`)
         const gday = state.days[dateKey] ?? {}
         gday[target.label] = target.igOnly
