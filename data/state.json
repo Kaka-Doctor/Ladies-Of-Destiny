@@ -20,9 +20,9 @@
     },
     "2026-09-23": {
       "10:00": {
-        "status": "scheduled",
+        "status": "published",
+        "at": "2026-09-23T09:07:59.674Z",
         "publishTime": "2026-09-23T07:00:00.000Z",
-        "at": "2026-09-23T05:51:15.340Z",
         "photo": "WhatsApp Image 2026-08-02 at 11.50.06 PMzCaz.jpeg",
         "caption": "𝗚𝗨𝗡𝗗𝗨𝗔 𝗨𝗧𝗔𝗠𝗕𝗨𝗟𝗜𝗦𝗛𝗢 𝗪𝗔𝗞𝗢 𝗛𝗔𝗟𝗜𝗦𝗜 𝗡𝗗𝗔𝗡𝗜 𝗬𝗔 𝗞𝗥𝗜𝗦𝗧𝗢!\n\nBinti zangu wapendwa, ulimwengu unajaribu kutueleza sisi ni nani, na mara nyingi tunajikuta tukitafuta utambulisho wetu katika vitu visivyodumu au maoni ya wengine. Lakini nataka ujue leo kwamba thamani na utambulisho wako halisi haupatikani huko, bali umetoka kwa Muumba wako.\n\nNdani ya Kristo, wewe si tu mtu yeyote; wewe ni binti mpendwa wa Mfalme, umechaguliwa na kuwekwa wakfu kwa kusudi maalum. Anakupenda bila masharti, anakuona kuwa wa thamani isiyoelezeka, na katika Yeye ndipo unapopata thamani isiyoyumba na utulivu.\n\nUsiruhusu sauti za ulimwengu zifunike ukweli huu mkuu. Jiweke imara katika Neno lake na ujue kuwa wewe ni wa thamani, una nguvu, na una hatima ya kimungu. Umekaguliwa!\n\n1 Petro 2:9 \"Lakini ninyi ni ukoo mteule, ukuhani wa kifalme, taifa takatifu, watu wa milki ya Mungu, mpate kutangaza fadhili zake yeye aliyewaita mtoke gizani mkaingie katika nuru yake ya ajabu.\"\n\n#UtambulishoWako #BintiWaMfalme #ThamaniYako #LadiesOfDestiny #MabintiWenyeHatima",
         "lang": "sw",
@@ -32,8 +32,13 @@
           "en": "Knowing Who You Are in Christ",
           "sw": "Kujua Wewe Ni Nani Ndani ya Kristo"
         },
+        "ig": {
+          "id": "17980100576907777",
+          "permalink": "https://www.instagram.com/p/Ddn85wCDTIC/"
+        },
         "fb": {
-          "id": "122190561500938552"
+          "id": "710815315448548_122190561500938552",
+          "permalink": "https://www.facebook.com/photo.php?fbid=122190561500938552&set=a.122103534068938552&type=3"
         }
       }
     },
@@ -148,6 +153,13 @@
       "date": "2026-09-25",
       "slot": "10:00",
       "message": "10:00 FB half pre-scheduled via Meta (publishes 2026-09-25T07:00:00.000Z, Kiswahili) — topic #3 \"The Love of Jesus: Loving Beyond Feelings\" / \"Upendo wa Yesu: Kupenda Zaidi ya Hisia\" (LOVE & RELATIONSHIPS); \"WhatsApp Image 2026-08-02 at 11dvszdvc.50.12 PM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
+    },
+    {
+      "ts": "2026-09-23T09:07:59.675Z",
+      "level": "success",
+      "date": "2026-09-23",
+      "slot": "10:00",
+      "message": "10:00 Auto: published — \"WhatsApp Image 2026-08-02 at 11.50.06 PMzCaz.jpeg\" | sw | no topic | IG ✓ | FB ✓"
     }
   ]
 }
