@@ -79,11 +79,30 @@
           "id": "122190561614938552"
         }
       }
+    },
+    "2026-09-26": {
+      "10:00": {
+        "status": "scheduled",
+        "publishTime": "2026-09-26T07:00:00.000Z",
+        "at": "2026-09-23T22:17:10.181Z",
+        "photo": "WhatsApp Image 2026-08-02 at 11fvsdv.50.05 PM.jpeg",
+        "caption": "𝗖𝗨𝗟𝗧𝗜𝗩𝗔𝗧𝗘 𝗔 𝗣𝗨𝗥𝗘 𝗛𝗘𝗔𝗥𝗧, 𝗟𝗜𝗩𝗘 𝗔 𝗥𝗔𝗗𝗜𝗔𝗡𝗧 𝗟𝗜𝗙𝗘\n\nMy dearest sisters, have you ever truly considered the profound beauty of purity? It's far more than just outward actions; it's a radiant state of your heart and mind that overflows into everything you do. God deeply desires for us to cultivate a clean spirit, reflecting His holiness and grace in every fiber of our being.\n\nWhen we intentionally guard our minds against impure thoughts and our hearts from harmful influences, our actions naturally align with God's perfect will. This daily commitment to purity empowers us to make wise choices, speak words that build up, and engage in activities that honor Him.\n\nRemember, living in purity isn't about perfection, but about an earnest desire and daily surrender to God's transformative power. It allows you to walk confidently in your divine purpose, unburdened and truly free. You are chosen.\n\n\"Blessed are the pure in heart, for they shall see God.\" - Matthew 5:8\n\n#PurityOfHeart #LivePure #DivinePurpose #LadiesOfDestiny #MabintiWenyeHatima",
+        "lang": "en",
+        "topic": {
+          "n": 4,
+          "cat": "PURITY & WISDOM",
+          "en": "Purity of Heart, Mind and Actions",
+          "sw": "Usafi wa Moyo, Akili na Matendo"
+        },
+        "fb": {
+          "id": "122190679694938552"
+        }
+      }
     }
   },
   "rotation": {
-    "photo": 4,
-    "topic": 3,
+    "photo": 5,
+    "topic": 4,
     "fallbackEn": 1,
     "fallbackSw": 0
   },
@@ -160,6 +179,13 @@
       "date": "2026-09-23",
       "slot": "10:00",
       "message": "10:00 Auto: published — \"WhatsApp Image 2026-08-02 at 11.50.06 PMzCaz.jpeg\" | sw | no topic | IG ✓ | FB ✓"
+    },
+    {
+      "ts": "2026-09-23T22:17:10.181Z",
+      "level": "info",
+      "date": "2026-09-26",
+      "slot": "10:00",
+      "message": "10:00 FB half pre-scheduled via Meta (publishes 2026-09-26T07:00:00.000Z, English) — topic #4 \"Purity of Heart, Mind and Actions\" / \"Usafi wa Moyo, Akili na Matendo\" (PURITY & WISDOM); \"WhatsApp Image 2026-08-02 at 11fvsdv.50.05 PM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
     }
   ]
 }
