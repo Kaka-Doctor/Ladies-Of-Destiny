@@ -1,5 +1,5 @@
 {
-  "_readme": "THE config file for the Ladies of Destiny agent. pageId/pageName/igUserId/igUsername/pageAccessToken are AUTO-FILLED the first time a valid token is provided (paste a fresh Graph API Explorer token into data/meta-token.txt and push, or run the workflow once). To change posting time: edit 'slots' (EAT). To pause: set autoPost=false. IG catch-up window after slot time: graceMinutes (90 = IG retries until 1.5h past the slot, then that day's IG is skipped; use the force button to rescue it manually).",
+  "_readme": "THE config file for the Ladies of Destiny agent. pageId/pageName/igUserId/igUsername/pageAccessToken are AUTO-FILLED the first time a valid token is provided (paste a fresh Graph API Explorer token into data/meta-token.txt and push, or run the workflow once). To change posting time: edit 'slots' (EAT). To pause: set autoPost=false. IG catch-up window after slot time: graceMinutes (240 = the same 4-hour window Biblia Tafsiri Mbalimbali posts reliably with; past it that day's IG is skipped — the force button rescues it manually, posting just the IG half). Mutual rescue: 'siblings' lists the pages this agent watches — any landed run here dispatches a sibling whose IG half is due but has no landed run of its own (needs the DISPATCH_TOKEN repo secret).",
   "metaUserToken": "",
   "appId": "1396184215347531",
   "appSecret": "c2e2387de1cefa6b8c95a963b49f5c6d",
@@ -10,8 +10,9 @@
   "platforms": "facebook,instagram",
   "timezone": "Africa/Dar_es_Salaam",
   "slots": "10:00",
-  "graceMinutes": 90,
+  "graceMinutes": 240,
   "scheduleDays": 3,
+  "siblings": "Kaka-Doctor/Biblia-Tafsiri-Mbalimbali,Kaka-Doctor/Posting-to-social-medias",
   "boldHeading": true,
   "pageAccessToken": "EAAT10ngyYUsBSlzVdp9xA1XOHIEhsJMU515zIlQNfdN1TEFU1evX3PS5DrPKO4FifxZCSP2TQDzmX7vvZAdVCagirnD4Sa2nFXLNZCrkB09xSnpHQ12D7WArdWBZBR3oHeQ7vSLPZBE0vIXzoFsE3ZBmqUxznW1AagaiPOBMusH1ZAwjm6BJA4QzSdUnpOY2bARdjSyzxtKV09AojLLhCqC",
   "igUserId": "17841471917752471",
