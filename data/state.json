@@ -44,9 +44,9 @@
     },
     "2026-09-24": {
       "10:00": {
-        "status": "scheduled",
+        "status": "partial",
         "publishTime": "2026-09-24T07:00:00.000Z",
-        "at": "2026-09-23T05:51:23.198Z",
+        "at": "2026-09-24T07:00:00.000Z",
         "photo": "WhatsApp Image 2026-08-02 at 11.dfsadvs50.31 PM.jpeg",
         "caption": "𝗚𝗥𝗢𝗪𝗜𝗡𝗚 𝗠𝗢𝗥𝗘 𝗟𝗜𝗞𝗘 𝗝𝗘𝗦𝗨𝗦 𝗘𝗔𝗖𝗛 𝗡𝗘𝗪 𝗗𝗔𝗪𝗡\n\nMy dearest sisters, isn't it wonderful to know that God invites us into a beautiful journey of becoming more and more like His Son, Jesus, every single day? This isn't about achieving perfection overnight, but about a loving, Spirit-led transformation where His character shines brighter through us.\n\nThink about it: with every choice we make to forgive, to show kindness, or to speak truth in love, we are stepping closer to His likeness. Let's actively seek His face in prayer and immerse ourselves in His Word, allowing the Holy Spirit to shape our hearts and minds to reflect His gentle strength.\n\nThis daily growth isn't just for us; it's so His light can touch others through our lives, revealing His grace and goodness to a world that desperately needs Him. Remember, you are a Lady of Destiny, uniquely designed to reflect Christ's beauty and purpose. You are chosen.\n\n2 Corinthians 3:18: \"And we all, with unveiled face, beholding the glory of the Lord, are being transformed into the same image from one degree of glory to another. For this comes from the Lord who is the Spirit.\"\n\n#ChristlikeCharacter #DailyTransformation #WalkWithJesus #LadiesOfDestiny #MabintiWenyeHatima",
         "lang": "en",
@@ -57,7 +57,8 @@
           "sw": "Kufanana na Yesu Zaidi Kila Siku"
         },
         "fb": {
-          "id": "122190561560938552"
+          "id": "710815315448548_122190561560938552",
+          "permalink": "https://www.facebook.com/photo.php?fbid=122190561560938552&set=a.122103534068938552&type=3"
         }
       }
     },
@@ -186,6 +187,13 @@
       "date": "2026-09-26",
       "slot": "10:00",
       "message": "10:00 FB half pre-scheduled via Meta (publishes 2026-09-26T07:00:00.000Z, English) — topic #4 \"Purity of Heart, Mind and Actions\" / \"Usafi wa Moyo, Akili na Matendo\" (PURITY & WISDOM); \"WhatsApp Image 2026-08-02 at 11fvsdv.50.05 PM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
+    },
+    {
+      "ts": "2026-09-24T11:46:46.352Z",
+      "level": "error",
+      "date": "2026-09-24",
+      "slot": "10:00",
+      "message": "10:00 partial — FB published by Meta on time, but no landed run caught up the IG half within 90 min"
     }
   ]
 }
