@@ -127,12 +127,31 @@
           "id": "122190866300938552"
         }
       }
+    },
+    "2026-09-28": {
+      "10:00": {
+        "status": "scheduled",
+        "publishTime": "2026-09-28T07:00:00.000Z",
+        "at": "2026-09-25T21:50:22.713Z",
+        "photo": "WhatsApp Image 2026-08-02 at 11zczcz.50.07 PM.jpeg",
+        "caption": "𝗬𝗢𝗨𝗥 𝗧𝗥𝗨𝗘 𝗕𝗘𝗔𝗨𝗧𝗬 𝗕𝗘𝗚𝗜𝗡𝗦 𝗜𝗡 𝗬𝗢𝗨𝗥 𝗛𝗘𝗔𝗥𝗧\n\nSisters, the world keeps shouting that your worth is in your looks, your shape, or your clothes. But God looks deeper — He looks at the heart. The girl who loves Him, forgives easily, and carries peace is more beautiful than any mirror can measure.\n\nOuter beauty fades with time, but a heart full of gentleness and quiet strength grows more lovely every year.\n\n\"Your beauty should be that of your inner self, the unfading beauty of a gentle and quiet spirit, which is of great worth in God's sight.\" — 1 Peter 3:4\n\nKeep shining from the inside out.\n\n#InnerBeauty #GentleHeart #SelfWorth #LadiesOfDestiny #MabintiWenyeHatima",
+        "lang": "en",
+        "topic": {
+          "n": 6,
+          "cat": "EDUCATION, WORK & PURPOSE",
+          "en": "Discovering Your God-Given Purpose",
+          "sw": "Kugundua Kusudi Lako la Kimungu"
+        },
+        "fb": {
+          "id": "122191013960938552"
+        }
+      }
     }
   },
   "rotation": {
-    "photo": 6,
-    "topic": 5,
-    "fallbackEn": 1,
+    "photo": 7,
+    "topic": 6,
+    "fallbackEn": 2,
     "fallbackSw": 0
   },
   "events": [
@@ -243,6 +262,13 @@
       "date": "2026-09-25",
       "slot": "10:00",
       "message": "10:00 Auto: published — \"WhatsApp Image 2026-08-02 at 11dvszdvc.50.12 PM.jpeg\" | sw | no topic | IG ✓ | FB ✓"
+    },
+    {
+      "ts": "2026-09-25T21:50:22.714Z",
+      "level": "info",
+      "date": "2026-09-28",
+      "slot": "10:00",
+      "message": "10:00 FB half pre-scheduled via Meta (publishes 2026-09-28T07:00:00.000Z, English) — topic #6 \"Discovering Your God-Given Purpose\" / \"Kugundua Kusudi Lako la Kimungu\" (EDUCATION, WORK & PURPOSE); \"WhatsApp Image 2026-08-02 at 11zczcz.50.07 PM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
     }
   ]
 }
