@@ -68,9 +68,9 @@
     },
     "2026-09-25": {
       "10:00": {
-        "status": "scheduled",
+        "status": "published",
+        "at": "2026-09-25T07:46:52.513Z",
         "publishTime": "2026-09-25T07:00:00.000Z",
-        "at": "2026-09-23T05:51:35.129Z",
         "photo": "WhatsApp Image 2026-08-02 at 11dvszdvc.50.12 PM.jpeg",
         "caption": "𝗣𝗘𝗡𝗗𝗔 𝗞𝗔𝗠𝗔 𝗬𝗘𝗦𝗨: 𝗨𝗔𝗠𝗨𝗭𝗜 𝗦𝗜𝗢 𝗧𝗨 𝗛𝗜𝗦𝗜𝗔\n\nBinti zangu wapendwa, mara nyingi tunafikiri upendo ni hisia tu, ile furaha inayotujia tunapokuwa na mtu tunayempenda. Lakini upendo halisi wa Yesu, ambao unatualika kuufuata, unazidi sana hisia za papo hapo. Ni uamuzi thabiti wa kutenda mema, kujitolea, na kusamehe, hata nyakati ngumu.\n\nFikiria jinsi Yesu alivyotupenda sisi, hata tulipokuwa bado wenye dhambi. Hakutegemea hisia tu bali alifanya uamuzi wa kutujali, kutukomboa, na kutupenda bila masharti. Je, wewe uko tayari kumpenda Mungu na jirani yako kwa upendo unaotokana na uamuzi, siyo tu hisia?\n\nKukua katika upendo huu wa kimungu kutakupa nguvu na amani isiyo na kifani. Inatujengea tabia ya Kristo na kutuonyesha jinsi ya kutumikia kwa kweli. Mungu ana mpango wako mkubwa!\n\nWarumi 5:8: Lakini Mungu alithibitisha upendo wake kwetu sisi, kwa kuwa wakati tulipokuwa tungali wenye dhambi, Kristo alikufa kwa ajili yetu.\n\n#UpendoWaKweli #PendaKamaYesu #NguvuYaUpendo #LadiesOfDestiny #MabintiWenyeHatima",
         "lang": "sw",
@@ -80,8 +80,13 @@
           "en": "The Love of Jesus: Loving Beyond Feelings",
           "sw": "Upendo wa Yesu: Kupenda Zaidi ya Hisia"
         },
+        "ig": {
+          "id": "18102242897346959",
+          "permalink": "https://www.instagram.com/p/Dds9OE2nyz3/"
+        },
         "fb": {
-          "id": "122190561614938552"
+          "id": "710815315448548_122190561614938552",
+          "permalink": "https://www.facebook.com/photo.php?fbid=122190561614938552&set=a.122103534068938552&type=3"
         }
       }
     },
@@ -231,6 +236,13 @@
       "date": "2026-09-27",
       "slot": "10:00",
       "message": "10:00 FB half pre-scheduled via Meta (publishes 2026-09-27T07:00:00.000Z, Kiswahili) — topic #5 \"Leading Like Jesus\" / \"Kuongoza Kama Yesu\" (LEADERSHIP & INFLUENCE); \"WhatsApp Image 2026-08-02 at 11zcazdc.50.25 PM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
+    },
+    {
+      "ts": "2026-09-25T07:46:52.513Z",
+      "level": "success",
+      "date": "2026-09-25",
+      "slot": "10:00",
+      "message": "10:00 Auto: published — \"WhatsApp Image 2026-08-02 at 11dvszdvc.50.12 PM.jpeg\" | sw | no topic | IG ✓ | FB ✓"
     }
   ]
 }
