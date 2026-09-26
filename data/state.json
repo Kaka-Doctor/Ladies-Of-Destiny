@@ -151,11 +151,30 @@
           "id": "122191013960938552"
         }
       }
+    },
+    "2026-09-29": {
+      "10:00": {
+        "status": "scheduled",
+        "publishTime": "2026-09-29T07:00:00.000Z",
+        "at": "2026-09-26T21:35:49.192Z",
+        "photo": "WhatsApp Image 2026-08-02 at 11zdvsd.50.27 PM.jpeg",
+        "caption": "𝗕𝗜𝗡𝗧𝗜, 𝗔𝗡𝗚𝗔'𝗔𝗔 𝗞𝗪𝗔 𝗬𝗘𝗦𝗨 𝗠𝗧𝗔𝗡𝗗𝗔𝗢𝗡𝗜\n\nBinti wapendwa, tunajua mnatumia mitandao ya kijamii, na huko pia dunia inawaona. Kila picha mnayoweka, kila maoni mnayotoa, na kila ujumbe mnaoushiriki, unazungumza kitu kuhusu ninyi – na muhimu zaidi, unazungumza kuhusu Yesu anayeishi ndani yenu. Wewe ni balozi wa Kristo popote ulipo, hata kwenye ulimwengu wa kidijitali.\n\nAcha uwepo wako mtandaoni uwe kielelezo cha neema yake na upendo wake usio na mipaka. Tunaalikwa kuangaza nuru ya Kristo katika giza lolote, na mitandao ya kijamii ni jukwaa kubwa la kufanya hivyo. Hebu tuwe vyanzo vya msukumo, matumaini, na ukweli kwa wengine.\n\nKumbuka wewe si mtazamaji tu, bali ni balozi wa Mungu. Tumia fursa hii kuleta mabadiliko chanya, kuhamasisha wengine katika imani, na kuishi maisha yanayomtukuza Yeye. Mungu anakuamini! Endelea kuang'aa!\n\n\"Ninyi ni nuru ya ulimwengu. Mji uliojengwa juu ya mlima hauwezi kufichwa. Wala watu hawawashi taa na kuiweka chini ya pishi, bali huiweka juu ya kinara, nayo huwaangazia wote waliomo nyumbani. Vivyo hivyo, nuru yenu na iangaze mbele za watu, ili waone matendo yenu mema na kumtukuza Baba yenu aliye mbinguni.\" Mathayo 5:14-16\n\n#NuruYakoMtandaoni #UshawishiChanya #BaloziWaKristo #LadiesOfDestiny #MabintiWenyeHatima",
+        "lang": "sw",
+        "topic": {
+          "n": 7,
+          "cat": "DIGITAL LIFE & MODERN CULTURE",
+          "en": "Representing Jesus on Social Media",
+          "sw": "Kumwakilisha Yesu katika Mitandao ya Kijamii"
+        },
+        "fb": {
+          "id": "122191177106938552"
+        }
+      }
     }
   },
   "rotation": {
-    "photo": 7,
-    "topic": 6,
+    "photo": 8,
+    "topic": 7,
     "fallbackEn": 2,
     "fallbackSw": 0
   },
@@ -281,6 +300,13 @@
       "date": "2026-09-26",
       "slot": "10:00",
       "message": "10:00 Auto: published — \"WhatsApp Image 2026-08-02 at 11fvsdv.50.05 PM.jpeg\" | en | no topic | IG ✓ | FB ✓"
+    },
+    {
+      "ts": "2026-09-26T21:35:49.192Z",
+      "level": "info",
+      "date": "2026-09-29",
+      "slot": "10:00",
+      "message": "10:00 FB half pre-scheduled via Meta (publishes 2026-09-29T07:00:00.000Z, Kiswahili) — topic #7 \"Representing Jesus on Social Media\" / \"Kumwakilisha Yesu katika Mitandao ya Kijamii\" (DIGITAL LIFE & MODERN CULTURE); \"WhatsApp Image 2026-08-02 at 11zdvsd.50.27 PM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
     }
   ]
 }
