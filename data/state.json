@@ -92,9 +92,9 @@
     },
     "2026-09-26": {
       "10:00": {
-        "status": "scheduled",
+        "status": "published",
+        "at": "2026-09-26T08:31:33.672Z",
         "publishTime": "2026-09-26T07:00:00.000Z",
-        "at": "2026-09-23T22:17:10.181Z",
         "photo": "WhatsApp Image 2026-08-02 at 11fvsdv.50.05 PM.jpeg",
         "caption": "𝗖𝗨𝗟𝗧𝗜𝗩𝗔𝗧𝗘 𝗔 𝗣𝗨𝗥𝗘 𝗛𝗘𝗔𝗥𝗧, 𝗟𝗜𝗩𝗘 𝗔 𝗥𝗔𝗗𝗜𝗔𝗡𝗧 𝗟𝗜𝗙𝗘\n\nMy dearest sisters, have you ever truly considered the profound beauty of purity? It's far more than just outward actions; it's a radiant state of your heart and mind that overflows into everything you do. God deeply desires for us to cultivate a clean spirit, reflecting His holiness and grace in every fiber of our being.\n\nWhen we intentionally guard our minds against impure thoughts and our hearts from harmful influences, our actions naturally align with God's perfect will. This daily commitment to purity empowers us to make wise choices, speak words that build up, and engage in activities that honor Him.\n\nRemember, living in purity isn't about perfection, but about an earnest desire and daily surrender to God's transformative power. It allows you to walk confidently in your divine purpose, unburdened and truly free. You are chosen.\n\n\"Blessed are the pure in heart, for they shall see God.\" - Matthew 5:8\n\n#PurityOfHeart #LivePure #DivinePurpose #LadiesOfDestiny #MabintiWenyeHatima",
         "lang": "en",
@@ -104,8 +104,13 @@
           "en": "Purity of Heart, Mind and Actions",
           "sw": "Usafi wa Moyo, Akili na Matendo"
         },
+        "ig": {
+          "id": "18111681440034724",
+          "permalink": "https://www.instagram.com/p/DdvnIgNl2F9/"
+        },
         "fb": {
-          "id": "122190679694938552"
+          "id": "710815315448548_122190679694938552",
+          "permalink": "https://www.facebook.com/photo.php?fbid=122190679694938552&set=a.122103534068938552&type=3"
         }
       }
     },
@@ -269,6 +274,13 @@
       "date": "2026-09-28",
       "slot": "10:00",
       "message": "10:00 FB half pre-scheduled via Meta (publishes 2026-09-28T07:00:00.000Z, English) — topic #6 \"Discovering Your God-Given Purpose\" / \"Kugundua Kusudi Lako la Kimungu\" (EDUCATION, WORK & PURPOSE); \"WhatsApp Image 2026-08-02 at 11zczcz.50.07 PM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
+    },
+    {
+      "ts": "2026-09-26T08:31:33.672Z",
+      "level": "success",
+      "date": "2026-09-26",
+      "slot": "10:00",
+      "message": "10:00 Auto: published — \"WhatsApp Image 2026-08-02 at 11fvsdv.50.05 PM.jpeg\" | en | no topic | IG ✓ | FB ✓"
     }
   ]
 }
