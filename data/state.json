@@ -116,8 +116,8 @@
     },
     "2026-09-27": {
       "10:00": {
-        "status": "scheduled",
-        "at": "2026-09-24T23:28:02.281Z",
+        "status": "published",
+        "at": "2026-09-27T10:45:42.990Z",
         "publishTime": "2026-09-27T07:00:00.000Z",
         "photo": "WhatsApp Image 2026-08-02 at 11zcazdc.50.25 PM.jpeg",
         "caption": "𝗕𝗜𝗡𝗧𝗜, 𝗢𝗡𝗚𝗢𝗭𝗔 𝗞𝗪𝗔 𝗠𝗢𝗬𝗢 𝗪𝗔 𝗬𝗘𝗦𝗨\n\nBinti zangu wapendwa, mara nyingi tunafikiria uongozi kama kuwa na cheo au mamlaka makubwa, sivyo? Lakini Yesu alitufundisha njia tofauti kabisa — uongozi wa huduma, unyenyekevu, na upendo usio na masharti. Je, unaweza kuona jinsi unavyoweza kuongoza kwa kutoa, kwa kusikiliza, na kwa kuwa mfano mwema katika kila unalofanya, hata katika mambo madogo ya kila siku?\n\nAnza na moyo wako, ukimwomba Mungu akufundishe kuwahudumia wengine kama Yesu alivyofanya. Kumbuka, hata tabasamu dogo, neno la kutia moyo, au msaada kwa rafiki linaweza kuwa kitendo cha uongozi wenye nguvu. Una nafasi ya kipekee ya kuathiri ulimwengu wako kwa upendo na wema, ukiongoza kwa mfano na kuonyesha nuru ya Kristo. Endelea kuang'aa!\n\n“Lakini isiwe hivyo kwenu; bali yeyote anayetaka kuwa mkuu kati yenu atakuwa mtumishi wenu; na yeyote anayetaka kuwa wa kwanza kati yenu atakuwa mtumwa wenu; kama vile Mwana wa Adamu naye hakuja kutumikiwa, bali kutumika, na kutoa nafsi yake iwe fidia ya wengi.”\n— Mathayo 20:26-28\n\n#UongoziWaHuduma #MfanoWaKristo #BintiKiongozi #LadiesOfDestiny #MabintiWenyeHatima",
@@ -129,8 +129,8 @@
           "sw": "Kuongoza Kama Yesu"
         },
         "ig": {
-          "error": "Media ID is not available",
-          "retries": 1
+          "id": "18110006612013206",
+          "permalink": "https://www.instagram.com/p/DdybRuQmId1/"
         },
         "fb": {
           "id": "710815315448548_122190866300938552",
@@ -319,6 +319,13 @@
       "date": "2026-09-27",
       "slot": "10:00",
       "message": "10:00 Auto: IG half failed (Media ID is not available) — slot stays OPEN, later landed runs retry the IG half until the 240-min window closes"
+    },
+    {
+      "ts": "2026-09-27T10:45:42.990Z",
+      "level": "success",
+      "date": "2026-09-27",
+      "slot": "10:00",
+      "message": "10:00 Auto: published — \"WhatsApp Image 2026-08-02 at 11zcazdc.50.25 PM.jpeg\" | sw | no topic | IG ✓ | FB ✓"
     }
   ]
 }
