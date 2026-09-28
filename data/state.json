@@ -199,11 +199,30 @@
           "id": "122191357220938552"
         }
       }
+    },
+    "2026-10-01": {
+      "10:00": {
+        "status": "scheduled",
+        "publishTime": "2026-10-01T07:00:00.000Z",
+        "at": "2026-09-28T21:23:23.764Z",
+        "photo": "WhatsApp Image 2026-08-02 at 1dvsdvs1.50.32 PM.jpeg",
+        "caption": "𝗪𝗘𝗪𝗘 𝗡𝗜 𝗧𝗛𝗔𝗠𝗔𝗡𝗜 𝗞𝗨𝗕𝗪𝗔 𝗞𝗪𝗔 𝗠𝗨𝗡𝗚𝗨!\n\nBinti yangu mpendwa, mara nyingi dunia hutupa viwango vya uwongo vya thamani yetu, ikitujaribu kujitathmini kwa muonekano, mafanikio, au idhini ya wengine. Lakini ujue kuwa thamani yako haipatikani katika vitu hivyo, bali imefichwa ndani ya moyo wa Muumba wako.\n\nUmeumbwa kwa makusudi na kwa upendo mwingi wa Mungu, ukibeba alama yake ya kipekee. Yeye anakuona wewe kama kito cha thamani isiyo na kifani, mrembo na mwenye uwezo wa ajabu. Kamwe usiruhusu sauti za mashaka au za dunia kukudanganya kuhusu ukweli huu wa kimungu.\n\nKukumbatia ukweli huu kutakupa ujasiri wa kutembea katika kusudi lako na kuishi maisha yaliyojawa na amani na furaha. Wewe si kosa, wewe ni uumbaji bora wa Mungu. Umekaguliwa!\n\nZaburi 139:14: \"Nitakushukuru kwa kuwa nimeumbwa kwa jinsi ya ajabu; Matendo yako ni ya ajabu, Na nafsi yangu yajua sana.\"\n\n#ThamaniYakoKwaMungu #BintiWaThamani #UmeumbwaKwaKusudi #LadiesOfDestiny #MabintiWenyeHatima",
+        "lang": "sw",
+        "topic": {
+          "n": 9,
+          "cat": "IDENTITY & RELATIONSHIP WITH GOD",
+          "en": "Understanding Your Value Through God's Eyes",
+          "sw": "Kuelewa Thamani Yako kwa Macho ya Mungu"
+        },
+        "fb": {
+          "id": "122191518548938552"
+        }
+      }
     }
   },
   "rotation": {
-    "photo": 9,
-    "topic": 8,
+    "photo": 10,
+    "topic": 9,
     "fallbackEn": 2,
     "fallbackSw": 0
   },
@@ -364,6 +383,13 @@
       "date": "2026-09-28",
       "slot": "10:00",
       "message": "10:00 Auto: published — \"WhatsApp Image 2026-08-02 at 11zczcz.50.07 PM.jpeg\" | en | no topic | IG ✓ | FB ✓"
+    },
+    {
+      "ts": "2026-09-28T21:23:23.764Z",
+      "level": "info",
+      "date": "2026-10-01",
+      "slot": "10:00",
+      "message": "10:00 FB half pre-scheduled via Meta (publishes 2026-10-01T07:00:00.000Z, Kiswahili) — topic #9 \"Understanding Your Value Through God's Eyes\" / \"Kuelewa Thamani Yako kwa Macho ya Mungu\" (IDENTITY & RELATIONSHIP WITH GOD); \"WhatsApp Image 2026-08-02 at 1dvsdvs1.50.32 PM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
     }
   ]
 }
