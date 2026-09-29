@@ -164,9 +164,9 @@
     },
     "2026-09-29": {
       "10:00": {
-        "status": "scheduled",
+        "status": "published",
+        "at": "2026-09-29T07:31:16.900Z",
         "publishTime": "2026-09-29T07:00:00.000Z",
-        "at": "2026-09-26T21:35:49.192Z",
         "photo": "WhatsApp Image 2026-08-02 at 11zdvsd.50.27 PM.jpeg",
         "caption": "𝗕𝗜𝗡𝗧𝗜, 𝗔𝗡𝗚𝗔'𝗔𝗔 𝗞𝗪𝗔 𝗬𝗘𝗦𝗨 𝗠𝗧𝗔𝗡𝗗𝗔𝗢𝗡𝗜\n\nBinti wapendwa, tunajua mnatumia mitandao ya kijamii, na huko pia dunia inawaona. Kila picha mnayoweka, kila maoni mnayotoa, na kila ujumbe mnaoushiriki, unazungumza kitu kuhusu ninyi – na muhimu zaidi, unazungumza kuhusu Yesu anayeishi ndani yenu. Wewe ni balozi wa Kristo popote ulipo, hata kwenye ulimwengu wa kidijitali.\n\nAcha uwepo wako mtandaoni uwe kielelezo cha neema yake na upendo wake usio na mipaka. Tunaalikwa kuangaza nuru ya Kristo katika giza lolote, na mitandao ya kijamii ni jukwaa kubwa la kufanya hivyo. Hebu tuwe vyanzo vya msukumo, matumaini, na ukweli kwa wengine.\n\nKumbuka wewe si mtazamaji tu, bali ni balozi wa Mungu. Tumia fursa hii kuleta mabadiliko chanya, kuhamasisha wengine katika imani, na kuishi maisha yanayomtukuza Yeye. Mungu anakuamini! Endelea kuang'aa!\n\n\"Ninyi ni nuru ya ulimwengu. Mji uliojengwa juu ya mlima hauwezi kufichwa. Wala watu hawawashi taa na kuiweka chini ya pishi, bali huiweka juu ya kinara, nayo huwaangazia wote waliomo nyumbani. Vivyo hivyo, nuru yenu na iangaze mbele za watu, ili waone matendo yenu mema na kumtukuza Baba yenu aliye mbinguni.\" Mathayo 5:14-16\n\n#NuruYakoMtandaoni #UshawishiChanya #BaloziWaKristo #LadiesOfDestiny #MabintiWenyeHatima",
         "lang": "sw",
@@ -176,8 +176,13 @@
           "en": "Representing Jesus on Social Media",
           "sw": "Kumwakilisha Yesu katika Mitandao ya Kijamii"
         },
+        "ig": {
+          "id": "18090898061196436",
+          "permalink": "https://www.instagram.com/p/Dd3OnlalOL3/"
+        },
         "fb": {
-          "id": "122191177106938552"
+          "id": "710815315448548_122191177106938552",
+          "permalink": "https://www.facebook.com/photo.php?fbid=122191177106938552&set=a.122103534068938552&type=3"
         }
       }
     },
@@ -390,6 +395,13 @@
       "date": "2026-10-01",
       "slot": "10:00",
       "message": "10:00 FB half pre-scheduled via Meta (publishes 2026-10-01T07:00:00.000Z, Kiswahili) — topic #9 \"Understanding Your Value Through God's Eyes\" / \"Kuelewa Thamani Yako kwa Macho ya Mungu\" (IDENTITY & RELATIONSHIP WITH GOD); \"WhatsApp Image 2026-08-02 at 1dvsdvs1.50.32 PM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
+    },
+    {
+      "ts": "2026-09-29T07:31:16.900Z",
+      "level": "success",
+      "date": "2026-09-29",
+      "slot": "10:00",
+      "message": "10:00 Auto: published — \"WhatsApp Image 2026-08-02 at 11zdvsd.50.27 PM.jpeg\" | sw | no topic | IG ✓ | FB ✓"
     }
   ]
 }
