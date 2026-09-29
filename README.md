@@ -4,7 +4,7 @@ Posts **one devotional per day at 10:00 EAT** to the **Ladies Of Destiny** Faceb
 
 Each day's post is written about **one assigned topic** from [`data/topics.json`](data/topics.json) — the owner's list of 100 topics in 8 categories, used in order (topic #1 on day 1, #2 on day 2, …) and cycling every 100 days. Swahili days use the topic's Swahili title, English days the English one.
 
-The images are **yours**: upload them to `data/photos/` and the agent uses one per day, in alphabetical order, cycling back to the first when the last is used.
+The images are **yours**: upload them to `data/photos/` and the agent uses one per day in **random (shuffled) order** — no image repeats until **all** of them have been used once, then the deck is reshuffled and a new random cycle begins, forever.
 
 ---
 
@@ -79,9 +79,10 @@ GitHub silently drops most scheduled runs on young accounts — this agent **nev
 | Change posting time | `data/config.json` → `"slots": "10:00"` (EAT) |
 | Pause posting | `data/config.json` → `"autoPost": false` (pending Meta posts are cancelled too) |
 | IG retry window | `data/config.json` → `"graceMinutes": 240` (the Biblia model — how long after slot time a missed IG half stays rescuable; past it, the **force** button is the only rescue) |
-| Add / replace images | Upload to `data/photos/` — new ones join the rotation automatically |
+| Add / replace images | Upload to `data/photos/` — new ones join the current shuffled deck at a random position (no waiting a full cycle) |
 | Change / reorder topics | Edit `data/topics.json` (one per day, in order, cycling) |
 | Restart the topic queue | `data/state.json` → `"rotation": { "topic": 0 }` |
+| Reshuffle the photos now | `data/state.json` → `"rotation": { "deck": [] }` — the next run deals a fresh shuffled cycle |
 | Check what is live | `node scripts/check-live-posts.mjs` locally (or read the latest run log) |
 | Different Gemini model | Repo **variable** `GEMINI_MODEL` (default `gemini-2.5-flash`) |
 
@@ -91,7 +92,7 @@ GitHub silently drops most scheduled runs on young accounts — this agent **nev
 data/config.json              ← the switch file (slots, timezone, pause, token — auto-filled)
 data/state.json               ← what was posted/scheduled each day (auto-committed)
 data/topics.json              ← the 100-topic queue (one assigned topic per day, in order)
-data/photos/                  ← YOUR images (one per day, alphabetical, cycling)
+data/photos/                  ← YOUR images (one per day, shuffled, no repeats until all used, then reshuffled)
 data/fallback-captions.json   ← 10 EN + 10 SW stored posts (used only if Gemini is unreachable)
 data/meta-token.txt           ← one-paste token setup (cleared after first use)
 scripts/gh-agent.mjs          ← the agent

@@ -30,10 +30,11 @@
  *  back to Gemini's free theme choice.
  *
  *  IMAGES: the owner uploads her own images to data/photos/ — the agent uses
- *  one per day in alphabetical order, cycling back to the first when the last
- *  is used ("use one image every day until they are over then you repeat").
- *  While the folder is empty: Facebook gets the caption as a text-only post
- *  and Instagram waits (IG cannot post without an image).
+ *  one per day in SHUFFLED order (owner rule 2026-09-29: NOT alphabetical,
+ *  NOT upload order — random). No image repeats until EVERY image has been
+ *  used once, then the deck is reshuffled and a fresh random cycle begins,
+ *  forever. While the folder is empty: Facebook gets the caption as a
+ *  text-only post and Instagram waits (IG cannot post without an image).
  *
  *  RELIABILITY MODEL: GitHub silently drops most scheduled runs on young
  *  accounts. The agent therefore does NOT rely on firing at slot time. Every
@@ -309,7 +310,30 @@ function parseSlots(str) {
     .sort((a, b) => a.minutes - b.minutes)
 }
 
-// ── Images: data/photos/ rotation (one per day, cycle when over) ─────────────
+// ── Images: data/photos/ SHUFFLED-DECK rotation (one per day) ───────────────
+// Owner rule (2026-09-29): images must NOT run in name/upload order. Each
+// day's image is drawn from a shuffled deck: RANDOM order, and NO image
+// repeats until EVERY image has been used once — then the deck is reshuffled
+// and a new random cycle begins, forever (like cards: shuffle, deal them
+// all, reshuffle, repeat). The deck records the WHOLE cycle order with a deal
+// position, so a used photo can never be re-dealt within the same cycle.
+// New uploads join the UNDEALT part of the current cycle at a random
+// position (so they don't wait a full cycle); deleted files drop out
+// automatically (the deal position self-adjusts).
+// State: rotation.deck = full shuffled order of the current cycle,
+// rotation.deckPos = how many have been dealt so far,
+// rotation.deckEpoch = current cycle number (log line only). The legacy
+// rotation.photo counter is ignored — the first run with this code starts a
+// brand-new shuffled cycle.
+function shuffle(arr) {
+  const a = [...arr]
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[a[i], a[j]] = [a[j], a[i]]
+  }
+  return a
+}
+
 async function getPhotos() {
   const all = await fs.readdir(PHOTOS_DIR).catch(() => [])
   const jpgs = all.filter((f) => /\.jpe?g$/i.test(f)).sort()
@@ -317,12 +341,49 @@ async function getPhotos() {
   return { jpgs, pending }
 }
 
+function ensureDeck(state, jpgs) {
+  const have = new Set(jpgs ?? [])
+  const oldDeck = Array.isArray(state.rotation.deck) ? state.rotation.deck : []
+  let pos = Number(state.rotation.deckPos ?? 0)
+  if (!Number.isFinite(pos) || pos < 0) pos = 0
+  if (pos > oldDeck.length) pos = oldDeck.length
+  // 1) drop files that no longer exist; a deletion BEFORE the deal position
+  //    shifts the frontier left so already-dealt photos stay dealt
+  const deck = []
+  oldDeck.forEach((f, i) => {
+    if (have.has(f)) deck.push(f)
+    else if (i < pos) pos--
+  })
+  // 2) cycle exhausted (or fresh/empty) → deal a full new shuffled cycle
+  if (pos >= deck.length && have.size > 0) {
+    deck.length = 0
+    deck.push(...shuffle([...have]))
+    pos = 0
+    state.rotation.deckEpoch = Number(state.rotation.deckEpoch ?? 0) + 1
+  }
+  // 3) newly uploaded photos join the UNDEALT part of the current cycle
+  for (const f of shuffle([...have])) {
+    if (!deck.includes(f)) {
+      const at = pos + Math.floor(Math.random() * (deck.length - pos + 1))
+      deck.splice(at, 0, f)
+    }
+  }
+  state.rotation.deck = deck
+  state.rotation.deckPos = pos
+  return deck
+}
+
 function peekPhoto(state, jpgs) {
-  return jpgs.length > 0 ? jpgs[Number(state.rotation.photo ?? 0) % jpgs.length] : null
+  if (!jpgs || jpgs.length === 0) return null
+  const deck = ensureDeck(state, jpgs)
+  return deck[Number(state.rotation.deckPos ?? 0)] ?? null
 }
 
 function advancePhoto(state, jpgs) {
-  if (jpgs.length > 0) state.rotation.photo = (Number(state.rotation.photo ?? 0) + 1) % jpgs.length
+  if (!jpgs || jpgs.length === 0) return
+  ensureDeck(state, jpgs)
+  state.rotation.deckPos = Number(state.rotation.deckPos ?? 0) + 1
+  ensureDeck(state, jpgs) // cycle exhausted → reshuffle, new cycle begins
 }
 
 // ── Daily topic queue (data/topics.json — the owner's 100-topic list) ────────
@@ -587,15 +648,19 @@ async function captionForSlot(lang, state, fallbacks, boldEnabled, topic) {
 }
 
 // ── State (data/state.json, committed back by the workflow) ─────────────────
-const EMPTY_STATE = { version: 1, days: {}, rotation: { photo: 0, topic: 0, fallbackEn: 0, fallbackSw: 0 }, events: [] }
+const EMPTY_STATE = { version: 1, days: {}, rotation: { photo: 0, topic: 0, fallbackEn: 0, fallbackSw: 0, deck: [], deckPos: 0, deckEpoch: 0 }, events: [] }
 async function readState() {
   try {
     const s = JSON.parse(await fs.readFile(STATE_FILE, 'utf-8'))
     const rotation = { ...EMPTY_STATE.rotation }
     for (const k of Object.keys(rotation)) {
+      if (k === 'deck') continue // array of filenames — copied below, not a counter
       const v = Number(s.rotation?.[k])
       if (Number.isFinite(v) && v >= 0) rotation[k] = Math.floor(v)
     }
+    // the shuffled-deck order survives restarts verbatim (validated against
+    // the actual photos folder by ensureDeck on every use)
+    if (Array.isArray(s.rotation?.deck)) rotation.deck = s.rotation.deck.filter((f) => typeof f === 'string')
     return { ...EMPTY_STATE, ...s, rotation }
   } catch {
     return JSON.parse(JSON.stringify(EMPTY_STATE))
@@ -985,7 +1050,7 @@ async function main() {
   const fallbacks = await loadFallbacks()
   const topics = await loadTopics()
   const geminiReady = Boolean(String(process.env.GEMINI_API_KEY ?? '').trim())
-  log(`[library] ${photos.length} image(s) in data/photos/ (used one per day, cycled when over)${pending.length > 0 ? `; ${pending.length} PNG/WebP will be converted to JPEG by the workflow's normalize step` : ''}`)
+  log(`[library] ${photos.length} image(s) in data/photos/ (one per day in SHUFFLED order — no repeats until all are used, then reshuffled forever)${pending.length > 0 ? `; ${pending.length} PNG/WebP will be converted to JPEG by the workflow's normalize step` : ''}`)
   log(`[library] captions: ${geminiReady ? 'Google Gemini live (GEMINI_API_KEY set) — the Lady of Destiny persona writes each post' : 'FALLBACK pool (GEMINI_API_KEY secret not set — add it in repo Settings → Secrets → Actions for live Gemini captions)'}, ${fallbacks.posts.filter((p) => p.lang === 'en').length} EN + ${fallbacks.posts.filter((p) => p.lang === 'sw').length} SW stored`)
   log(`[library] next slot language: ${nextSlotLang(state) === 'sw' ? 'Kiswahili' : 'English'} (daily alternation; a fresh repo starts with English)`)
   const nextTopic = peekTopic(state, topics)
@@ -1081,7 +1146,7 @@ async function main() {
         const photo = peekPhoto(state, photos)
         const tLang = slotLang(state, target.date ?? now.date, target.label)
         const tTopic = peekTopic(state, topics)
-        log(`[pick] slot ${target.label} on ${target.date ?? now.date} → language: ${tLang === 'sw' ? 'Kiswahili' : 'English'} → topic: ${tTopic ? `#${tTopic.n} "${tLang === 'sw' ? tTopic.sw : tTopic.en}" (${tTopic.cat})` : 'free theme'} → photo: ${photo ?? '(none — text-only FB post + IG skipped until images are uploaded)'} (rotation index ${Number(state.rotation.photo ?? 0) % Math.max(1, photos.length)} of ${photos.length})`)
+        log(`[pick] slot ${target.label} on ${target.date ?? now.date} → language: ${tLang === 'sw' ? 'Kiswahili' : 'English'} → topic: ${tTopic ? `#${tTopic.n} "${tLang === 'sw' ? tTopic.sw : tTopic.en}" (${tTopic.cat})` : 'free theme'} → photo: ${photo ?? '(none — text-only FB post + IG skipped until images are uploaded)'} (shuffled deck: ${Math.max(0, (state.rotation.deck?.length ?? 0) - Number(state.rotation.deckPos ?? 0))}/${photos.length} left this cycle, cycle #${Number(state.rotation.deckEpoch ?? 0)})`)
         log(`[pick] caption: ${geminiReady ? 'to be written by Google Gemini (Lady of Destiny persona)' : 'fallback pool post (GEMINI_API_KEY not set)'} — heading auto-bolded for social media`)
         log('[dry-run] would publish now:')
         log(`  Facebook (${page.pageName || 'Ladies Of Destiny'}): ${photo ? 'photo upload with caption' : 'text-only feed post with caption'}`)
