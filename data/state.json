@@ -188,9 +188,9 @@
     },
     "2026-09-30": {
       "10:00": {
-        "status": "scheduled",
+        "status": "published",
+        "at": "2026-09-30T08:34:20.484Z",
         "publishTime": "2026-09-30T07:00:00.000Z",
-        "at": "2026-09-27T22:33:01.926Z",
         "photo": "WhatsApp Image 2026-08-02 at 1ZCXzs1.50.25 PM.jpeg",
         "caption": "𝗦𝗛𝗜𝗡𝗘 𝗛𝗜𝗦 𝗟𝗢𝗩𝗘 𝗧𝗛𝗥𝗢𝗨𝗚𝗛 𝗬𝗢𝗨𝗥 𝗔𝗖𝗧𝗜𝗢𝗡𝗦\n\nMy beautiful sisters, did you know that your everyday kindness and helpfulness are powerful testimonies to God's love? Every act of compassion, every helping hand you extend, has the potential to reveal Jesus to those around you. It's not about seeking praise for ourselves, but about humbly serving with a heart full of God's grace.\n\nWhether it's a kind word to someone struggling, a thoughtful gesture to a neighbor, or volunteering your time, let your actions be saturated with the gentle spirit of Christ. These aren't just good deeds; they are sparks of divine light that show the world the heart of our Savior.\n\nWhen people see your light, they shouldn't just see you; they should see a glimpse of the Jesus who lives within you. Let your life be a living letter, inviting others to know the amazing love of Jesus through your genuine and selfless good works. Keep shining!\n\n\"Let your light shine before others, that they may see your good deeds and glorify your Father in heaven.\"\n— Matthew 5:16\n\n#GoodWorks #ShineForJesus #ServiceWithLove #LadiesOfDestiny #MabintiWenyeHatima",
         "lang": "en",
@@ -200,8 +200,13 @@
           "en": "Good Works That Point People to Jesus",
           "sw": "Matendo Mema Yanayoelekeza Watu kwenda Yesu"
         },
+        "ig": {
+          "id": "17908209522481811",
+          "permalink": "https://www.instagram.com/p/Dd56n6QlAf4/"
+        },
         "fb": {
-          "id": "122191357220938552"
+          "id": "710815315448548_122191357220938552",
+          "permalink": "https://www.facebook.com/photo.php?fbid=122191357220938552&set=a.122103534068938552&type=3"
         }
       }
     },
@@ -637,6 +642,13 @@
       "date": "2026-10-02",
       "slot": "10:00",
       "message": "10:00 FB half pre-scheduled via Meta (publishes 2026-10-02T07:00:00.000Z, English) — topic #10 \"The Beauty of a Good Heart\" / \"Urembo wa Moyo Mzuri\" (CHRISTLIKE CHARACTER); \"pic_firy9tzit5.jpg\"; IG half to be posted by a landed run in the catch-up window"
+    },
+    {
+      "ts": "2026-09-30T08:34:20.484Z",
+      "level": "success",
+      "date": "2026-09-30",
+      "slot": "10:00",
+      "message": "10:00 Auto: published — \"WhatsApp Image 2026-08-02 at 1ZCXzs1.50.25 PM.jpeg\" | en | no topic | IG ✓ | FB ✓"
     }
   ]
 }
