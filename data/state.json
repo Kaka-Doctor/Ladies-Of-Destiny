@@ -212,9 +212,9 @@
     },
     "2026-10-01": {
       "10:00": {
-        "status": "scheduled",
+        "status": "published",
+        "at": "2026-10-01T07:12:26.669Z",
         "publishTime": "2026-10-01T07:00:00.000Z",
-        "at": "2026-09-28T21:23:23.764Z",
         "photo": "WhatsApp Image 2026-08-02 at 1dvsdvs1.50.32 PM.jpeg",
         "caption": "𝗪𝗘𝗪𝗘 𝗡𝗜 𝗧𝗛𝗔𝗠𝗔𝗡𝗜 𝗞𝗨𝗕𝗪𝗔 𝗞𝗪𝗔 𝗠𝗨𝗡𝗚𝗨!\n\nBinti yangu mpendwa, mara nyingi dunia hutupa viwango vya uwongo vya thamani yetu, ikitujaribu kujitathmini kwa muonekano, mafanikio, au idhini ya wengine. Lakini ujue kuwa thamani yako haipatikani katika vitu hivyo, bali imefichwa ndani ya moyo wa Muumba wako.\n\nUmeumbwa kwa makusudi na kwa upendo mwingi wa Mungu, ukibeba alama yake ya kipekee. Yeye anakuona wewe kama kito cha thamani isiyo na kifani, mrembo na mwenye uwezo wa ajabu. Kamwe usiruhusu sauti za mashaka au za dunia kukudanganya kuhusu ukweli huu wa kimungu.\n\nKukumbatia ukweli huu kutakupa ujasiri wa kutembea katika kusudi lako na kuishi maisha yaliyojawa na amani na furaha. Wewe si kosa, wewe ni uumbaji bora wa Mungu. Umekaguliwa!\n\nZaburi 139:14: \"Nitakushukuru kwa kuwa nimeumbwa kwa jinsi ya ajabu; Matendo yako ni ya ajabu, Na nafsi yangu yajua sana.\"\n\n#ThamaniYakoKwaMungu #BintiWaThamani #UmeumbwaKwaKusudi #LadiesOfDestiny #MabintiWenyeHatima",
         "lang": "sw",
@@ -224,8 +224,13 @@
           "en": "Understanding Your Value Through God's Eyes",
           "sw": "Kuelewa Thamani Yako kwa Macho ya Mungu"
         },
+        "ig": {
+          "id": "17865554415670762",
+          "permalink": "https://www.instagram.com/p/Dd8WDQFl_rS/"
+        },
         "fb": {
-          "id": "122191518548938552"
+          "id": "710815315448548_122191518548938552",
+          "permalink": "https://www.facebook.com/photo.php?fbid=122191518548938552&set=a.122103534068938552&type=3"
         }
       }
     },
@@ -675,6 +680,13 @@
       "date": "2026-10-03",
       "slot": "10:00",
       "message": "10:00 FB half pre-scheduled via Meta (publishes 2026-10-03T07:00:00.000Z, Kiswahili) — topic #11 \"Loving People Who Are Different From You\" / \"Kupenda Watu Wanaotofautiana Nawe\" (LOVE & RELATIONSHIPS); \"WhatsApp Image 202zdcsdfs6-08-02 at 11.50.05 PM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
+    },
+    {
+      "ts": "2026-10-01T07:12:26.669Z",
+      "level": "success",
+      "date": "2026-10-01",
+      "slot": "10:00",
+      "message": "10:00 Auto: published — \"WhatsApp Image 2026-08-02 at 1dvsdvs1.50.32 PM.jpeg\" | sw | no topic | IG ✓ | FB ✓"
     }
   ]
 }
