@@ -236,9 +236,9 @@
     },
     "2026-10-02": {
       "10:00": {
-        "status": "scheduled",
+        "status": "published",
+        "at": "2026-10-02T09:01:13.191Z",
         "publishTime": "2026-10-02T07:00:00.000Z",
-        "at": "2026-09-29T23:12:42.663Z",
         "photo": "pic_firy9tzit5.jpg",
         "caption": "𝗟𝗘𝗧 𝗬𝗢𝗨𝗥 𝗚𝗢𝗢𝗗 𝗛𝗘𝗔𝗥𝗧 𝗦𝗛𝗜𝗡𝗘 𝗕𝗥𝗜𝗚𝗛𝗧𝗘𝗦𝗧\n\nMy dearest sisters, sometimes we focus so much on outward appearance, trying to look our best for the world. But do you know where your most radiant, everlasting beauty truly lies? It begins deep within, in the tender soil of your heart.\n\nA truly good heart, filled with God's love, radiates kindness, patience, and compassion to everyone you meet. It's the gentle spirit, the forgiving nature, and the genuine desire to uplift others that makes you truly beautiful in God's eyes and to those around you.\n\nLet's ask God daily to cultivate a pure and loving heart within us, sisters. Choose goodness, choose grace, and watch how your inner light becomes an undeniable beacon of His glory. This is the beauty that never fades. You are chosen.\n\nYour beauty should not come from outward adornment, such as elaborate hairstyles and the wearing of gold jewelry or fine clothes. Rather, it should be that of your inner self, the unfading beauty of a gentle and quiet spirit, which is of great worth in God’s sight.\n1 Peter 3:3-4\n\n#InnerBeauty #ChristlikeCharacter #HeartOfGold #LadiesOfDestiny #MabintiWenyeHatima",
         "lang": "en",
@@ -248,8 +248,13 @@
           "en": "The Beauty of a Good Heart",
           "sw": "Urembo wa Moyo Mzuri"
         },
+        "ig": {
+          "id": "17988153807063757",
+          "permalink": "https://www.instagram.com/p/Dd_HSUqmO8P/"
+        },
         "fb": {
-          "id": "122191710332938552"
+          "id": "710815315448548_122191710332938552",
+          "permalink": "https://www.facebook.com/photo.php?fbid=122191710332938552&set=a.122103534068938552&type=3"
         }
       }
     },
@@ -713,6 +718,13 @@
       "date": "2026-10-04",
       "slot": "10:00",
       "message": "10:00 FB half pre-scheduled via Meta (publishes 2026-10-04T07:00:00.000Z, English) — topic #12 \"Guarding Your Mind in a Digital Generation\" / \"Kulinda Akili Yako katika Kizazi cha Kidijitali\" (PURITY & WISDOM); \"WhatsApp Image 2026-08-02 zdvcsdfvat 11.50.26 PM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
+    },
+    {
+      "ts": "2026-10-02T09:01:13.191Z",
+      "level": "success",
+      "date": "2026-10-02",
+      "slot": "10:00",
+      "message": "10:00 Auto: published — \"pic_firy9tzit5.jpg\" | en | no topic | IG ✓ | FB ✓"
     }
   ]
 }
