@@ -295,11 +295,30 @@
           "id": "122192015654938552"
         }
       }
+    },
+    "2026-10-05": {
+      "10:00": {
+        "status": "scheduled",
+        "publishTime": "2026-10-05T07:00:00.000Z",
+        "at": "2026-10-03T00:29:17.229Z",
+        "photo": "pic_36xnk0p5cp.jpg",
+        "caption": "𝗢𝗡𝗚𝗢𝗭𝗔 𝗞𝗪𝗔 𝗞𝗨𝗧𝗨𝗠𝗜𝗞𝗜𝗔 𝗞𝗪𝗔 𝗨𝗣𝗘𝗡𝗗𝗢!\n\nBinti zangu wapendwa, mara nyingi tunafikiri uongozi ni mamlaka au cheo. Lakini Yesu alitufundisha njia tofauti kabisa: uongozi wa utumishi. Hii inamaanisha kuongoza si kwa kutafuta sifa au kutawala, bali kwa kuwatumikia wengine kwa upendo na unyenyekevu, ukichota nguvu kutoka kwa Mungu.\n\nJe, unajua kwamba moyo wako wa upendo na utayari wako wa kusaidia ndivyo vinavyokuweka mstari wa mbele katika kumwakilisha Kristo? Kila unapotumikia jirani yako, rafiki yako, au hata mgeni, unamuonyesha Yesu kwa vitendo na kuwa kiongozi wa kweli. Mungu amekupa uwezo wa kuathiri wengine kupitia huduma yako, uwe nuru inayoangaza gizani.\n\nUsidharau mchango wako mdogo, binti. Kila tendo la fadhili lina nguvu ya kubadilisha maisha na kuleta utukufu kwa Mungu. Endelea kuongozwa na Roho Mtakatifu katika kila hatua ya utumishi wako, ukiwa na moyo safi na wa kujitolea. Umekaguliwa, binti!\n\nMarko 10:45: \"Kwa maana Mwana wa Adamu naye hakuja kutumikiwa, bali kutumikia, na kutoa nafsi yake iwe fidia ya wengi.\"\n\n#UongoziWaUtumishi #TumikiaKwaUpendo #BintiKiongozi #LadiesOfDestiny #MabintiWenyeHatima",
+        "lang": "sw",
+        "topic": {
+          "n": 13,
+          "cat": "LEADERSHIP & INFLUENCE",
+          "en": "Servant Leadership",
+          "sw": "Uongozi wa Utumishi"
+        },
+        "fb": {
+          "id": "122192195204938552"
+        }
+      }
     }
   },
   "rotation": {
     "photo": 10,
-    "topic": 12,
+    "topic": 13,
     "fallbackEn": 2,
     "fallbackSw": 0,
     "deck": [
@@ -509,7 +528,7 @@
       "WhatsApp Image 2026-08-03 xcbdxfbdat 10.35.48 AM.jpeg",
       "pic_348slr32s1.jpg"
     ],
-    "deckPos": 3,
+    "deckPos": 4,
     "deckEpoch": 1
   },
   "events": [
@@ -725,6 +744,13 @@
       "date": "2026-10-02",
       "slot": "10:00",
       "message": "10:00 Auto: published — \"pic_firy9tzit5.jpg\" | en | no topic | IG ✓ | FB ✓"
+    },
+    {
+      "ts": "2026-10-03T00:29:17.230Z",
+      "level": "info",
+      "date": "2026-10-05",
+      "slot": "10:00",
+      "message": "10:00 FB half pre-scheduled via Meta (publishes 2026-10-05T07:00:00.000Z, Kiswahili) — topic #13 \"Servant Leadership\" / \"Uongozi wa Utumishi\" (LEADERSHIP & INFLUENCE); \"pic_36xnk0p5cp.jpg\"; IG half to be posted by a landed run in the catch-up window"
     }
   ]
 }
