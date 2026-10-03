@@ -319,11 +319,30 @@
           "id": "122192195204938552"
         }
       }
+    },
+    "2026-10-06": {
+      "10:00": {
+        "status": "scheduled",
+        "publishTime": "2026-10-06T07:00:00.000Z",
+        "at": "2026-10-03T22:07:36.131Z",
+        "photo": "pic_sib8tyw6fg.jpg",
+        "caption": "𝗗𝗜𝗦𝗖𝗢𝗩𝗘𝗥 𝗬𝗢𝗨𝗥 𝗗𝗜𝗩𝗜𝗡𝗘 𝗚𝗜𝗙𝗧𝗦 𝗔𝗡𝗗 𝗦𝗛𝗜𝗡𝗘!\n\nMy dearest sisters, have you ever wondered what unique treasures God has placed inside you? Each one of you is wonderfully made with specific talents and abilities designed by Him for a special purpose. Don't underestimate the quiet nudges or the things you naturally love to do; those are often clues to your divine gifts.\n\nIt's not enough to simply discover these gifts; God calls us to nurture and grow them, like seeds planted in fertile ground. Whether it's a gift for teaching, creating, serving, listening, or leading, dedicate time to develop it. When you use your gifts, you’re not just serving others; you're glorifying God and fulfilling a part of your beautiful destiny.\n\nSo, take a moment today to prayerfully ask God to reveal your gifts more clearly. Begin using them, even in small ways, and watch how He multiplies your efforts. Your journey of discovery and development is a powerful act of worship. God has a plan for you.\n\n1 Peter 4:10: \"Each of you should use whatever gift you have received to serve others, as faithful stewards of God’s grace in its various forms.\"\n\n#DivineGifts #PurposeDriven #GrowInFaith #LadiesOfDestiny #MabintiWenyeHatima",
+        "lang": "en",
+        "topic": {
+          "n": 14,
+          "cat": "EDUCATION, WORK & PURPOSE",
+          "en": "Discovering and Developing Your Gifts",
+          "sw": "Kugundua na Kukuza Zawadi Zako"
+        },
+        "fb": {
+          "id": "122192340284938552"
+        }
+      }
     }
   },
   "rotation": {
     "photo": 10,
-    "topic": 13,
+    "topic": 14,
     "fallbackEn": 2,
     "fallbackSw": 0,
     "deck": [
@@ -533,7 +552,7 @@
       "WhatsApp Image 2026-08-03 xcbdxfbdat 10.35.48 AM.jpeg",
       "pic_348slr32s1.jpg"
     ],
-    "deckPos": 4,
+    "deckPos": 5,
     "deckEpoch": 1
   },
   "events": [
@@ -763,6 +782,13 @@
       "date": "2026-10-03",
       "slot": "10:00",
       "message": "10:00 Auto: published — \"WhatsApp Image 202zdcsdfs6-08-02 at 11.50.05 PM.jpeg\" | sw | no topic | IG ✓ | FB ✓"
+    },
+    {
+      "ts": "2026-10-03T22:07:36.132Z",
+      "level": "info",
+      "date": "2026-10-06",
+      "slot": "10:00",
+      "message": "10:00 FB half pre-scheduled via Meta (publishes 2026-10-06T07:00:00.000Z, English) — topic #14 \"Discovering and Developing Your Gifts\" / \"Kugundua na Kukuza Zawadi Zako\" (EDUCATION, WORK & PURPOSE); \"pic_sib8tyw6fg.jpg\"; IG half to be posted by a landed run in the catch-up window"
     }
   ]
 }
