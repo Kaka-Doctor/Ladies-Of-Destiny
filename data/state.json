@@ -260,9 +260,9 @@
     },
     "2026-10-03": {
       "10:00": {
-        "status": "scheduled",
+        "status": "published",
+        "at": "2026-10-03T09:04:16.287Z",
         "publishTime": "2026-10-03T07:00:00.000Z",
-        "at": "2026-10-01T00:11:05.440Z",
         "photo": "WhatsApp Image 202zdcsdfs6-08-02 at 11.50.05 PM.jpeg",
         "caption": "𝗣𝗘𝗡𝗗𝗔 𝗞𝗔𝗠𝗔 𝗞𝗥𝗜𝗦𝗧𝗢, 𝗕𝗜𝗟𝗔 𝗠𝗜𝗣𝗔𝗞𝗔\n\nBinti zangu wapendwa, mara nyingi tunaona ni rahisi kuwapenda wale wanaofanana nasi, wenye mawazo au malezi sawa. Lakini, je, umewahi kujiuliza inakuwaje kuonyesha upendo wa kweli kwa yule anayetofautiana nawe kabisa? Mungu anatuita kupanua mioyo yetu na kuvuka mipaka ya kawaida.\n\nKila mmoja wetu ameumbwa kwa sura na mfano wa Mungu, hata kama tunaonekana tofauti, tunatoka tamaduni tofauti, au tuna mitazamo tofauti. Tofauti zetu hazipaswi kututenganisha, bali zinapaswa kutukumbusha uzuri na upana wa uumbaji wake wa ajabu. Zinatupa fursa ya kujifunza na kukua.\n\nHebu tuwe mabalozi wa upendo wake, tukijitahidi kuelewa, kuheshimu, na kuwajali wengine bila kujali tofauti zao. Kwa kufanya hivyo, tunaonyesha ulimwengu jinsi upendo wa Kristo unavyoweza kuunganisha kila mtu. Endelea kuang'aa!\n\nWakolosai 3:14: \"Juu ya hayo yote vaeni upendo, ndio kifungo cha ukamilifu.\"\n\n#UpendoBilaMipaka #HeshimuTofauti #MoyoWaUpendo #LadiesOfDestiny #MabintiWenyeHatima",
         "lang": "sw",
@@ -272,8 +272,13 @@
           "en": "Loving People Who Are Different From You",
           "sw": "Kupenda Watu Wanaotofautiana Nawe"
         },
+        "ig": {
+          "id": "18112780916137608",
+          "permalink": "https://www.instagram.com/p/DeBsb1qiTIu/"
+        },
         "fb": {
-          "id": "122191865828938552"
+          "id": "710815315448548_122191865828938552",
+          "permalink": "https://www.facebook.com/photo.php?fbid=122191865828938552&set=a.122103534068938552&type=3"
         }
       }
     },
@@ -751,6 +756,13 @@
       "date": "2026-10-05",
       "slot": "10:00",
       "message": "10:00 FB half pre-scheduled via Meta (publishes 2026-10-05T07:00:00.000Z, Kiswahili) — topic #13 \"Servant Leadership\" / \"Uongozi wa Utumishi\" (LEADERSHIP & INFLUENCE); \"pic_36xnk0p5cp.jpg\"; IG half to be posted by a landed run in the catch-up window"
+    },
+    {
+      "ts": "2026-10-03T09:04:16.287Z",
+      "level": "success",
+      "date": "2026-10-03",
+      "slot": "10:00",
+      "message": "10:00 Auto: published — \"WhatsApp Image 202zdcsdfs6-08-02 at 11.50.05 PM.jpeg\" | sw | no topic | IG ✓ | FB ✓"
     }
   ]
 }
