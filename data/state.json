@@ -284,9 +284,9 @@
     },
     "2026-10-04": {
       "10:00": {
-        "status": "scheduled",
+        "status": "published",
+        "at": "2026-10-04T08:27:58.270Z",
         "publishTime": "2026-10-04T07:00:00.000Z",
-        "at": "2026-10-01T23:11:57.133Z",
         "photo": "WhatsApp Image 2026-08-02 zdvcsdfvat 11.50.26 PM.jpeg",
         "caption": "𝗦𝗛𝗜𝗘𝗟𝗗 𝗬𝗢𝗨𝗥 𝗛𝗘𝗔𝗥𝗧, 𝗦𝗛𝗜𝗘𝗟𝗗 𝗬𝗢𝗨𝗥 𝗠𝗜𝗡𝗗: 𝗡𝗔𝗩𝗜𝗚𝗔𝗧𝗘 𝗧𝗛𝗘 𝗗𝗜𝗚𝗜𝗧𝗔𝗟 𝗪𝗢𝗥𝗟𝗗 𝗪𝗜𝗦𝗘𝗟𝗬\n\nMy dear sisters, in this digital age, our minds are constantly exposed to so much information and influence. Just like we protect our physical space, we must also guard the gates of our minds from things that don't align with God's truth and purity. What we consume consistently truly shapes who we become.\n\nPurity isn't just about actions, but about the thoughts we entertain. Let's be wise and discerning about what we allow into our hearts through screens, choosing content that uplifts, inspires, and draws us closer to God, not away from Him. Your mind is a sacred space, a garden for God’s truth.\n\nWhen we intentionally choose what fills our minds, we cultivate a spirit of wisdom and discernment that empowers us to live out our divine purpose confidently. Remember, what you feed your mind will grow in your life. You are chosen, my beautiful sister!\n\nProverbs 4:23 (NIV)\nAbove all else, guard your heart, for everything you do flows from it.\n\n#DigitalDiscernment #GuardYourMind #ChristianPurity #LadiesOfDestiny #MabintiWenyeHatima",
         "lang": "en",
@@ -296,8 +296,13 @@
           "en": "Guarding Your Mind in a Digital Generation",
           "sw": "Kulinda Akili Yako katika Kizazi cha Kidijitali"
         },
+        "ig": {
+          "id": "17959182633211605",
+          "permalink": "https://www.instagram.com/p/DeENE2vGB-Q/"
+        },
         "fb": {
-          "id": "122192015654938552"
+          "id": "710815315448548_122192015654938552",
+          "permalink": "https://www.facebook.com/photo.php?fbid=122192015654938552&set=a.122103534068938552&type=3"
         }
       }
     },
@@ -789,6 +794,13 @@
       "date": "2026-10-06",
       "slot": "10:00",
       "message": "10:00 FB half pre-scheduled via Meta (publishes 2026-10-06T07:00:00.000Z, English) — topic #14 \"Discovering and Developing Your Gifts\" / \"Kugundua na Kukuza Zawadi Zako\" (EDUCATION, WORK & PURPOSE); \"pic_sib8tyw6fg.jpg\"; IG half to be posted by a landed run in the catch-up window"
+    },
+    {
+      "ts": "2026-10-04T08:27:58.270Z",
+      "level": "success",
+      "date": "2026-10-04",
+      "slot": "10:00",
+      "message": "10:00 Auto: published — \"WhatsApp Image 2026-08-02 zdvcsdfvat 11.50.26 PM.jpeg\" | en | no topic | IG ✓ | FB ✓"
     }
   ]
 }
