@@ -343,11 +343,30 @@
           "id": "122192340284938552"
         }
       }
+    },
+    "2026-10-07": {
+      "10:00": {
+        "status": "scheduled",
+        "publishTime": "2026-10-07T07:00:00.000Z",
+        "at": "2026-10-04T23:36:18.521Z",
+        "photo": "WhatsApp Image 2026-08-02 sat 11.50.03 PM.jpeg",
+        "caption": "𝗡𝗬𝗔𝗬𝗢 𝗭𝗔𝗞𝗢 𝗭𝗔 𝗞𝗜𝗗𝗜𝗝𝗜𝗧𝗔𝗟𝗜: 𝗞𝗜𝗢𝗢 𝗖𝗛𝗔 𝗜𝗠𝗔𝗡𝗜 𝗬𝗔𝗞𝗢!\n\nBinti zangu wapendwa, ulimwengu wa kidijitali ni sehemu kubwa ya maisha yetu leo. Kila unachochapisha, unachopenda, na unachoshiriki mtandaoni kinaunda 'nyayo zako za kidijitali' – taswira yako unayoijenga machoni pa wengine. Je, taswira hii inamwakilisha Kristo ndani yako?\n\nKama binti wenye hatima ya kimungu, nyayo zako za kidijitali ni fursa ya kipekee ya kutoa ushuhuda hai wa imani yako. Hebu tuhakikishe maneno yetu, picha zetu, na mienendo yetu yote mtandaoni inatoa heshima kwa Mungu na kuwainua wengine. Uwe balozi wa matumaini, upendo, na usafi katika ulimwengu huu wa kidijitali.\n\nKumbuka, Kristo anaangaza kupitia wewe, hata kwenye skrini yako. Chagua kuangazia nuru ya Mungu kwa kila chapisho. Umekaguliwa, binti yangu!\n\n\"Na kila mfanyalo, kwa neno au kwa tendo, fanyeni yote kwa jina la Bwana Yesu, mkimshukuru Mungu Baba kwa yeye.\" Wakolosai 3:17\n\n#NyayoZaKidijitali #UshuhudaWaKristo #BintiWaMungu #LadiesOfDestiny #MabintiWenyeHatima",
+        "lang": "sw",
+        "topic": {
+          "n": 15,
+          "cat": "DIGITAL LIFE & MODERN CULTURE",
+          "en": "Your Digital Footprint and Your Testimony",
+          "sw": "Nyayo Zako za Kidijitali na Ushuhuda Wako"
+        },
+        "fb": {
+          "id": "122192513918938552"
+        }
+      }
     }
   },
   "rotation": {
     "photo": 10,
-    "topic": 14,
+    "topic": 15,
     "fallbackEn": 2,
     "fallbackSw": 0,
     "deck": [
@@ -429,6 +448,7 @@
       "WhatsApp Image 2026-08-03xvsxfg at 10.35.54 AM.jpeg",
       "pic_mxvii7m6le.jpg",
       "WhatsApp Image 2026-08-02fxcgf at 11.50.03 PM.jpeg",
+      "IMG-20261003-WA0006.jpg",
       "pic_1xgimczey3.jpg",
       "pic_sawkmhd6lv.jpg",
       "WhatsApp Image 2026-08-02dfsdfv at 11.50.09 PM.jpeg",
@@ -557,7 +577,7 @@
       "WhatsApp Image 2026-08-03 xcbdxfbdat 10.35.48 AM.jpeg",
       "pic_348slr32s1.jpg"
     ],
-    "deckPos": 5,
+    "deckPos": 6,
     "deckEpoch": 1
   },
   "events": [
@@ -801,6 +821,13 @@
       "date": "2026-10-04",
       "slot": "10:00",
       "message": "10:00 Auto: published — \"WhatsApp Image 2026-08-02 zdvcsdfvat 11.50.26 PM.jpeg\" | en | no topic | IG ✓ | FB ✓"
+    },
+    {
+      "ts": "2026-10-04T23:36:18.522Z",
+      "level": "info",
+      "date": "2026-10-07",
+      "slot": "10:00",
+      "message": "10:00 FB half pre-scheduled via Meta (publishes 2026-10-07T07:00:00.000Z, Kiswahili) — topic #15 \"Your Digital Footprint and Your Testimony\" / \"Nyayo Zako za Kidijitali na Ushuhuda Wako\" (DIGITAL LIFE & MODERN CULTURE); \"WhatsApp Image 2026-08-02 sat 11.50.03 PM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
     }
   ]
 }
