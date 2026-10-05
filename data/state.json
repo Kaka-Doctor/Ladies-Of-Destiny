@@ -308,9 +308,9 @@
     },
     "2026-10-05": {
       "10:00": {
-        "status": "scheduled",
+        "status": "published",
+        "at": "2026-10-05T09:37:01.733Z",
         "publishTime": "2026-10-05T07:00:00.000Z",
-        "at": "2026-10-03T00:29:17.229Z",
         "photo": "pic_36xnk0p5cp.jpg",
         "caption": "𝗢𝗡𝗚𝗢𝗭𝗔 𝗞𝗪𝗔 𝗞𝗨𝗧𝗨𝗠𝗜𝗞𝗜𝗔 𝗞𝗪𝗔 𝗨𝗣𝗘𝗡𝗗𝗢!\n\nBinti zangu wapendwa, mara nyingi tunafikiri uongozi ni mamlaka au cheo. Lakini Yesu alitufundisha njia tofauti kabisa: uongozi wa utumishi. Hii inamaanisha kuongoza si kwa kutafuta sifa au kutawala, bali kwa kuwatumikia wengine kwa upendo na unyenyekevu, ukichota nguvu kutoka kwa Mungu.\n\nJe, unajua kwamba moyo wako wa upendo na utayari wako wa kusaidia ndivyo vinavyokuweka mstari wa mbele katika kumwakilisha Kristo? Kila unapotumikia jirani yako, rafiki yako, au hata mgeni, unamuonyesha Yesu kwa vitendo na kuwa kiongozi wa kweli. Mungu amekupa uwezo wa kuathiri wengine kupitia huduma yako, uwe nuru inayoangaza gizani.\n\nUsidharau mchango wako mdogo, binti. Kila tendo la fadhili lina nguvu ya kubadilisha maisha na kuleta utukufu kwa Mungu. Endelea kuongozwa na Roho Mtakatifu katika kila hatua ya utumishi wako, ukiwa na moyo safi na wa kujitolea. Umekaguliwa, binti!\n\nMarko 10:45: \"Kwa maana Mwana wa Adamu naye hakuja kutumikiwa, bali kutumikia, na kutoa nafsi yake iwe fidia ya wengi.\"\n\n#UongoziWaUtumishi #TumikiaKwaUpendo #BintiKiongozi #LadiesOfDestiny #MabintiWenyeHatima",
         "lang": "sw",
@@ -320,8 +320,13 @@
           "en": "Servant Leadership",
           "sw": "Uongozi wa Utumishi"
         },
+        "ig": {
+          "id": "17867749323659776",
+          "permalink": "https://www.instagram.com/p/DeG5x0gFfYz/"
+        },
         "fb": {
-          "id": "122192195204938552"
+          "id": "710815315448548_122192195204938552",
+          "permalink": "https://www.facebook.com/photo.php?fbid=122192195204938552&set=a.122103534068938552&type=3"
         }
       }
     },
@@ -828,6 +833,13 @@
       "date": "2026-10-07",
       "slot": "10:00",
       "message": "10:00 FB half pre-scheduled via Meta (publishes 2026-10-07T07:00:00.000Z, Kiswahili) — topic #15 \"Your Digital Footprint and Your Testimony\" / \"Nyayo Zako za Kidijitali na Ushuhuda Wako\" (DIGITAL LIFE & MODERN CULTURE); \"WhatsApp Image 2026-08-02 sat 11.50.03 PM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
+    },
+    {
+      "ts": "2026-10-05T09:37:01.733Z",
+      "level": "success",
+      "date": "2026-10-05",
+      "slot": "10:00",
+      "message": "10:00 Auto: published — \"pic_36xnk0p5cp.jpg\" | sw | no topic | IG ✓ | FB ✓"
     }
   ]
 }
