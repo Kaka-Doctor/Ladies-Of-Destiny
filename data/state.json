@@ -332,9 +332,9 @@
     },
     "2026-10-06": {
       "10:00": {
-        "status": "scheduled",
+        "status": "published",
+        "at": "2026-10-06T07:33:38.358Z",
         "publishTime": "2026-10-06T07:00:00.000Z",
-        "at": "2026-10-03T22:07:36.131Z",
         "photo": "pic_sib8tyw6fg.jpg",
         "caption": "𝗗𝗜𝗦𝗖𝗢𝗩𝗘𝗥 𝗬𝗢𝗨𝗥 𝗗𝗜𝗩𝗜𝗡𝗘 𝗚𝗜𝗙𝗧𝗦 𝗔𝗡𝗗 𝗦𝗛𝗜𝗡𝗘!\n\nMy dearest sisters, have you ever wondered what unique treasures God has placed inside you? Each one of you is wonderfully made with specific talents and abilities designed by Him for a special purpose. Don't underestimate the quiet nudges or the things you naturally love to do; those are often clues to your divine gifts.\n\nIt's not enough to simply discover these gifts; God calls us to nurture and grow them, like seeds planted in fertile ground. Whether it's a gift for teaching, creating, serving, listening, or leading, dedicate time to develop it. When you use your gifts, you’re not just serving others; you're glorifying God and fulfilling a part of your beautiful destiny.\n\nSo, take a moment today to prayerfully ask God to reveal your gifts more clearly. Begin using them, even in small ways, and watch how He multiplies your efforts. Your journey of discovery and development is a powerful act of worship. God has a plan for you.\n\n1 Peter 4:10: \"Each of you should use whatever gift you have received to serve others, as faithful stewards of God’s grace in its various forms.\"\n\n#DivineGifts #PurposeDriven #GrowInFaith #LadiesOfDestiny #MabintiWenyeHatima",
         "lang": "en",
@@ -344,8 +344,13 @@
           "en": "Discovering and Developing Your Gifts",
           "sw": "Kugundua na Kukuza Zawadi Zako"
         },
+        "ig": {
+          "id": "18053399777592180",
+          "permalink": "https://www.instagram.com/p/DeJQch8AUiz/"
+        },
         "fb": {
-          "id": "122192340284938552"
+          "id": "710815315448548_122192340284938552",
+          "permalink": "https://www.facebook.com/photo.php?fbid=122192340284938552&set=a.122103534068938552&type=3"
         }
       }
     },
@@ -866,6 +871,13 @@
       "date": "2026-10-08",
       "slot": "10:00",
       "message": "10:00 FB half pre-scheduled via Meta (publishes 2026-10-08T07:00:00.000Z, English) — topic #16 \"Serving Without Expecting Recognition\" / \"Kutumikia bila Kutegemea Sifa\" (SERVICE & GOOD DEEDS); \"pic_awcs5fv4v2.jpg\"; IG half to be posted by a landed run in the catch-up window"
+    },
+    {
+      "ts": "2026-10-06T07:33:38.358Z",
+      "level": "success",
+      "date": "2026-10-06",
+      "slot": "10:00",
+      "message": "10:00 Auto: published — \"pic_sib8tyw6fg.jpg\" | en | no topic | IG ✓ | FB ✓"
     }
   ]
 }
