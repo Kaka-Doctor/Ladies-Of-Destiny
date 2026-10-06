@@ -367,11 +367,30 @@
           "id": "122192513918938552"
         }
       }
+    },
+    "2026-10-08": {
+      "10:00": {
+        "status": "scheduled",
+        "publishTime": "2026-10-08T07:00:00.000Z",
+        "at": "2026-10-06T00:48:34.900Z",
+        "photo": "pic_awcs5fv4v2.jpg",
+        "caption": "𝗦𝗘𝗥𝗩𝗘 𝗤𝗨𝗜𝗘𝗧𝗟𝗬, 𝗚𝗢𝗗 𝗦𝗘𝗘𝗦 𝗘𝗩𝗘𝗥𝗬𝗧𝗛𝗜𝗡𝗚!\n\nMy beautiful sisters, have you ever felt the pull to be noticed when you serve, whether it's helping at church or simply being kind? It's natural to want appreciation, but as Ladies of Destiny, our true joy comes from serving God with a pure heart, not for human applause.\n\nRemember, true service isn't about the spotlight; it's about pouring out love because Christ first loved us. When we serve quietly, behind the scenes, or without seeking credit, we truly reflect the humble heart of Jesus, who came not to be served, but to serve.\n\nGod sees every single act of kindness, every sacrifice, and every moment you choose to serve Him and others, even when no one else does. Your humble heart is precious to Him, and your reward is from above. You are chosen.\n\nMatthew 6:3-4 (NIV): \"But when you give to the needy, do not let your left hand know what your right hand is doing, so that your giving may be in secret. Then your Father, who sees what is done in secret, will reward you.\"\n\n#HumbleService #ServeGod #SecretActsOfKindness #LadiesOfDestiny #MabintiWenyeHatima",
+        "lang": "en",
+        "topic": {
+          "n": 16,
+          "cat": "SERVICE & GOOD DEEDS",
+          "en": "Serving Without Expecting Recognition",
+          "sw": "Kutumikia bila Kutegemea Sifa"
+        },
+        "fb": {
+          "id": "122192685590938552"
+        }
+      }
     }
   },
   "rotation": {
     "photo": 10,
-    "topic": 15,
+    "topic": 16,
     "fallbackEn": 2,
     "fallbackSw": 0,
     "deck": [
@@ -582,7 +601,7 @@
       "WhatsApp Image 2026-08-03 xcbdxfbdat 10.35.48 AM.jpeg",
       "pic_348slr32s1.jpg"
     ],
-    "deckPos": 6,
+    "deckPos": 7,
     "deckEpoch": 1
   },
   "events": [
@@ -840,6 +859,13 @@
       "date": "2026-10-05",
       "slot": "10:00",
       "message": "10:00 Auto: published — \"pic_36xnk0p5cp.jpg\" | sw | no topic | IG ✓ | FB ✓"
+    },
+    {
+      "ts": "2026-10-06T00:48:34.900Z",
+      "level": "info",
+      "date": "2026-10-08",
+      "slot": "10:00",
+      "message": "10:00 FB half pre-scheduled via Meta (publishes 2026-10-08T07:00:00.000Z, English) — topic #16 \"Serving Without Expecting Recognition\" / \"Kutumikia bila Kutegemea Sifa\" (SERVICE & GOOD DEEDS); \"pic_awcs5fv4v2.jpg\"; IG half to be posted by a landed run in the catch-up window"
     }
   ]
 }
