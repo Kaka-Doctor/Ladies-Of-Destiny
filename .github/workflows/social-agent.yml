@@ -3,28 +3,28 @@ name: Ladies of Destiny Agent
 # ─────────────────────────────────────────────────────────────────────────────
 #  Ladies of Destiny — posts ONE image + ONE caption (written by Google Gemini
 #  in the "Lady of Destiny" persona) to the "Ladies Of Destiny" Facebook page
-#  AND its Instagram account every day at 10:00 EAT — caption language
+#  AND its Instagram account every day at 09:00 EAT — caption language
 #  alternating daily: English one day, Kiswahili the next (owner rule
 #  2026-09-22).
 #
 #  GitHub's cron fires this workflow on TWO schedules:
-#    • "3 7 * * *"   — daily 10:03 EAT PUNCTUALITY fire: the first run after
-#      the 10:00 slot publishes the Instagram half at ~10:04-10:07 EAT (IG's
+#    • "3 6 * * *"   — daily 09:03 EAT PUNCTUALITY fire: the first run after
+#      the 09:00 slot publishes the Instagram half at ~09:04-09:07 EAT (IG's
 #      own API scheduling is not available, so a landed run right after the
-#      slot is as close to 10:00 as GitHub can get; owner rule 2026-09-23:
-#      "if possible it would also post on ig at 10:00am").
+#      slot is as close to 09:00 as GitHub can get; owner rule 2026-10-07:
+#      post at 09:00 EAT — TLP 06:00, LOD 09:00, BTM 12:00, staggered).
 #    • "13,43 * * * *" — 30-min heartbeat around the clock (off-peak minutes
 #      — GitHub drops scheduled runs at peak minutes when Actions load is
 #      high). Retries for a missed IG half land on these fires within the
-#      240-min catch-up window (10:00-14:00 EAT, "graceMinutes" in
-#      data/config.json — the SAME 4-hour window Biblia Tafsiri Mbalimbali
-#      posts reliably with every day, owner rule 2026-09-24); past the
+#      420-min catch-up window (09:00-16:00 EAT, "graceMinutes" in
+#      data/config.json — widened 2026-10-07, owner rule "make sure it
+#      posts everyday"; sibling pages force-rescue the same afternoon); past the
 #      window the day's IG half is skipped (the force button rescues it
 #      manually, posting just the IG half).
 #  Beyond that, the timing barely matters: every run that lands PRE-SCHEDULES
 #  the next "scheduleDays" days (default 3) with META'S OWN scheduled
 #  publishing — Meta's servers then publish each Facebook post exactly at
-#  10:00 EAT, no matter when or whether GitHub fires again. Instagram halves
+#  09:00 EAT, no matter when or whether GitHub fires again. Instagram halves
 #  reuse the slot's pinned image + caption.
 #
 #  MUTUAL RESCUE (owner rule 2026-09-24): every landed run also checks the
@@ -43,7 +43,8 @@ name: Ladies of Destiny Agent
 #  data/photos/ (any JPG/PNG).
 #
 #  ⟶ To CHANGE posting time: edit "slots" (and "timezone") in data/config.json
-#    only — this file never needs to change.
+#    only — the one exception in this file is the punctuality cron below,
+#    which must follow the slot time (09:03 EAT for a 09:00 slot).
 # ⟶ To POST RIGHT NOW (or rescue a MISSED slot the same day): Actions tab →
 #    "Ladies of Destiny Agent" → "Run workflow" → tick "force".
 # ⟶ To TEST without publishing: same, but tick "dryRun".
@@ -60,7 +61,7 @@ name: Ladies of Destiny Agent
 
 on:
   schedule:
-    - cron: "3 7 * * *"    # daily 10:03 EAT punctuality fire for the IG half
+    - cron: "3 6 * * *"    # daily 09:03 EAT punctuality fire for the IG half
     - cron: "13,43 * * * *" # 30-min heartbeat (off-peak minutes)
   workflow_dispatch:
     inputs:

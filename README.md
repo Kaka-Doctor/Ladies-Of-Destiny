@@ -1,6 +1,6 @@
 # Ladies Of Destiny — Daily Devotional Auto-Poster
 
-Posts **one devotional per day at 10:00 EAT** to the **Ladies Of Destiny** Facebook page **and** its Instagram account, with captions written by **Google Gemini** in the *Lady of Destiny (Binti Mwenye Hatima ya Kimungu)* persona — languages alternating daily: **English today → Kiswahili tomorrow**, forever.
+Posts **one devotional per day at 09:00 EAT** (owner rule 2026-10-07: TLP 06:00, LOD 09:00, BTM 12:00 — staggered through the day) to the **Ladies Of Destiny** Facebook page **and** its Instagram account, with captions written by **Google Gemini** in the *Lady of Destiny (Binti Mwenye Hatima ya Kimungu)* persona — languages alternating daily: **English today → Kiswahili tomorrow**, forever.
 
 Each day's post is written about **one assigned topic** from [`data/topics.json`](data/topics.json) — the owner's list of 100 topics in 8 categories, used in order (topic #1 on day 1, #2 on day 2, …) and cycling every 100 days. Swahili days use the topic's Swahili title, English days the English one.
 
@@ -55,16 +55,16 @@ The owner directive (2026-09-23): instead of Gemini freely choosing a theme, **t
 
 ## How it stays reliable (the Biblia Tafsiri Mbalimbali model, owner rule 2026-09-24)
 
-GitHub silently drops most scheduled runs on young accounts — this agent **never depends on GitHub firing at 10:00**:
+GitHub silently drops most scheduled runs on young accounts — this agent **never depends on GitHub firing at 09:00**:
 
-1. **Facebook — punctual by construction.** Every landed run pre-schedules the next 3 days on **Meta's own scheduler** (`scheduled_publish_time`), which publishes exactly at 10:00 EAT. One landed run every ~2 days is enough.
-2. **Instagram — catch-up, soon after 10:00.** IG's API cannot schedule posts (re-verified live 2026-09-23: `scheduled_publish_time` is whitelist-gated — "(#3) User must be on whitelist"), so the first landed run after 10:00 publishes the IG half with the slot's pinned image + caption. Normally that is the workflow's built-in **10:03 EAT punctuality fire** — IG lands at ~10:04–10:07 EAT. If that fire is dropped, the every-30-min heartbeat retries within a **240-minute window** (10:00–14:00 EAT, `graceMinutes: 240`) — **the same 4-hour catch-up window Biblia Tafsiri Mbalimbali has posted reliably with every single day** (owner rule 2026-09-24: *"do the same on these other pages as Biblia"*). Past 14:00 the day's IG half is **skipped** (the event log records a `partial` slot — the **force** button can still post it manually, see below); IG never goes out at arbitrary times of day.
+1. **Facebook — punctual by construction.** Every landed run pre-schedules the next 3 days on **Meta's own scheduler** (`scheduled_publish_time`), which publishes exactly at 09:00 EAT. One landed run every ~2 days is enough.
+2. **Instagram — catch-up, soon after 09:00.** IG's API cannot schedule posts (re-verified live 2026-09-23: `scheduled_publish_time` is whitelist-gated — "(#3) User must be on whitelist"), so the first landed run after 09:00 publishes the IG half with the slot's pinned image + caption. Normally that is the workflow's built-in **09:03 EAT punctuality fire** — IG lands at ~09:04–09:07 EAT. If that fire is dropped, the every-30-min heartbeat retries within a **420-minute window** (09:00–16:00 EAT, `graceMinutes: 420` — widened 2026-10-07, owner rule *"make sure it posts everyday"*; sibling pages force-rescue the same afternoon). Past 16:00 the day's IG half is **skipped** (the event log records a `partial` slot — the **force** button can still post it manually, see below); IG never goes out at arbitrary times of day.
 3. **A failed IG attempt never closes a slot.** If an IG publish fails mid-window (network blip, container timeout), the slot stays open (`scheduled`, IG pending) and EVERY later landed run retries it until the window lapses. One transient error never costs a post.
 4. **No double-posting, ever.** Before retrying, the agent scans the live IG feed for a post already carrying this slot's caption — a publish that timed out but actually succeeded server-side (phantom) is adopted, not repeated. Manual posts of the same content are adopted too. Runs are also queued (workflow concurrency group) so two runs never race.
-5. **Punctuality fire + heartbeat.** The workflow fires daily at **10:03 EAT** (the punctuality fire that lands the IG half minutes after the slot) and every 30 min (`:13`/`:43`, off-peak minutes) as heartbeat, so drops cost nothing — only landed runs do work.
+5. **Punctuality fire + heartbeat.** The workflow fires daily at **09:03 EAT** (the punctuality fire that lands the IG half minutes after the slot) and every 30 min (`:13`/`:43`, off-peak minutes) as heartbeat, so drops cost nothing — only landed runs do work.
 6. **Mutual rescue (new, 2026-09-24).** The three page agents (this one, Biblia Tafsiri Mbalimbali, Teacher's Lesson Plan) watch each other: **any landed run on ANY of the three pages also checks the other two** via the GitHub API and dispatches their workflow when a sibling has an IG half due but no landed run of its own — API dispatches are 100% reliable, unlike cron. So Biblia's reliable run landings now wake this page too. Token: `dispatchToken` in `data/config.json` (already configured) — a `DISPATCH_TOKEN` repo secret would override it if ever added. Dispatched runs skip their own sibling check (no ping-pong).
 
-**Want IG even closer to 10:00, or a backup pinger?** The built-in 10:03 EAT fire already lands IG at ~10:04 — about as close as possible, because IG's API cannot schedule posts and a run must land after the slot. For a redundant external backup (useful if GitHub has a bad dropping day), create a free cron-job.org job that pings the workflow daily at 10:05 EAT (Africa/Dar_es_Salaam): URL `POST https://api.github.com/repos/Kaka-Doctor/Ladies-Of-Destiny/actions/workflows/social-agent.yml/dispatches`, header `Authorization: Bearer <your GitHub PAT>`, body `{"ref":"main"}` — the landed run then publishes the IG half within ~1 minute.
+**Want IG even closer to 09:00, or a backup pinger?** The built-in 09:03 EAT fire already lands IG at ~09:04 — about as close as possible, because IG's API cannot schedule posts and a run must land after the slot. For a redundant external backup (useful if GitHub has a bad dropping day), create a free cron-job.org job that pings the workflow daily at 09:05 EAT (Africa/Dar_es_Salaam): URL `POST https://api.github.com/repos/Kaka-Doctor/Ladies-Of-Destiny/actions/workflows/social-agent.yml/dispatches`, header `Authorization: Bearer <your GitHub PAT>`, body `{"ref":"main"}` — the landed run then publishes the IG half within ~1 minute.
 
 ## Daily buttons (Actions tab → "Ladies of Destiny Agent" → Run workflow)
 
@@ -76,9 +76,9 @@ GitHub silently drops most scheduled runs on young accounts — this agent **nev
 
 | Want | Do |
 |------|----|
-| Change posting time | `data/config.json` → `"slots": "10:00"` (EAT) |
+| Change posting time | `data/config.json` → `"slots": "09:00"` (EAT) |
 | Pause posting | `data/config.json` → `"autoPost": false` (pending Meta posts are cancelled too) |
-| IG retry window | `data/config.json` → `"graceMinutes": 240` (the Biblia model — how long after slot time a missed IG half stays rescuable; past it, the **force** button is the only rescue) |
+| IG retry window | `data/config.json` → `"graceMinutes": 420` (widened 2026-10-07 — how long after slot time a missed IG half stays rescuable; sibling pages force-rescue the same afternoon, the **force** button is the manual rescue) |
 | Add / replace images | Upload to `data/photos/` — new ones join the current shuffled deck at a random position (no waiting a full cycle) |
 | Change / reorder topics | Edit `data/topics.json` (one per day, in order, cycling) |
 | Restart the topic queue | `data/state.json` → `"rotation": { "topic": 0 }` |
