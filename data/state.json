@@ -356,9 +356,9 @@
     },
     "2026-10-07": {
       "10:00": {
-        "status": "partial",
+        "status": "published",
+        "at": "2026-10-07T17:46:01.703Z",
         "publishTime": "2026-10-07T07:00:00.000Z",
-        "at": "2026-10-07T07:00:00.000Z",
         "photo": "WhatsApp Image 2026-08-02 sat 11.50.03 PM.jpeg",
         "caption": "𝗡𝗬𝗔𝗬𝗢 𝗭𝗔𝗞𝗢 𝗭𝗔 𝗞𝗜𝗗𝗜𝗝𝗜𝗧𝗔𝗟𝗜: 𝗞𝗜𝗢𝗢 𝗖𝗛𝗔 𝗜𝗠𝗔𝗡𝗜 𝗬𝗔𝗞𝗢!\n\nBinti zangu wapendwa, ulimwengu wa kidijitali ni sehemu kubwa ya maisha yetu leo. Kila unachochapisha, unachopenda, na unachoshiriki mtandaoni kinaunda 'nyayo zako za kidijitali' – taswira yako unayoijenga machoni pa wengine. Je, taswira hii inamwakilisha Kristo ndani yako?\n\nKama binti wenye hatima ya kimungu, nyayo zako za kidijitali ni fursa ya kipekee ya kutoa ushuhuda hai wa imani yako. Hebu tuhakikishe maneno yetu, picha zetu, na mienendo yetu yote mtandaoni inatoa heshima kwa Mungu na kuwainua wengine. Uwe balozi wa matumaini, upendo, na usafi katika ulimwengu huu wa kidijitali.\n\nKumbuka, Kristo anaangaza kupitia wewe, hata kwenye skrini yako. Chagua kuangazia nuru ya Mungu kwa kila chapisho. Umekaguliwa, binti yangu!\n\n\"Na kila mfanyalo, kwa neno au kwa tendo, fanyeni yote kwa jina la Bwana Yesu, mkimshukuru Mungu Baba kwa yeye.\" Wakolosai 3:17\n\n#NyayoZaKidijitali #UshuhudaWaKristo #BintiWaMungu #LadiesOfDestiny #MabintiWenyeHatima",
         "lang": "sw",
@@ -367,6 +367,10 @@
           "cat": "DIGITAL LIFE & MODERN CULTURE",
           "en": "Your Digital Footprint and Your Testimony",
           "sw": "Nyayo Zako za Kidijitali na Ushuhuda Wako"
+        },
+        "ig": {
+          "id": "18069510137785094",
+          "permalink": "https://www.instagram.com/p/DeM7VLglxp4/"
         },
         "fb": {
           "id": "710815315448548_122192513918938552",
@@ -912,6 +916,13 @@
       "date": "2026-10-07",
       "slot": "10:00",
       "message": "10:00 partial — FB published by Meta on time, but no landed run caught up the IG half within 240 min"
+    },
+    {
+      "ts": "2026-10-07T17:46:01.703Z",
+      "level": "success",
+      "date": "2026-10-07",
+      "slot": "10:00",
+      "message": "10:00 Auto: published — \"WhatsApp Image 2026-08-02 sat 11.50.03 PM.jpeg\" | sw | no topic | IG ✓ | FB ✓"
     }
   ]
 }
