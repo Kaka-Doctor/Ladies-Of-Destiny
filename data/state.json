@@ -442,11 +442,30 @@
           "id": "122193012626938552"
         }
       }
+    },
+    "2026-10-11": {
+      "09:00": {
+        "status": "scheduled",
+        "publishTime": "2026-10-11T06:00:00.000Z",
+        "at": "2026-10-08T23:57:45.356Z",
+        "photo": "WhatsApp Image 2026-0dfsdf8-03 at 10.35.50 AM.jpeg",
+        "caption": "𝗧𝗔𝗕𝗜𝗔 𝗬𝗔𝗞𝗢, 𝗡𝗚𝗨𝗭𝗢 𝗬𝗔 𝗨𝗢𝗡𝗚𝗢𝗭𝗜 𝗪𝗔𝗞𝗢 𝗪𝗔 𝗞𝗜𝗠𝗨𝗡𝗚𝗨!\n\nBinti zangu wapendwa, mara nyingi tunafikiria uongozi ni cheo, mamlaka, au kuwa mbele ya wengine. Lakini ukweli ni kwamba, safari ya uongozi wa kweli, uongozi unaoleta mabadiliko chanya, huanza na kitu kimoja muhimu: tabia yako.\n\nTabia njema hujengwa katika maamuzi madogomadogo unayofanya kila siku — uaminifu wako, uadilifu wako, unyenyekevu wako, na upendo wako. Mungu anatutazama sisi sio tu kwa kile tunachofanya, bali na kwa jinsi tulivyo ndani; anataka tuakisi tabia yake takatifu katika kila hatua. Wakati tabia yako inalingana na Neno la Mungu, unakuwa kiongozi wa kweli popote ulipo, hata bila cheo. Umekaguliwa!\n\nWewe ni binti wa Mfalme, umeitwa kuongoza kwa mfano, kwa nuru ya Kristo inayong'aa ndani yako. Hivyo basi, jitahidi kujenga tabia imara yenye kumcha Mungu, kwani ndiyo itakayokuwezesha kutimiza hatima yako ya kimungu na kuwa ushawishi chanya kwa wengine. Endelea kuang'aa, binti!\n\n1 Timotheo 4:12: Mtu awaye yote asiudharau ujana wako; bali uwe mfano kwa waaminio, kwa maneno, na kwa mwenendo, na kwa upendo, na kwa imani, na kwa usafi.\n\n#TabiaNjema #UongoziWaKimungu #BintiKiongozi #LadiesOfDestiny #MabintiWenyeHatima",
+        "lang": "sw",
+        "topic": {
+          "n": 21,
+          "cat": "LEADERSHIP & INFLUENCE",
+          "en": "Leadership Begins With Character",
+          "sw": "Uongozi Huanza na Tabia"
+        },
+        "fb": {
+          "id": "122193211490938552"
+        }
+      }
     }
   },
   "rotation": {
     "photo": 10,
-    "topic": 20,
+    "topic": 21,
     "fallbackEn": 2,
     "fallbackSw": 0,
     "deck": [
@@ -667,7 +686,7 @@
       "WhatsApp Image 2026-08-03 xcbdxfbdat 10.35.48 AM.jpeg",
       "pic_348slr32s1.jpg"
     ],
-    "deckPos": 11,
+    "deckPos": 12,
     "deckEpoch": 1
   },
   "events": [
@@ -995,6 +1014,13 @@
       "date": "2026-10-08",
       "slot": "09:00",
       "message": "09:00 Auto: published — \"WhatsApp Image 2026-08zczdcz-02 at 11.50.06 PM.jpeg\" | en | no topic | IG ✓ | FB ✓"
+    },
+    {
+      "ts": "2026-10-08T23:57:45.357Z",
+      "level": "info",
+      "date": "2026-10-11",
+      "slot": "09:00",
+      "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-10-11T06:00:00.000Z, Kiswahili) — topic #21 \"Leadership Begins With Character\" / \"Uongozi Huanza na Tabia\" (LEADERSHIP & INFLUENCE); \"WhatsApp Image 2026-0dfsdf8-03 at 10.35.50 AM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
     }
   ]
 }
