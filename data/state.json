@@ -384,9 +384,9 @@
     },
     "2026-10-08": {
       "09:00": {
-        "status": "scheduled",
+        "status": "published",
+        "at": "2026-10-08T06:01:33.380Z",
         "publishTime": "2026-10-08T06:00:00.000Z",
-        "at": "2026-10-07T17:54:02.158Z",
         "photo": "WhatsApp Image 2026-08zczdcz-02 at 11.50.06 PM.jpeg",
         "caption": "𝗬𝗢𝗨𝗥 𝗧𝗥𝗨𝗘 𝗦𝗘𝗟𝗙, 𝗔𝗟𝗪𝗔𝗬𝗦 𝗔𝗡𝗗 𝗘𝗩𝗘𝗥𝗬𝗪𝗛𝗘𝗥𝗘!\n\nMy beautiful sisters, let's talk about integrity – living as the same genuine person, whether you're with friends, family, online, or alone. It means your words and actions always align with your heart and values, even when no one is watching, because God always is.\n\nGod desires for us to walk in truth because He is truth itself. When you live with integrity, you build a strong foundation of trust, you honor God with your whole being, and you become a shining light that reflects His beautiful character to the world around you.\n\nIt might not always be easy, but choose to stand firm in your convictions, letting your inner light guide every decision and interaction. Remember that your consistency is a powerful testimony to your faith, dear one. You are chosen to live a life of authentic beauty!\n\nProverbs 11:3 (NIV): \"The integrity of the upright guides them, but the unfaithful are destroyed by their duplicity.\"\n\n#IntegrityMatters #LiveWithTruth #AuthenticFaith #LadiesOfDestiny #MabintiWenyeHatima",
         "lang": "en",
@@ -395,6 +395,10 @@
           "cat": "CHRISTLIKE CHARACTER",
           "en": "Integrity: Being the Same Person Everywhere",
           "sw": "Uadilifu: Kuwa Mtu Yuleyule Popote Ulipo"
+        },
+        "ig": {
+          "id": "18113655434039661",
+          "permalink": "https://www.instagram.com/p/DeOPf_mGKnL/"
         },
         "fb": {
           "id": "122192975564938552"
@@ -984,6 +988,13 @@
       "date": "2026-10-10",
       "slot": "09:00",
       "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-10-10T06:00:00.000Z, English) — topic #20 \"Making Wise Choices About Relationships\" / \"Kufanya Maamuzi ya Hekima Kuhusu Mahusiano\" (PURITY & WISDOM); \"WhatsApp Image 202sdvsf6-08-0dfvsdv3 at 10.35.42 AM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
+    },
+    {
+      "ts": "2026-10-08T06:01:33.380Z",
+      "level": "success",
+      "date": "2026-10-08",
+      "slot": "09:00",
+      "message": "09:00 Auto: published — \"WhatsApp Image 2026-08zczdcz-02 at 11.50.06 PM.jpeg\" | en | no topic | IG ✓ | FB ✓"
     }
   ]
 }
