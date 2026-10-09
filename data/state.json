@@ -466,11 +466,30 @@
           "id": "122193211490938552"
         }
       }
+    },
+    "2026-10-12": {
+      "09:00": {
+        "status": "scheduled",
+        "publishTime": "2026-10-12T06:00:00.000Z",
+        "at": "2026-10-09T23:15:41.735Z",
+        "photo": "WhatsApp Imagzdfcsdce 2026-08-02 at 11.50.08 PM.jpeg",
+        "caption": "𝗘𝗫𝗖𝗘𝗟 𝗙𝗢𝗥 𝗛𝗜𝗦 𝗚𝗟𝗢𝗥𝗬 𝗜𝗡 𝗘𝗩𝗘𝗥𝗬 𝗦𝗜𝗡𝗚𝗟𝗘 𝗧𝗛𝗜𝗡𝗚!\n\nMy dearest sisters, have you ever thought about how every task you do, no matter how small, can be an act of worship? When we choose to do our best in school, at home, or in any work, we're not just doing it for ourselves or for others; we're doing it as unto the Lord. This is what true excellence looks like for a Lady of Destiny.\n\nThis mindset transforms the mundane into the miraculous! It means giving your best effort, not out of pressure, but out of a heart full of love and gratitude for God, who gave you strength and abilities. Let your commitment to excellence reflect the magnificent God you serve, knowing that He deserves your very best.\n\nRemember, your diligence and pursuit of excellence in every area of your life are a powerful testimony to God's presence within you. You are fulfilling your divine purpose by honoring Him in all you do. God sees your heart and your effort, beloved ones. You are chosen!\n\n\"Whatever you do, work at it with all your heart, as working for the Lord, not for human masters,\" Colossians 3:23 (NIV)\n\n#ExcellenceForGod #DivinePurpose #WorkUntoTheLord #LadiesOfDestiny #MabintiWenyeHatima",
+        "lang": "en",
+        "topic": {
+          "n": 22,
+          "cat": "EDUCATION, WORK & PURPOSE",
+          "en": "Excellence: Doing Everything as Unto the Lord",
+          "sw": "Ubora: Kufanya Kila Kitu Kama kwa Bwana"
+        },
+        "fb": {
+          "id": "122193393074938552"
+        }
+      }
     }
   },
   "rotation": {
     "photo": 10,
-    "topic": 21,
+    "topic": 22,
     "fallbackEn": 2,
     "fallbackSw": 0,
     "deck": [
@@ -691,7 +710,7 @@
       "WhatsApp Image 2026-08-03 xcbdxfbdat 10.35.48 AM.jpeg",
       "pic_348slr32s1.jpg"
     ],
-    "deckPos": 12,
+    "deckPos": 13,
     "deckEpoch": 1
   },
   "events": [
@@ -1033,6 +1052,13 @@
       "date": "2026-10-09",
       "slot": "09:00",
       "message": "09:00 Auto: published — \"WhatsApp Image 2026-08-zdvzdv02 at 11.50.06 PM.jpeg\" | sw | no topic | IG ✓ | FB ✓"
+    },
+    {
+      "ts": "2026-10-09T23:15:41.735Z",
+      "level": "info",
+      "date": "2026-10-12",
+      "slot": "09:00",
+      "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-10-12T06:00:00.000Z, English) — topic #22 \"Excellence: Doing Everything as Unto the Lord\" / \"Ubora: Kufanya Kila Kitu Kama kwa Bwana\" (EDUCATION, WORK & PURPOSE); \"WhatsApp Imagzdfcsdce 2026-08-02 at 11.50.08 PM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
     }
   ]
 }
