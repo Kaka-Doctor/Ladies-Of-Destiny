@@ -431,9 +431,9 @@
     },
     "2026-10-10": {
       "09:00": {
-        "status": "scheduled",
+        "status": "published",
+        "at": "2026-10-10T09:43:30.071Z",
         "publishTime": "2026-10-10T06:00:00.000Z",
-        "at": "2026-10-07T23:50:04.416Z",
         "photo": "WhatsApp Image 202sdvsf6-08-0dfvsdv3 at 10.35.42 AM.jpeg",
         "caption": "𝗡𝗔𝗩𝗜𝗚𝗔𝗧𝗜𝗡𝗚 𝗥𝗘𝗟𝗔𝗧𝗜𝗢𝗡𝗦𝗛𝗜𝗣𝗦 𝗪𝗜𝗧𝗛 𝗗𝗜𝗩𝗜𝗡𝗘 𝗪𝗜𝗦𝗗𝗢𝗠!\n\nMy beloved sisters, your journey with God is precious, and the people you walk with can profoundly shape it. Relationships, whether friendships or romantic interests, are powerful forces in our lives, capable of either drawing us closer to God's purpose or gently pulling us away. This is why making wise choices about who to share your heart and time with is so incredibly important.\n\nDivine wisdom is your guiding light in these decisions. Pray about your connections, seek godly counsel, and align your choices with God's Word. Ask yourself if these relationships truly honor Him and support your walk in purity and faith, always striving for companionship that uplifts and encourages your spiritual growth.\n\nRemember, true connection is rooted in shared values and a mutual desire to glorify God. Choose wisely, my dear sisters, for your relationships reflect your heart and destiny. God has a beautiful plan for you!\n\nAbove all else, guard your heart, for everything you do flows from it.\nProverbs 4:23\n\n#GuardYourHeart #GodlyRelationships #PurityJourney #LadiesOfDestiny #MabintiWenyeHatima",
         "lang": "en",
@@ -443,8 +443,13 @@
           "en": "Making Wise Choices About Relationships",
           "sw": "Kufanya Maamuzi ya Hekima Kuhusu Mahusiano"
         },
+        "ig": {
+          "id": "18380333527234946",
+          "permalink": "https://www.instagram.com/p/DeTyfhuFxrG/"
+        },
         "fb": {
-          "id": "122193012626938552"
+          "id": "710815315448548_122193012626938552",
+          "permalink": "https://www.facebook.com/photo.php?fbid=122193012626938552&set=a.122103534068938552&type=3"
         }
       }
     },
@@ -1059,6 +1064,13 @@
       "date": "2026-10-12",
       "slot": "09:00",
       "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-10-12T06:00:00.000Z, English) — topic #22 \"Excellence: Doing Everything as Unto the Lord\" / \"Ubora: Kufanya Kila Kitu Kama kwa Bwana\" (EDUCATION, WORK & PURPOSE); \"WhatsApp Imagzdfcsdce 2026-08-02 at 11.50.08 PM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
+    },
+    {
+      "ts": "2026-10-10T09:43:30.071Z",
+      "level": "success",
+      "date": "2026-10-10",
+      "slot": "09:00",
+      "message": "09:00 Auto: published — \"WhatsApp Image 202sdvsf6-08-0dfvsdv3 at 10.35.42 AM.jpeg\" | en | no topic | IG ✓ | FB ✓"
     }
   ]
 }
