@@ -490,11 +490,30 @@
           "id": "122193393074938552"
         }
       }
+    },
+    "2026-10-13": {
+      "09:00": {
+        "status": "scheduled",
+        "publishTime": "2026-10-13T06:00:00.000Z",
+        "at": "2026-10-10T23:32:43.277Z",
+        "photo": "WhatsApp Image 2026-08-02 at 1dvsdvs1.50.32 PM.jpeg",
+        "caption": "𝗨𝗞𝗨𝗥𝗔𝗦𝗔 𝗪𝗔𝗞𝗢, 𝗡𝗨𝗥𝗨 𝗬𝗔𝗞𝗢: 𝗠𝗧𝗔𝗪𝗔𝗟𝗜 𝗪𝗔 𝗞𝗥𝗜𝗦𝗧𝗢!\n\nDada zangu wapenzi, dunia ya mitandao ya kijamii ni kama jukwaa kubwa, na kila siku tunapata fursa ya kupaza sauti zetu. Je, umewahi kujiuliza, kama binti wa Kristo, nini hasa tunapaswa kuweka kwenye kurasa zetu? Kumbuka wewe ni nani katika Kristo kabla hujaweka chochote; wewe ni malkia, binti wa Mfalme wa Wafalme.\n\nKila picha, kila ujumbe, na kila video unayochapisha inapaswa kuakisi nuru ya Kristo ndani yako. Tuchapishe mambo yanayojenga, yanayoleta matumaini, yanayohamasisha wengine kumjua Mungu zaidi, na yanayoonyesha uzuri wa usafi na utakatifu, badala ya yale yanayoweza kupotosha au kumpa Mungu utukufu mdogo.\n\nHuu ni ushuhuda wako wa kimya kimya, ukimtumikia Mungu hata kupitia skrini. Hebu kurasa zetu ziwe vielelezo vya wema, hekima, na upendo wa Mungu. Mungu ana mpango wako kwa kila post!\n\n\"Mtu awaye yote asiudharau ujana wako; bali uwe mfano kwa waaminio, katika usemi, na mwenendo, na upendo, na imani, na usafi.\" — 1 Timotheo 4:12\n\n#UshuhudaMtandaoni #NuruYaKristoKidijitali #MaishaYaUsafiOnline #LadiesOfDestiny #MabintiWenyeHatima",
+        "lang": "sw",
+        "topic": {
+          "n": 23,
+          "cat": "DIGITAL LIFE & MODERN CULTURE",
+          "en": "What Should a Christian Girl Post Online?",
+          "sw": "Msichana wa Kikristo Anapaswa Ku-post Nini Mtandaoni?"
+        },
+        "fb": {
+          "id": "122193556454938552"
+        }
+      }
     }
   },
   "rotation": {
     "photo": 10,
-    "topic": 22,
+    "topic": 23,
     "fallbackEn": 2,
     "fallbackSw": 0,
     "deck": [
@@ -715,7 +734,7 @@
       "WhatsApp Image 2026-08-03 xcbdxfbdat 10.35.48 AM.jpeg",
       "pic_348slr32s1.jpg"
     ],
-    "deckPos": 13,
+    "deckPos": 14,
     "deckEpoch": 1
   },
   "events": [
@@ -1071,6 +1090,13 @@
       "date": "2026-10-10",
       "slot": "09:00",
       "message": "09:00 Auto: published — \"WhatsApp Image 202sdvsf6-08-0dfvsdv3 at 10.35.42 AM.jpeg\" | en | no topic | IG ✓ | FB ✓"
+    },
+    {
+      "ts": "2026-10-10T23:32:43.278Z",
+      "level": "info",
+      "date": "2026-10-13",
+      "slot": "09:00",
+      "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-10-13T06:00:00.000Z, Kiswahili) — topic #23 \"What Should a Christian Girl Post Online?\" / \"Msichana wa Kikristo Anapaswa Ku-post Nini Mtandaoni?\" (DIGITAL LIFE & MODERN CULTURE); \"WhatsApp Image 2026-08-02 at 1dvsdvs1.50.32 PM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
     }
   ]
 }
