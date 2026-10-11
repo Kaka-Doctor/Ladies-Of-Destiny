@@ -514,11 +514,30 @@
           "id": "122193556454938552"
         }
       }
+    },
+    "2026-10-14": {
+      "09:00": {
+        "status": "scheduled",
+        "publishTime": "2026-10-14T06:00:00.000Z",
+        "at": "2026-10-11T23:39:03.555Z",
+        "photo": "pic_shdzlutt56.jpg",
+        "caption": "𝗨𝗡𝗟𝗘𝗔𝗦𝗛 𝗬𝗢𝗨𝗥 𝗖𝗢𝗠𝗣𝗔𝗦𝗦𝗜𝗢𝗡, 𝗧𝗥𝗔𝗡𝗦𝗙𝗢𝗥𝗠 𝗔 𝗟𝗜𝗙𝗘!\n\nMy dearest sisters, have you ever felt a gentle tug at your heart when you see someone hurting or in need? That's God's tender Spirit stirring compassion within you, reminding you of His boundless love for all His children. It's not just a feeling; it's an invitation to reflect His heart to the world around you, a beautiful part of your divine purpose.\n\nCompassion in action means moving beyond simply feeling sorry for someone; it means stepping out in faith to offer a kind word, a helping hand, or a listening ear. It could be helping a friend with homework, comforting someone who is sad, or volunteering your time to a cause that helps others – big or small, every act of love matters.\n\nWhen you choose to act with compassion, you become a powerful vessel of God's grace, bringing light and hope where it's needed most. You're not just doing a good deed; you're living out your calling and making an eternal difference in the lives of others. You are chosen to shine!\n\n\"Dear children, let us not love with words or speech but with actions and in truth.\"\n— 1 John 3:18\n\n#CompassionInAction #ServeWithLove #SpreadKindness #LadiesOfDestiny #MabintiWenyeHatima",
+        "lang": "en",
+        "topic": {
+          "n": 24,
+          "cat": "SERVICE & GOOD DEEDS",
+          "en": "Compassion in Action",
+          "sw": "Huruma katika Vitendo"
+        },
+        "fb": {
+          "id": "122193719774938552"
+        }
+      }
     }
   },
   "rotation": {
     "photo": 10,
-    "topic": 23,
+    "topic": 24,
     "fallbackEn": 2,
     "fallbackSw": 0,
     "deck": [
@@ -739,7 +758,7 @@
       "WhatsApp Image 2026-08-03 xcbdxfbdat 10.35.48 AM.jpeg",
       "pic_348slr32s1.jpg"
     ],
-    "deckPos": 14,
+    "deckPos": 15,
     "deckEpoch": 1
   },
   "events": [
@@ -1109,6 +1128,13 @@
       "date": "2026-10-11",
       "slot": "09:00",
       "message": "09:00 Auto: published — \"WhatsApp Image 2026-0dfsdf8-03 at 10.35.50 AM.jpeg\" | sw | no topic | IG ✓ | FB ✓"
+    },
+    {
+      "ts": "2026-10-11T23:39:03.556Z",
+      "level": "info",
+      "date": "2026-10-14",
+      "slot": "09:00",
+      "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-10-14T06:00:00.000Z, English) — topic #24 \"Compassion in Action\" / \"Huruma katika Vitendo\" (SERVICE & GOOD DEEDS); \"pic_shdzlutt56.jpg\"; IG half to be posted by a landed run in the catch-up window"
     }
   ]
 }
