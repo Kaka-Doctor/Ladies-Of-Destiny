@@ -455,9 +455,9 @@
     },
     "2026-10-11": {
       "09:00": {
-        "status": "scheduled",
+        "status": "published",
+        "at": "2026-10-11T08:53:18.694Z",
         "publishTime": "2026-10-11T06:00:00.000Z",
-        "at": "2026-10-08T23:57:45.356Z",
         "photo": "WhatsApp Image 2026-0dfsdf8-03 at 10.35.50 AM.jpeg",
         "caption": "𝗧𝗔𝗕𝗜𝗔 𝗬𝗔𝗞𝗢, 𝗡𝗚𝗨𝗭𝗢 𝗬𝗔 𝗨𝗢𝗡𝗚𝗢𝗭𝗜 𝗪𝗔𝗞𝗢 𝗪𝗔 𝗞𝗜𝗠𝗨𝗡𝗚𝗨!\n\nBinti zangu wapendwa, mara nyingi tunafikiria uongozi ni cheo, mamlaka, au kuwa mbele ya wengine. Lakini ukweli ni kwamba, safari ya uongozi wa kweli, uongozi unaoleta mabadiliko chanya, huanza na kitu kimoja muhimu: tabia yako.\n\nTabia njema hujengwa katika maamuzi madogomadogo unayofanya kila siku — uaminifu wako, uadilifu wako, unyenyekevu wako, na upendo wako. Mungu anatutazama sisi sio tu kwa kile tunachofanya, bali na kwa jinsi tulivyo ndani; anataka tuakisi tabia yake takatifu katika kila hatua. Wakati tabia yako inalingana na Neno la Mungu, unakuwa kiongozi wa kweli popote ulipo, hata bila cheo. Umekaguliwa!\n\nWewe ni binti wa Mfalme, umeitwa kuongoza kwa mfano, kwa nuru ya Kristo inayong'aa ndani yako. Hivyo basi, jitahidi kujenga tabia imara yenye kumcha Mungu, kwani ndiyo itakayokuwezesha kutimiza hatima yako ya kimungu na kuwa ushawishi chanya kwa wengine. Endelea kuang'aa, binti!\n\n1 Timotheo 4:12: Mtu awaye yote asiudharau ujana wako; bali uwe mfano kwa waaminio, kwa maneno, na kwa mwenendo, na kwa upendo, na kwa imani, na kwa usafi.\n\n#TabiaNjema #UongoziWaKimungu #BintiKiongozi #LadiesOfDestiny #MabintiWenyeHatima",
         "lang": "sw",
@@ -467,8 +467,13 @@
           "en": "Leadership Begins With Character",
           "sw": "Uongozi Huanza na Tabia"
         },
+        "ig": {
+          "id": "18107923880189288",
+          "permalink": "https://www.instagram.com/p/DeWRi1gl2j2/"
+        },
         "fb": {
-          "id": "122193211490938552"
+          "id": "710815315448548_122193211490938552",
+          "permalink": "https://www.facebook.com/photo.php?fbid=122193211490938552&set=a.122103534068938552&type=3"
         }
       }
     },
@@ -1097,6 +1102,13 @@
       "date": "2026-10-13",
       "slot": "09:00",
       "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-10-13T06:00:00.000Z, Kiswahili) — topic #23 \"What Should a Christian Girl Post Online?\" / \"Msichana wa Kikristo Anapaswa Ku-post Nini Mtandaoni?\" (DIGITAL LIFE & MODERN CULTURE); \"WhatsApp Image 2026-08-02 at 1dvsdvs1.50.32 PM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
+    },
+    {
+      "ts": "2026-10-11T08:53:18.694Z",
+      "level": "success",
+      "date": "2026-10-11",
+      "slot": "09:00",
+      "message": "09:00 Auto: published — \"WhatsApp Image 2026-0dfsdf8-03 at 10.35.50 AM.jpeg\" | sw | no topic | IG ✓ | FB ✓"
     }
   ]
 }
