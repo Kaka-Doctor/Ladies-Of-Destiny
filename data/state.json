@@ -479,9 +479,9 @@
     },
     "2026-10-12": {
       "09:00": {
-        "status": "scheduled",
+        "status": "published",
+        "at": "2026-10-12T08:01:26.528Z",
         "publishTime": "2026-10-12T06:00:00.000Z",
-        "at": "2026-10-09T23:15:41.735Z",
         "photo": "WhatsApp Imagzdfcsdce 2026-08-02 at 11.50.08 PM.jpeg",
         "caption": "𝗘𝗫𝗖𝗘𝗟 𝗙𝗢𝗥 𝗛𝗜𝗦 𝗚𝗟𝗢𝗥𝗬 𝗜𝗡 𝗘𝗩𝗘𝗥𝗬 𝗦𝗜𝗡𝗚𝗟𝗘 𝗧𝗛𝗜𝗡𝗚!\n\nMy dearest sisters, have you ever thought about how every task you do, no matter how small, can be an act of worship? When we choose to do our best in school, at home, or in any work, we're not just doing it for ourselves or for others; we're doing it as unto the Lord. This is what true excellence looks like for a Lady of Destiny.\n\nThis mindset transforms the mundane into the miraculous! It means giving your best effort, not out of pressure, but out of a heart full of love and gratitude for God, who gave you strength and abilities. Let your commitment to excellence reflect the magnificent God you serve, knowing that He deserves your very best.\n\nRemember, your diligence and pursuit of excellence in every area of your life are a powerful testimony to God's presence within you. You are fulfilling your divine purpose by honoring Him in all you do. God sees your heart and your effort, beloved ones. You are chosen!\n\n\"Whatever you do, work at it with all your heart, as working for the Lord, not for human masters,\" Colossians 3:23 (NIV)\n\n#ExcellenceForGod #DivinePurpose #WorkUntoTheLord #LadiesOfDestiny #MabintiWenyeHatima",
         "lang": "en",
@@ -491,8 +491,13 @@
           "en": "Excellence: Doing Everything as Unto the Lord",
           "sw": "Ubora: Kufanya Kila Kitu Kama kwa Bwana"
         },
+        "ig": {
+          "id": "18634950082017766",
+          "permalink": "https://www.instagram.com/p/DeYwZ1yGxZk/"
+        },
         "fb": {
-          "id": "122193393074938552"
+          "id": "710815315448548_122193393074938552",
+          "permalink": "https://www.facebook.com/photo.php?fbid=122193393074938552&set=a.122103534068938552&type=3"
         }
       }
     },
@@ -1135,6 +1140,13 @@
       "date": "2026-10-14",
       "slot": "09:00",
       "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-10-14T06:00:00.000Z, English) — topic #24 \"Compassion in Action\" / \"Huruma katika Vitendo\" (SERVICE & GOOD DEEDS); \"pic_shdzlutt56.jpg\"; IG half to be posted by a landed run in the catch-up window"
+    },
+    {
+      "ts": "2026-10-12T08:01:26.528Z",
+      "level": "success",
+      "date": "2026-10-12",
+      "slot": "09:00",
+      "message": "09:00 Auto: published — \"WhatsApp Imagzdfcsdce 2026-08-02 at 11.50.08 PM.jpeg\" | en | no topic | IG ✓ | FB ✓"
     }
   ]
 }
