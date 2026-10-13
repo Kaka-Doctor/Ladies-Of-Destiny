@@ -503,9 +503,9 @@
     },
     "2026-10-13": {
       "09:00": {
-        "status": "scheduled",
+        "status": "published",
+        "at": "2026-10-13T07:08:50.773Z",
         "publishTime": "2026-10-13T06:00:00.000Z",
-        "at": "2026-10-10T23:32:43.277Z",
         "photo": "WhatsApp Image 2026-08-02 at 1dvsdvs1.50.32 PM.jpeg",
         "caption": "𝗨𝗞𝗨𝗥𝗔𝗦𝗔 𝗪𝗔𝗞𝗢, 𝗡𝗨𝗥𝗨 𝗬𝗔𝗞𝗢: 𝗠𝗧𝗔𝗪𝗔𝗟𝗜 𝗪𝗔 𝗞𝗥𝗜𝗦𝗧𝗢!\n\nDada zangu wapenzi, dunia ya mitandao ya kijamii ni kama jukwaa kubwa, na kila siku tunapata fursa ya kupaza sauti zetu. Je, umewahi kujiuliza, kama binti wa Kristo, nini hasa tunapaswa kuweka kwenye kurasa zetu? Kumbuka wewe ni nani katika Kristo kabla hujaweka chochote; wewe ni malkia, binti wa Mfalme wa Wafalme.\n\nKila picha, kila ujumbe, na kila video unayochapisha inapaswa kuakisi nuru ya Kristo ndani yako. Tuchapishe mambo yanayojenga, yanayoleta matumaini, yanayohamasisha wengine kumjua Mungu zaidi, na yanayoonyesha uzuri wa usafi na utakatifu, badala ya yale yanayoweza kupotosha au kumpa Mungu utukufu mdogo.\n\nHuu ni ushuhuda wako wa kimya kimya, ukimtumikia Mungu hata kupitia skrini. Hebu kurasa zetu ziwe vielelezo vya wema, hekima, na upendo wa Mungu. Mungu ana mpango wako kwa kila post!\n\n\"Mtu awaye yote asiudharau ujana wako; bali uwe mfano kwa waaminio, katika usemi, na mwenendo, na upendo, na imani, na usafi.\" — 1 Timotheo 4:12\n\n#UshuhudaMtandaoni #NuruYaKristoKidijitali #MaishaYaUsafiOnline #LadiesOfDestiny #MabintiWenyeHatima",
         "lang": "sw",
@@ -515,8 +515,13 @@
           "en": "What Should a Christian Girl Post Online?",
           "sw": "Msichana wa Kikristo Anapaswa Ku-post Nini Mtandaoni?"
         },
+        "ig": {
+          "id": "17911068279516722",
+          "permalink": "https://www.instagram.com/p/DebPLKlIMzZ/"
+        },
         "fb": {
-          "id": "122193556454938552"
+          "id": "710815315448548_122193556454938552",
+          "permalink": "https://www.facebook.com/photo.php?fbid=122193556454938552&set=a.122103534068938552&type=3"
         }
       }
     },
@@ -1173,6 +1178,13 @@
       "date": "2026-10-15",
       "slot": "09:00",
       "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-10-15T06:00:00.000Z, Kiswahili) — topic #25 \"Knowing God Personally, Not Just Knowing About God\" / \"Kumjua Mungu Binafsi, sio Kujua Habari Zake Tu\" (IDENTITY & RELATIONSHIP WITH GOD); \"WhatsApp Image 2026-08-02 at 11zczcz.50.07 PM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
+    },
+    {
+      "ts": "2026-10-13T07:08:50.773Z",
+      "level": "success",
+      "date": "2026-10-13",
+      "slot": "09:00",
+      "message": "09:00 Auto: published — \"WhatsApp Image 2026-08-02 at 1dvsdvs1.50.32 PM.jpeg\" | sw | no topic | IG ✓ | FB ✓"
     }
   ]
 }
