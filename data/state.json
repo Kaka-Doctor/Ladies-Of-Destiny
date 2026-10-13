@@ -538,11 +538,30 @@
           "id": "122193719774938552"
         }
       }
+    },
+    "2026-10-15": {
+      "09:00": {
+        "status": "scheduled",
+        "publishTime": "2026-10-15T06:00:00.000Z",
+        "at": "2026-10-13T02:00:52.972Z",
+        "photo": "WhatsApp Image 2026-08-02 at 11zczcz.50.07 PM.jpeg",
+        "caption": "𝗨𝗦𝗜𝗜𝗦𝗛𝗜 𝗞𝗪𝗔 𝗛𝗔𝗗𝗜𝗧𝗛𝗜: 𝗔𝗡𝗭𝗔 𝗠𝗔𝗛𝗨𝗦𝗜𝗔𝗡𝗢 𝗡𝗔𝗘!\n\nBinti zangu wapendwa, mara nyingi tunasikia habari nyingi kuhusu Mungu—tukio lake la kuumba, miujiza yake, hata mafundisho yake kutoka Kanisani. Lakini je, umewahi kujiuliza kama unamjua Mungu kwa dhati, kama rafiki yako wa karibu, au unajua tu mambo Yake?\n\nKumjua Mungu binafsi kunamaanisha zaidi ya kujua tu mambo Yake; kunamaanisha kuwa na mahusiano Naye ya ndani kabisa. Ni kuzungumza Naye moyoni mwako, kusikia sauti Yake kupitia Neno Lake, na kuhisi uwepo wake katika kila hatua ya maisha yako. Ni kujitoa kwako kwake na kumuamini yeye kikamilifu.\n\nAnza safari ya kumjua Yeye binafsi leo, binti yangu, kwa maana Yeye anakutamani sana umjue. Fungua moyo wako na umwache aingie ndani ya maisha yako yote, akuongoze na kukujaza amani isiyo na kifani. Umekaguliwa, Mungu ana mpango wako!\n\nYeremia 29:13: \"Nanyi mtanitafuta na kuniona, mtakaponitafuta kwa moyo wenu wote.\"\n\n#JuaMunguWako #UrafikiNaMungu #MahusianoNaMungu #LadiesOfDestiny #MabintiWenyeHatima",
+        "lang": "sw",
+        "topic": {
+          "n": 25,
+          "cat": "IDENTITY & RELATIONSHIP WITH GOD",
+          "en": "Knowing God Personally, Not Just Knowing About God",
+          "sw": "Kumjua Mungu Binafsi, sio Kujua Habari Zake Tu"
+        },
+        "fb": {
+          "id": "122193903638938552"
+        }
+      }
     }
   },
   "rotation": {
     "photo": 10,
-    "topic": 24,
+    "topic": 25,
     "fallbackEn": 2,
     "fallbackSw": 0,
     "deck": [
@@ -763,7 +782,7 @@
       "WhatsApp Image 2026-08-03 xcbdxfbdat 10.35.48 AM.jpeg",
       "pic_348slr32s1.jpg"
     ],
-    "deckPos": 15,
+    "deckPos": 16,
     "deckEpoch": 1
   },
   "events": [
@@ -1147,6 +1166,13 @@
       "date": "2026-10-12",
       "slot": "09:00",
       "message": "09:00 Auto: published — \"WhatsApp Imagzdfcsdce 2026-08-02 at 11.50.08 PM.jpeg\" | en | no topic | IG ✓ | FB ✓"
+    },
+    {
+      "ts": "2026-10-13T02:00:52.973Z",
+      "level": "info",
+      "date": "2026-10-15",
+      "slot": "09:00",
+      "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-10-15T06:00:00.000Z, Kiswahili) — topic #25 \"Knowing God Personally, Not Just Knowing About God\" / \"Kumjua Mungu Binafsi, sio Kujua Habari Zake Tu\" (IDENTITY & RELATIONSHIP WITH GOD); \"WhatsApp Image 2026-08-02 at 11zczcz.50.07 PM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
     }
   ]
 }
