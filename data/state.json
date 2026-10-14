@@ -527,9 +527,9 @@
     },
     "2026-10-14": {
       "09:00": {
-        "status": "scheduled",
+        "status": "published",
+        "at": "2026-10-14T06:11:42.170Z",
         "publishTime": "2026-10-14T06:00:00.000Z",
-        "at": "2026-10-11T23:39:03.555Z",
         "photo": "pic_shdzlutt56.jpg",
         "caption": "𝗨𝗡𝗟𝗘𝗔𝗦𝗛 𝗬𝗢𝗨𝗥 𝗖𝗢𝗠𝗣𝗔𝗦𝗦𝗜𝗢𝗡, 𝗧𝗥𝗔𝗡𝗦𝗙𝗢𝗥𝗠 𝗔 𝗟𝗜𝗙𝗘!\n\nMy dearest sisters, have you ever felt a gentle tug at your heart when you see someone hurting or in need? That's God's tender Spirit stirring compassion within you, reminding you of His boundless love for all His children. It's not just a feeling; it's an invitation to reflect His heart to the world around you, a beautiful part of your divine purpose.\n\nCompassion in action means moving beyond simply feeling sorry for someone; it means stepping out in faith to offer a kind word, a helping hand, or a listening ear. It could be helping a friend with homework, comforting someone who is sad, or volunteering your time to a cause that helps others – big or small, every act of love matters.\n\nWhen you choose to act with compassion, you become a powerful vessel of God's grace, bringing light and hope where it's needed most. You're not just doing a good deed; you're living out your calling and making an eternal difference in the lives of others. You are chosen to shine!\n\n\"Dear children, let us not love with words or speech but with actions and in truth.\"\n— 1 John 3:18\n\n#CompassionInAction #ServeWithLove #SpreadKindness #LadiesOfDestiny #MabintiWenyeHatima",
         "lang": "en",
@@ -539,8 +539,13 @@
           "en": "Compassion in Action",
           "sw": "Huruma katika Vitendo"
         },
+        "ig": {
+          "id": "18128691061799979",
+          "permalink": "https://www.instagram.com/p/Dedtb6vF6K9/"
+        },
         "fb": {
-          "id": "122193719774938552"
+          "id": "710815315448548_122193719774938552",
+          "permalink": "https://www.facebook.com/photo.php?fbid=122193719774938552&set=a.122103534068938552&type=3"
         }
       }
     },
@@ -1211,6 +1216,13 @@
       "date": "2026-10-16",
       "slot": "09:00",
       "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-10-16T06:00:00.000Z, English) — topic #26 \"Honesty When Nobody Is Watching\" / \"Uaminifu Wakati Hakuna Mtu Anayekutazama\" (CHRISTLIKE CHARACTER); \"pic_215l57e6b4.jpg\"; IG half to be posted by a landed run in the catch-up window"
+    },
+    {
+      "ts": "2026-10-14T06:11:42.170Z",
+      "level": "success",
+      "date": "2026-10-14",
+      "slot": "09:00",
+      "message": "09:00 Auto: published — \"pic_shdzlutt56.jpg\" | en | no topic | IG ✓ | FB ✓"
     }
   ]
 }
