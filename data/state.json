@@ -586,11 +586,30 @@
           "id": "122194010648938552"
         }
       }
+    },
+    "2026-10-17": {
+      "09:00": {
+        "status": "scheduled",
+        "publishTime": "2026-10-17T06:00:00.000Z",
+        "at": "2026-10-14T23:28:21.553Z",
+        "photo": "WhatsApp Image 2dvsdg026-08-02 at 11.50.28 PM.jpeg",
+        "caption": "𝗡𝗘𝗡𝗢 𝗟𝗔𝗞𝗢 𝗟𝗜𝗡𝗔 𝗡𝗚𝗨𝗩𝗨 𝗬𝗔 𝗞𝗨𝗕𝗔𝗗𝗜𝗟𝗜𝗦𝗛𝗔 𝗠𝗔𝗜𝗦𝗛𝗔!\n\nBinti yangu mpendwa, umewahi kujiuliza ni kiasi gani neno moja dogo la kutia moyo linaweza kumbadilishia mtu siku nzima, au hata maisha yake yote? Tuna nguvu kubwa mikononi mwetu, sio tu kwa matendo yetu bali pia kwa maneno tunayochagua kuyatamka.\n\nKama mabinti wa Mungu, tumeitwa kuwa nuru katika ulimwengu huu, na sehemu ya nuru hiyo ni kuwahamasisha na kuwawezesha wengine. Fikiria jinsi unavyoweza kuinua roho ya dada yako au rafiki yako anayepitia changamoto, kwa kumpatia neno la upendo na tumaini linalotoka moyoni.\n\nJe, leo utachagua kuwa chanzo cha uhamasishaji na kuinua wengine? Kumbuka, hata neno dogo linaweza kuwasha moto mkubwa wa imani na ujasiri ndani ya mtu. Mungu anakutumia wewe kuwa chombo chake cha upendo. Endelea kuang'aa!\n\nWaefeso 4:29 \"Neno lo lote lililo baya lisitoke vinywani mwenu, bali lililo jema la kumfaa mwenye kuhitaji, ili liwape neema wanaosikia.\"\n\n#HamasishaWengine #NguvuYaManeno #JengaWengine #LadiesOfDestiny #MabintiWenyeHatima",
+        "lang": "sw",
+        "topic": {
+          "n": 27,
+          "cat": "LOVE & RELATIONSHIPS",
+          "en": "The Power of Encouraging Others",
+          "sw": "Nguvu ya Kuwahamasisha Wengine"
+        },
+        "fb": {
+          "id": "122194153178938552"
+        }
+      }
     }
   },
   "rotation": {
     "photo": 10,
-    "topic": 26,
+    "topic": 27,
     "fallbackEn": 2,
     "fallbackSw": 0,
     "deck": [
@@ -811,7 +830,7 @@
       "WhatsApp Image 2026-08-03 xcbdxfbdat 10.35.48 AM.jpeg",
       "pic_348slr32s1.jpg"
     ],
-    "deckPos": 17,
+    "deckPos": 18,
     "deckEpoch": 1
   },
   "events": [
@@ -1223,6 +1242,13 @@
       "date": "2026-10-14",
       "slot": "09:00",
       "message": "09:00 Auto: published — \"pic_shdzlutt56.jpg\" | en | no topic | IG ✓ | FB ✓"
+    },
+    {
+      "ts": "2026-10-14T23:28:21.553Z",
+      "level": "info",
+      "date": "2026-10-17",
+      "slot": "09:00",
+      "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-10-17T06:00:00.000Z, Kiswahili) — topic #27 \"The Power of Encouraging Others\" / \"Nguvu ya Kuwahamasisha Wengine\" (LOVE & RELATIONSHIPS); \"WhatsApp Image 2dvsdg026-08-02 at 11.50.28 PM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
     }
   ]
 }
