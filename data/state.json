@@ -575,9 +575,9 @@
     },
     "2026-10-16": {
       "09:00": {
-        "status": "scheduled",
+        "status": "published",
+        "at": "2026-10-16T06:25:07.839Z",
         "publishTime": "2026-10-16T06:00:00.000Z",
-        "at": "2026-10-13T21:50:42.759Z",
         "photo": "pic_215l57e6b4.jpg",
         "caption": "𝗜𝗡𝗧𝗘𝗚𝗥𝗜𝗧𝗬 𝗦𝗛𝗜𝗡𝗘𝗦 𝗕𝗥𝗜𝗚𝗛𝗧𝗘𝗦𝗧 𝗔𝗟𝗢𝗡𝗘\n\nMy dear sisters, have you ever thought about what honesty truly means when no one is watching? It's easy to be upright when eyes are on us, but our true character is forged in those quiet moments, known only to us and God. This commitment to truth, even when no one else sees, is the hallmark of a heart devoted to Him.\n\nLiving with integrity in secret builds a foundation of genuine trust with our Heavenly Father and within ourselves. It’s about choosing purity and truth, not for applause, but because our hearts desire to honor Him in every thought and action. This inner honesty shapes who we truly become, regardless of external recognition.\n\nLet's cultivate hearts that seek honesty in all things, knowing that God sees and cherishes our every effort to walk in His light. This commitment to truth, even in the unseen, empowers us to live out our divine purpose with confidence and grace. You are chosen.\n\nLuke 16:10 (NIV): \"Whoever can be trusted with very little can also be trusted with much, and whoever is dishonest with very little will also be dishonest with much.\"\n\n#Honesty #Integrity #Character #LadiesOfDestiny #MabintiWenyeHatima",
         "lang": "en",
@@ -587,8 +587,13 @@
           "en": "Honesty When Nobody Is Watching",
           "sw": "Uaminifu Wakati Hakuna Mtu Anayekutazama"
         },
+        "ig": {
+          "id": "18580650403069854",
+          "permalink": "https://www.instagram.com/p/Dei4kNnjOh5/"
+        },
         "fb": {
-          "id": "122194010648938552"
+          "id": "710815315448548_122194010648938552",
+          "permalink": "https://www.facebook.com/photo.php?fbid=122194010648938552&set=a.122103534068938552&type=3"
         }
       }
     },
@@ -1287,6 +1292,13 @@
       "date": "2026-10-18",
       "slot": "09:00",
       "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-10-18T06:00:00.000Z, English) — topic #28 \"Understanding Your Emotions Without Being Controlled by Them\" / \"Kuelewa Hisia Zako bila Kuongozwa Nazo\" (PURITY & WISDOM); \"WhatsApp Image 2026-08-02 atzdczdvcz 11.50.27 PM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
+    },
+    {
+      "ts": "2026-10-16T06:25:07.839Z",
+      "level": "success",
+      "date": "2026-10-16",
+      "slot": "09:00",
+      "message": "09:00 Auto: published — \"pic_215l57e6b4.jpg\" | en | no topic | IG ✓ | FB ✓"
     }
   ]
 }
