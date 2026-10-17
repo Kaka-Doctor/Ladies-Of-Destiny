@@ -599,9 +599,9 @@
     },
     "2026-10-17": {
       "09:00": {
-        "status": "scheduled",
+        "status": "partial",
         "publishTime": "2026-10-17T06:00:00.000Z",
-        "at": "2026-10-14T23:28:21.553Z",
+        "at": "2026-10-17T06:00:00.000Z",
         "photo": "WhatsApp Image 2dvsdg026-08-02 at 11.50.28 PM.jpeg",
         "caption": "𝗡𝗘𝗡𝗢 𝗟𝗔𝗞𝗢 𝗟𝗜𝗡𝗔 𝗡𝗚𝗨𝗩𝗨 𝗬𝗔 𝗞𝗨𝗕𝗔𝗗𝗜𝗟𝗜𝗦𝗛𝗔 𝗠𝗔𝗜𝗦𝗛𝗔!\n\nBinti yangu mpendwa, umewahi kujiuliza ni kiasi gani neno moja dogo la kutia moyo linaweza kumbadilishia mtu siku nzima, au hata maisha yake yote? Tuna nguvu kubwa mikononi mwetu, sio tu kwa matendo yetu bali pia kwa maneno tunayochagua kuyatamka.\n\nKama mabinti wa Mungu, tumeitwa kuwa nuru katika ulimwengu huu, na sehemu ya nuru hiyo ni kuwahamasisha na kuwawezesha wengine. Fikiria jinsi unavyoweza kuinua roho ya dada yako au rafiki yako anayepitia changamoto, kwa kumpatia neno la upendo na tumaini linalotoka moyoni.\n\nJe, leo utachagua kuwa chanzo cha uhamasishaji na kuinua wengine? Kumbuka, hata neno dogo linaweza kuwasha moto mkubwa wa imani na ujasiri ndani ya mtu. Mungu anakutumia wewe kuwa chombo chake cha upendo. Endelea kuang'aa!\n\nWaefeso 4:29 \"Neno lo lote lililo baya lisitoke vinywani mwenu, bali lililo jema la kumfaa mwenye kuhitaji, ili liwape neema wanaosikia.\"\n\n#HamasishaWengine #NguvuYaManeno #JengaWengine #LadiesOfDestiny #MabintiWenyeHatima",
         "lang": "sw",
@@ -612,7 +612,8 @@
           "sw": "Nguvu ya Kuwahamasisha Wengine"
         },
         "fb": {
-          "id": "122194153178938552"
+          "id": "710815315448548_122194153178938552",
+          "permalink": "https://www.facebook.com/photo.php?fbid=122194153178938552&set=a.122103534068938552&type=3"
         }
       }
     },
@@ -634,11 +635,30 @@
           "id": "122194276058938552"
         }
       }
+    },
+    "2026-10-19": {
+      "09:00": {
+        "status": "scheduled",
+        "publishTime": "2026-10-19T06:00:00.000Z",
+        "at": "2026-10-17T13:12:50.912Z",
+        "photo": "WhatsApp Image 2026-08-02 at 1zdcvzdvsdv1.50.06 PM.jpeg",
+        "caption": "𝗔𝗧𝗛𝗜𝗥𝗜 𝗕𝗜𝗟𝗔 𝗞𝗨𝗣𝗢𝗧𝗘𝗭𝗔 𝗡𝗨𝗥𝗨 𝗬𝗔𝗞𝗢!\n\nBinti yangu mpendwa, moyoni mwetu tuna hamu ya kuwa na athiri chanya kwa wengine na kueneza upendo wa Kristo, sindio? Tunatamani kuleta mabadiliko na kugusa maisha. Lakini je, umewahi kuhisi ukianza kupoteza utambulisho wako wa kweli ukijaribu kuwapendeza wengine au kufuata mkumbo?\n\nKumbuka, Mungu alikuumba wewe ukiwa wewe, na si mwingine. Nuru yako halisi ndiyo yenye uwezo wa kuathiri kweli, siyo kivuli cha mtu mwingine. Jua thamani yako isiyoweza kulinganishwa ndani ya Kristo na ruhusu hiyo thamani iangaze kutoka ndani. Umekaguliwa!\n\nUsidanganyike kufikiri kwamba ni lazima ubadilishe rangi zako ili kupatana na mazingira; bali simama imara katika Mungu aliyekuumba. Wakati unatoa na kupenda, hakikisha unajijaza tena na unajiwekea mipaka yenye afya inayokulinda. Mungu ana mpango maalum kwako unaohitaji wewe halisi kabisa. Endelea kuang'aa!\n\nMsiifuatishe namna ya dunia hii, bali mgeuzwe kwa kufanya upya akili zenu, mpate kujua yaliyo mapenzi ya Mungu yaliyo mema, ya kumpendeza, na ukamilifu. Warumi 12:2\n\n#UtambulishoWaKimungu #NuruYakoHalisi #KuishiKwaKusudi #LadiesOfDestiny #MabintiWenyeHatima",
+        "lang": "sw",
+        "topic": {
+          "n": 29,
+          "cat": "LEADERSHIP & INFLUENCE",
+          "en": "Influencing Others Without Losing Yourself",
+          "sw": "Kuwaathiri Wengine bila Kujipoteza"
+        },
+        "fb": {
+          "id": "122194510226938552"
+        }
+      }
     }
   },
   "rotation": {
     "photo": 10,
-    "topic": 28,
+    "topic": 29,
     "fallbackEn": 2,
     "fallbackSw": 0,
     "deck": [
@@ -859,7 +879,7 @@
       "WhatsApp Image 2026-08-03 xcbdxfbdat 10.35.48 AM.jpeg",
       "pic_348slr32s1.jpg"
     ],
-    "deckPos": 19,
+    "deckPos": 20,
     "deckEpoch": 1
   },
   "events": [
@@ -1299,6 +1319,20 @@
       "date": "2026-10-16",
       "slot": "09:00",
       "message": "09:00 Auto: published — \"pic_215l57e6b4.jpg\" | en | no topic | IG ✓ | FB ✓"
+    },
+    {
+      "ts": "2026-10-17T13:12:34.543Z",
+      "level": "error",
+      "date": "2026-10-17",
+      "slot": "09:00",
+      "message": "09:00 partial — FB published by Meta on time, but no landed run caught up the IG half within 420 min"
+    },
+    {
+      "ts": "2026-10-17T13:12:50.913Z",
+      "level": "info",
+      "date": "2026-10-19",
+      "slot": "09:00",
+      "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-10-19T06:00:00.000Z, Kiswahili) — topic #29 \"Influencing Others Without Losing Yourself\" / \"Kuwaathiri Wengine bila Kujipoteza\" (LEADERSHIP & INFLUENCE); \"WhatsApp Image 2026-08-02 at 1zdcvzdvsdv1.50.06 PM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
     }
   ]
 }
