@@ -654,11 +654,30 @@
           "id": "122194510226938552"
         }
       }
+    },
+    "2026-10-20": {
+      "09:00": {
+        "status": "scheduled",
+        "publishTime": "2026-10-20T06:00:00.000Z",
+        "at": "2026-10-17T21:26:59.629Z",
+        "photo": "WhatsApp Image 2026-08-03 at 10adfcsf.35.43 AM.jpeg",
+        "caption": "𝗗𝗜𝗦𝗖𝗜𝗣𝗟𝗜𝗡𝗘 𝗨𝗡𝗟𝗢𝗖𝗞𝗦 𝗬𝗢𝗨𝗥 𝗚𝗢𝗗-𝗚𝗜𝗩𝗘𝗡 𝗣𝗢𝗧𝗘𝗡𝗧𝗜𝗔𝗟!\n\nSisters, embracing a life of divine purpose calls for intentional discipline and consistent hard work. Every talent God has given you, every dream He's placed in your heart, requires diligent nurturing to blossom. It’s in those quiet moments of study, practice, or persistent effort that you truly grow and sharpen your gifts.\n\nDon't let challenges discourage you or tempt you towards shortcuts; instead, embrace the journey of consistent effort. Each disciplined step brings you closer to becoming the radiant woman God created you to be, shining His light brightly. Your dedication today is sowing seeds for a magnificent harvest in your future.\n\nRemember, dear ones, God sees your heart and delights in your willingness to work hard with integrity and devotion. He doesn't just care about the results, but the faithful process that shapes your character and faith. Let His strength empower you to stay focused and persevere in every endeavor, for His glory. God has a beautiful plan for you.\n\n\"Whatever you do, work at it with all your heart, as working for the Lord, not for human masters.\" — Colossians 3:23\n\n#DisciplineForDestiny #WorkWithPurpose #GodlyAmbition #LadiesOfDestiny #MabintiWenyeHatima",
+        "lang": "en",
+        "topic": {
+          "n": 30,
+          "cat": "EDUCATION, WORK & PURPOSE",
+          "en": "Discipline and Hard Work",
+          "sw": "Nidhamu na Kazi Ngumu"
+        },
+        "fb": {
+          "id": "122194557674938552"
+        }
+      }
     }
   },
   "rotation": {
     "photo": 10,
-    "topic": 29,
+    "topic": 30,
     "fallbackEn": 2,
     "fallbackSw": 0,
     "deck": [
@@ -879,7 +898,7 @@
       "WhatsApp Image 2026-08-03 xcbdxfbdat 10.35.48 AM.jpeg",
       "pic_348slr32s1.jpg"
     ],
-    "deckPos": 20,
+    "deckPos": 21,
     "deckEpoch": 1
   },
   "events": [
@@ -1333,6 +1352,13 @@
       "date": "2026-10-19",
       "slot": "09:00",
       "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-10-19T06:00:00.000Z, Kiswahili) — topic #29 \"Influencing Others Without Losing Yourself\" / \"Kuwaathiri Wengine bila Kujipoteza\" (LEADERSHIP & INFLUENCE); \"WhatsApp Image 2026-08-02 at 1zdcvzdvsdv1.50.06 PM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
+    },
+    {
+      "ts": "2026-10-17T21:26:59.630Z",
+      "level": "info",
+      "date": "2026-10-20",
+      "slot": "09:00",
+      "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-10-20T06:00:00.000Z, English) — topic #30 \"Discipline and Hard Work\" / \"Nidhamu na Kazi Ngumu\" (EDUCATION, WORK & PURPOSE); \"WhatsApp Image 2026-08-03 at 10adfcsf.35.43 AM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
     }
   ]
 }
