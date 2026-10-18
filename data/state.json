@@ -678,11 +678,30 @@
           "id": "122194557674938552"
         }
       }
+    },
+    "2026-10-21": {
+      "09:00": {
+        "status": "scheduled",
+        "publishTime": "2026-10-21T06:00:00.000Z",
+        "at": "2026-10-18T21:02:40.744Z",
+        "photo": "pic_f1v9r6659i.jpg",
+        "caption": "𝗨𝗦𝗜𝗣𝗢𝗧𝗘𝗭𝗘 𝗡𝗔𝗙𝗦𝗜 𝗬𝗔𝗞𝗢 𝗞𝗔𝗧𝗜𝗞𝗔 𝗠𝗜𝗧𝗔𝗡𝗗𝗔𝗢 𝗬𝗔 𝗞𝗜𝗝𝗔𝗠𝗜𝗜!\n\nBinti zangu wapendwa, mitandao ya kijamii ni sehemu kubwa ya maisha yetu leo, sivyo? Ni rahisi sana kujilinganisha na wengine na hata kuanza kutafuta uthibitisho wa thamani yetu kutokana na idadi ya 'likes' au wafuasi. Jihadharini sana usije ukaanza kuiga maisha ambayo si yako.\n\nLakini kumbuka, utambulisho wako halisi haupatikani huko. Wewe umeumbwa kwa mfano wa Mungu, umetengenezwa kwa makusudi ya kipekee na Yeye anakupenda kama ulivyo, bila kuhitaji vichujio au maoni ya wengine. Thamani yako imekwishakamilika ndani ya Kristo.\n\nUsiache dunia ya kidijitali ififishe nuru yako ya kweli au ibadilishe kile Mungu amekuita kuwa. Simama imara, kuwa wewe mwenyewe halisi, na iwe nuru yako ing'ae mtandaoni na nje ya mtandao. Endelea kuang'aa, binti!\n\nZaburi 139:14\nNitakushukuru kwa kuwa nimeumbwa kwa jinsi ya ajabu ya kutisha; Matendo yako ni ya ajabu, Na nafsi yangu yajua sana.\n\n#UtambulishoWaKweli #MitandaoNaImani #WeweNiWaThaman #LadiesOfDestiny #MabintiWenyeHatima",
+        "lang": "sw",
+        "topic": {
+          "n": 31,
+          "cat": "DIGITAL LIFE & MODERN CULTURE",
+          "en": "Social Media Without Losing Your Identity",
+          "sw": "Mitandao ya Kijamii bila Kupoteza Utambulisho Wako"
+        },
+        "fb": {
+          "id": "122194700216938552"
+        }
+      }
     }
   },
   "rotation": {
     "photo": 10,
-    "topic": 30,
+    "topic": 31,
     "fallbackEn": 2,
     "fallbackSw": 0,
     "deck": [
@@ -903,7 +922,7 @@
       "WhatsApp Image 2026-08-03 xcbdxfbdat 10.35.48 AM.jpeg",
       "pic_348slr32s1.jpg"
     ],
-    "deckPos": 21,
+    "deckPos": 22,
     "deckEpoch": 1
   },
   "events": [
@@ -1371,6 +1390,13 @@
       "date": "2026-10-18",
       "slot": "09:00",
       "message": "09:00 Auto: published — \"WhatsApp Image 2026-08-02 atzdczdvcz 11.50.27 PM.jpeg\" | en | no topic | IG ✓ | FB ✓"
+    },
+    {
+      "ts": "2026-10-18T21:02:40.745Z",
+      "level": "info",
+      "date": "2026-10-21",
+      "slot": "09:00",
+      "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-10-21T06:00:00.000Z, Kiswahili) — topic #31 \"Social Media Without Losing Your Identity\" / \"Mitandao ya Kijamii bila Kupoteza Utambulisho Wako\" (DIGITAL LIFE & MODERN CULTURE); \"pic_f1v9r6659i.jpg\"; IG half to be posted by a landed run in the catch-up window"
     }
   ]
 }
