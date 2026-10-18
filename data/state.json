@@ -619,9 +619,9 @@
     },
     "2026-10-18": {
       "09:00": {
-        "status": "scheduled",
+        "status": "published",
+        "at": "2026-10-18T06:36:06.175Z",
         "publishTime": "2026-10-18T06:00:00.000Z",
-        "at": "2026-10-15T21:21:33.803Z",
         "photo": "WhatsApp Image 2026-08-02 atzdczdvcz 11.50.27 PM.jpeg",
         "caption": "𝗙𝗘𝗘𝗟 𝗗𝗘𝗘𝗣𝗟𝗬, 𝗖𝗛𝗢𝗢𝗦𝗘 𝗪𝗜𝗦𝗘𝗟𝗬\n\nMy beautiful sisters, God created us with a rich tapestry of emotions – joy, sadness, anger, and fear. These feelings are valid and part of our human experience, designed to help us understand ourselves and the world around us. However, we are called to be wise stewards of our hearts, not prisoners to every passing feeling.\n\nInstead of reacting impulsively, let's learn to pause and bring our emotions before the Lord. Ask yourself: \"What is this feeling telling me? Is it leading me closer to God's truth or away from it?\" The Holy Spirit is our wonderful guide, empowering us to discern and respond in purity and wisdom, even when our feelings are intense.\n\nRemember, dear ones, you have the power to choose your response, no matter how strong an emotion feels. Let's practice inviting God into our emotional landscape, allowing Him to purify our hearts and direct our steps. This journey builds character and keeps us aligned with His beautiful purpose for us. God has a plan for you.\n\nProverbs 4:23 (NIV): \"Above all else, guard your heart, for everything you do flows from it.\"\n\n#FaithOverFeelings #GodlyWisdom #SelfControl #LadiesOfDestiny #MabintiWenyeHatima",
         "lang": "en",
@@ -631,8 +631,13 @@
           "en": "Understanding Your Emotions Without Being Controlled by Them",
           "sw": "Kuelewa Hisia Zako bila Kuongozwa Nazo"
         },
+        "ig": {
+          "id": "18077483492549177",
+          "permalink": "https://www.instagram.com/p/DeoDZlHmCQD/"
+        },
         "fb": {
-          "id": "122194276058938552"
+          "id": "710815315448548_122194276058938552",
+          "permalink": "https://www.facebook.com/photo.php?fbid=122194276058938552&set=a.122103534068938552&type=3"
         }
       }
     },
@@ -1359,6 +1364,13 @@
       "date": "2026-10-20",
       "slot": "09:00",
       "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-10-20T06:00:00.000Z, English) — topic #30 \"Discipline and Hard Work\" / \"Nidhamu na Kazi Ngumu\" (EDUCATION, WORK & PURPOSE); \"WhatsApp Image 2026-08-03 at 10adfcsf.35.43 AM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
+    },
+    {
+      "ts": "2026-10-18T06:36:06.175Z",
+      "level": "success",
+      "date": "2026-10-18",
+      "slot": "09:00",
+      "message": "09:00 Auto: published — \"WhatsApp Image 2026-08-02 atzdczdvcz 11.50.27 PM.jpeg\" | en | no topic | IG ✓ | FB ✓"
     }
   ]
 }
