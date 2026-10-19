@@ -643,9 +643,9 @@
     },
     "2026-10-19": {
       "09:00": {
-        "status": "scheduled",
+        "status": "published",
+        "at": "2026-10-19T06:50:37.069Z",
         "publishTime": "2026-10-19T06:00:00.000Z",
-        "at": "2026-10-17T13:12:50.912Z",
         "photo": "WhatsApp Image 2026-08-02 at 1zdcvzdvsdv1.50.06 PM.jpeg",
         "caption": "𝗔𝗧𝗛𝗜𝗥𝗜 𝗕𝗜𝗟𝗔 𝗞𝗨𝗣𝗢𝗧𝗘𝗭𝗔 𝗡𝗨𝗥𝗨 𝗬𝗔𝗞𝗢!\n\nBinti yangu mpendwa, moyoni mwetu tuna hamu ya kuwa na athiri chanya kwa wengine na kueneza upendo wa Kristo, sindio? Tunatamani kuleta mabadiliko na kugusa maisha. Lakini je, umewahi kuhisi ukianza kupoteza utambulisho wako wa kweli ukijaribu kuwapendeza wengine au kufuata mkumbo?\n\nKumbuka, Mungu alikuumba wewe ukiwa wewe, na si mwingine. Nuru yako halisi ndiyo yenye uwezo wa kuathiri kweli, siyo kivuli cha mtu mwingine. Jua thamani yako isiyoweza kulinganishwa ndani ya Kristo na ruhusu hiyo thamani iangaze kutoka ndani. Umekaguliwa!\n\nUsidanganyike kufikiri kwamba ni lazima ubadilishe rangi zako ili kupatana na mazingira; bali simama imara katika Mungu aliyekuumba. Wakati unatoa na kupenda, hakikisha unajijaza tena na unajiwekea mipaka yenye afya inayokulinda. Mungu ana mpango maalum kwako unaohitaji wewe halisi kabisa. Endelea kuang'aa!\n\nMsiifuatishe namna ya dunia hii, bali mgeuzwe kwa kufanya upya akili zenu, mpate kujua yaliyo mapenzi ya Mungu yaliyo mema, ya kumpendeza, na ukamilifu. Warumi 12:2\n\n#UtambulishoWaKimungu #NuruYakoHalisi #KuishiKwaKusudi #LadiesOfDestiny #MabintiWenyeHatima",
         "lang": "sw",
@@ -655,8 +655,13 @@
           "en": "Influencing Others Without Losing Yourself",
           "sw": "Kuwaathiri Wengine bila Kujipoteza"
         },
+        "ig": {
+          "id": "18369467104301443",
+          "permalink": "https://www.instagram.com/p/Deqp3t0F6-U/"
+        },
         "fb": {
-          "id": "122194510226938552"
+          "id": "710815315448548_122194510226938552",
+          "permalink": "https://www.facebook.com/photo.php?fbid=122194510226938552&set=a.122103534068938552&type=3"
         }
       }
     },
@@ -1397,6 +1402,13 @@
       "date": "2026-10-21",
       "slot": "09:00",
       "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-10-21T06:00:00.000Z, Kiswahili) — topic #31 \"Social Media Without Losing Your Identity\" / \"Mitandao ya Kijamii bila Kupoteza Utambulisho Wako\" (DIGITAL LIFE & MODERN CULTURE); \"pic_f1v9r6659i.jpg\"; IG half to be posted by a landed run in the catch-up window"
+    },
+    {
+      "ts": "2026-10-19T06:50:37.070Z",
+      "level": "success",
+      "date": "2026-10-19",
+      "slot": "09:00",
+      "message": "09:00 Auto: published — \"WhatsApp Image 2026-08-02 at 1zdcvzdvsdv1.50.06 PM.jpeg\" | sw | no topic | IG ✓ | FB ✓"
     }
   ]
 }
