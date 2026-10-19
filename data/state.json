@@ -702,11 +702,30 @@
           "id": "122194700216938552"
         }
       }
+    },
+    "2026-10-22": {
+      "09:00": {
+        "status": "scheduled",
+        "publishTime": "2026-10-22T06:00:00.000Z",
+        "at": "2026-10-19T23:45:41.830Z",
+        "photo": "WhatsApp Image 2026-08-0zsczsc2 at 11.50.09 PM.jpeg",
+        "caption": "𝗕𝗘 𝗔 𝗕𝗘𝗔𝗖𝗢𝗡 𝗢𝗙 𝗚𝗢𝗗'𝗦 𝗟𝗢𝗩𝗘\n\nMy dearest sisters, God has placed an incredible light within each of you, a light meant to shine brightly not just for yourselves, but for the world around you. When we open our hearts and eyes to those in need, we become vessels of His boundless compassion and grace. It’s in these moments that His love truly flows through us to others.\n\nDon't ever think your acts of kindness are too small or insignificant. A simple helping hand, a listening ear, a shared meal, or a kind word can make a monumental difference in someone's day and even their life. Remember, Jesus Himself came to serve, not to be served, showing us the path of true greatness.\n\nAs Ladies of Destiny, you are called to be agents of hope and healing. Embrace the joy of giving and the beauty of selfless service, knowing that every act of love you offer is an offering to God Himself. Keep shining your light and making a difference.\n\nHebrews 13:16: \"Do not neglect to do good and to share what you have, for such sacrifices are pleasing to God.\"\n\n#ServeWithLove #ActsOfKindness #LoveInAction #LadiesOfDestiny #MabintiWenyeHatima",
+        "lang": "en",
+        "topic": {
+          "n": 32,
+          "cat": "SERVICE & GOOD DEEDS",
+          "en": "Helping Those in Need",
+          "sw": "Kusaidia Walio katika Shida"
+        },
+        "fb": {
+          "id": "122194841282938552"
+        }
+      }
     }
   },
   "rotation": {
     "photo": 10,
-    "topic": 31,
+    "topic": 32,
     "fallbackEn": 2,
     "fallbackSw": 0,
     "deck": [
@@ -927,7 +946,7 @@
       "WhatsApp Image 2026-08-03 xcbdxfbdat 10.35.48 AM.jpeg",
       "pic_348slr32s1.jpg"
     ],
-    "deckPos": 22,
+    "deckPos": 23,
     "deckEpoch": 1
   },
   "events": [
@@ -1409,6 +1428,13 @@
       "date": "2026-10-19",
       "slot": "09:00",
       "message": "09:00 Auto: published — \"WhatsApp Image 2026-08-02 at 1zdcvzdvsdv1.50.06 PM.jpeg\" | sw | no topic | IG ✓ | FB ✓"
+    },
+    {
+      "ts": "2026-10-19T23:45:41.831Z",
+      "level": "info",
+      "date": "2026-10-22",
+      "slot": "09:00",
+      "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-10-22T06:00:00.000Z, English) — topic #32 \"Helping Those in Need\" / \"Kusaidia Walio katika Shida\" (SERVICE & GOOD DEEDS); \"WhatsApp Image 2026-08-0zsczsc2 at 11.50.09 PM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
     }
   ]
 }
