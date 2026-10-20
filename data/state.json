@@ -725,11 +725,30 @@
           "id": "122194841282938552"
         }
       }
+    },
+    "2026-10-23": {
+      "09:00": {
+        "status": "scheduled",
+        "publishTime": "2026-10-23T06:00:00.000Z",
+        "at": "2026-10-20T22:40:25.586Z",
+        "photo": "IMG-20260803-WA0169.jpg",
+        "caption": "𝗠𝗣𝗘𝗡𝗭𝗜 𝗪𝗔 𝗞𝗪𝗘𝗟𝗜 𝗔𝗡𝗔𝗧𝗔𝗞𝗔 𝗠𝗢𝗬𝗢 𝗪𝗔𝗞𝗢 𝗪𝗢𝗧𝗘!\n\nBinti yangu mpendwa, umewahi kujiuliza inamaanisha nini kumpenda Mungu kwa moyo wako wote? Sio tu kwa maneno au matendo ya nje, bali upendo ule unaojaza kila kona ya nafsi yako, mawazo yako, na hisia zako zote. Ni kuweka kipaumbele kumpenda Yeye kuliko kitu kingine chochote, kumruhusu upendo Wake uwe mwongozo wako katika kila hatua ya maisha.\n\nWakati tunampenda Mungu kwa moyo wetu wote, tunajisikia salama, tunapata amani ya kweli, na tunapata nguvu ya kushinda changamoto zote. Upendo huu huifanya roho yetu iangaze, ikituwezesha kutembea katika usafi na kutimiza kusudi letu la kimungu bila kuogopa chochote. Tunapojitoa Kwake kikamilifu, Yeye anatujaza upendo Wake usio na kikomo na kutuonyesha njia sahihi. Umekaguliwa!\n\nMathayo 22:37 \"Akamwambia, Mpende Bwana Mungu wako kwa moyo wako wote, na kwa roho yako yote, na kwa akili zako zote.\"\n\n#UpendoWaMungu #MoyoWoteKwaMungu #BintiWaImani #LadiesOfDestiny #MabintiWenyeHatima",
+        "lang": "sw",
+        "topic": {
+          "n": 33,
+          "cat": "IDENTITY & RELATIONSHIP WITH GOD",
+          "en": "Loving God With All Your Heart",
+          "sw": "Kumpenda Mungu kwa Moyo Wako Wote"
+        },
+        "fb": {
+          "id": "122194972016938552"
+        }
+      }
     }
   },
   "rotation": {
     "photo": 10,
-    "topic": 32,
+    "topic": 33,
     "fallbackEn": 2,
     "fallbackSw": 0,
     "deck": [
@@ -950,7 +969,7 @@
       "WhatsApp Image 2026-08-03 xcbdxfbdat 10.35.48 AM.jpeg",
       "pic_348slr32s1.jpg"
     ],
-    "deckPos": 23,
+    "deckPos": 24,
     "deckEpoch": 1
   },
   "events": [
@@ -1446,6 +1465,13 @@
       "date": "2026-10-20",
       "slot": "09:00",
       "message": "09:00 Auto: published — \"WhatsApp Image 2026-08-03 at 10adfcsf.35.43 AM.jpeg\" | en | no topic | IG ✓ | FB ✓"
+    },
+    {
+      "ts": "2026-10-20T22:40:25.587Z",
+      "level": "info",
+      "date": "2026-10-23",
+      "slot": "09:00",
+      "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-10-23T06:00:00.000Z, Kiswahili) — topic #33 \"Loving God With All Your Heart\" / \"Kumpenda Mungu kwa Moyo Wako Wote\" (IDENTITY & RELATIONSHIP WITH GOD); \"IMG-20260803-WA0169.jpg\"; IG half to be posted by a landed run in the catch-up window"
     }
   ]
 }
