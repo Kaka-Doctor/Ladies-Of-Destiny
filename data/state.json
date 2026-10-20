@@ -667,9 +667,9 @@
     },
     "2026-10-20": {
       "09:00": {
-        "status": "scheduled",
+        "status": "published",
+        "at": "2026-10-20T06:01:08.679Z",
         "publishTime": "2026-10-20T06:00:00.000Z",
-        "at": "2026-10-17T21:26:59.629Z",
         "photo": "WhatsApp Image 2026-08-03 at 10adfcsf.35.43 AM.jpeg",
         "caption": "𝗗𝗜𝗦𝗖𝗜𝗣𝗟𝗜𝗡𝗘 𝗨𝗡𝗟𝗢𝗖𝗞𝗦 𝗬𝗢𝗨𝗥 𝗚𝗢𝗗-𝗚𝗜𝗩𝗘𝗡 𝗣𝗢𝗧𝗘𝗡𝗧𝗜𝗔𝗟!\n\nSisters, embracing a life of divine purpose calls for intentional discipline and consistent hard work. Every talent God has given you, every dream He's placed in your heart, requires diligent nurturing to blossom. It’s in those quiet moments of study, practice, or persistent effort that you truly grow and sharpen your gifts.\n\nDon't let challenges discourage you or tempt you towards shortcuts; instead, embrace the journey of consistent effort. Each disciplined step brings you closer to becoming the radiant woman God created you to be, shining His light brightly. Your dedication today is sowing seeds for a magnificent harvest in your future.\n\nRemember, dear ones, God sees your heart and delights in your willingness to work hard with integrity and devotion. He doesn't just care about the results, but the faithful process that shapes your character and faith. Let His strength empower you to stay focused and persevere in every endeavor, for His glory. God has a beautiful plan for you.\n\n\"Whatever you do, work at it with all your heart, as working for the Lord, not for human masters.\" — Colossians 3:23\n\n#DisciplineForDestiny #WorkWithPurpose #GodlyAmbition #LadiesOfDestiny #MabintiWenyeHatima",
         "lang": "en",
@@ -678,6 +678,10 @@
           "cat": "EDUCATION, WORK & PURPOSE",
           "en": "Discipline and Hard Work",
           "sw": "Nidhamu na Kazi Ngumu"
+        },
+        "ig": {
+          "id": "18037815494850142",
+          "permalink": "https://www.instagram.com/p/DetI_doIM_X/"
         },
         "fb": {
           "id": "122194557674938552"
@@ -1435,6 +1439,13 @@
       "date": "2026-10-22",
       "slot": "09:00",
       "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-10-22T06:00:00.000Z, English) — topic #32 \"Helping Those in Need\" / \"Kusaidia Walio katika Shida\" (SERVICE & GOOD DEEDS); \"WhatsApp Image 2026-08-0zsczsc2 at 11.50.09 PM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
+    },
+    {
+      "ts": "2026-10-20T06:01:08.679Z",
+      "level": "success",
+      "date": "2026-10-20",
+      "slot": "09:00",
+      "message": "09:00 Auto: published — \"WhatsApp Image 2026-08-03 at 10adfcsf.35.43 AM.jpeg\" | en | no topic | IG ✓ | FB ✓"
     }
   ]
 }
