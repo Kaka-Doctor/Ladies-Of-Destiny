@@ -748,11 +748,30 @@
           "id": "122194972016938552"
         }
       }
+    },
+    "2026-10-24": {
+      "09:00": {
+        "status": "scheduled",
+        "publishTime": "2026-10-24T06:00:00.000Z",
+        "at": "2026-10-21T23:38:11.705Z",
+        "photo": "WhatsApp Imagsdfsdfe 2026-08-02 at 11.50.04 PM.jpeg",
+        "caption": "𝗛𝗨𝗠𝗜𝗟𝗜𝗧𝗬: 𝗧𝗛𝗘 𝗥𝗔𝗗𝗜𝗔𝗡𝗧 𝗖𝗥𝗢𝗪𝗡 𝗢𝗙 𝗧𝗥𝗨𝗘 𝗦𝗧𝗥𝗘𝗡𝗚𝗧𝗛\n\nMy beloved sisters, today let's talk about humility – not as weakness, but as a powerful, Christlike strength under control. True humility is knowing your worth in God, recognizing His grace in your life, and not needing to always be in the spotlight. It's a gentle spirit that truly reflects Jesus.\n\nWhen we walk in humility, we open ourselves up to more of God's grace and wisdom. It protects our hearts from pride and allows us to serve others with genuine love and a pure motive. This beautiful character trait helps us listen, learn, and grow into the amazing women God created us to be.\n\nChoose to lay down your own desires for recognition and instead trust God to exalt you. Serve Him and others with a quiet confidence, knowing that He sees your heart and rewards faithfulness. God sees your humble heart and will lift you up in His perfect timing.\n\n\"God opposes the proud but shows favor to the humble. Humble yourselves, therefore, under God’s mighty hand, that He may lift you up in due time.\"\n— 1 Peter 5:5b-6 (NIV)\n\n#HumbleHeart #StrengthUnderControl #GodlyCharacter #LadiesOfDestiny #MabintiWenyeHatima",
+        "lang": "en",
+        "topic": {
+          "n": 34,
+          "cat": "CHRISTLIKE CHARACTER",
+          "en": "Humility: Strength Under Control",
+          "sw": "Unyenyekevu: Nguvu Iliyodhibitiwa"
+        },
+        "fb": {
+          "id": "122195100938938552"
+        }
+      }
     }
   },
   "rotation": {
     "photo": 10,
-    "topic": 33,
+    "topic": 34,
     "fallbackEn": 2,
     "fallbackSw": 0,
     "deck": [
@@ -973,7 +992,7 @@
       "WhatsApp Image 2026-08-03 xcbdxfbdat 10.35.48 AM.jpeg",
       "pic_348slr32s1.jpg"
     ],
-    "deckPos": 24,
+    "deckPos": 25,
     "deckEpoch": 1
   },
   "events": [
@@ -1483,6 +1502,13 @@
       "date": "2026-10-21",
       "slot": "09:00",
       "message": "09:00 Auto: published — \"pic_f1v9r6659i.jpg\" | sw | no topic | IG ✓ | FB ✓"
+    },
+    {
+      "ts": "2026-10-21T23:38:11.706Z",
+      "level": "info",
+      "date": "2026-10-24",
+      "slot": "09:00",
+      "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-10-24T06:00:00.000Z, English) — topic #34 \"Humility: Strength Under Control\" / \"Unyenyekevu: Nguvu Iliyodhibitiwa\" (CHRISTLIKE CHARACTER); \"WhatsApp Imagsdfsdfe 2026-08-02 at 11.50.04 PM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
     }
   ]
 }
