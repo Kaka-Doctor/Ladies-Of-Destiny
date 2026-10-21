@@ -690,9 +690,9 @@
     },
     "2026-10-21": {
       "09:00": {
-        "status": "scheduled",
+        "status": "published",
+        "at": "2026-10-21T06:01:30.758Z",
         "publishTime": "2026-10-21T06:00:00.000Z",
-        "at": "2026-10-18T21:02:40.744Z",
         "photo": "pic_f1v9r6659i.jpg",
         "caption": "𝗨𝗦𝗜𝗣𝗢𝗧𝗘𝗭𝗘 𝗡𝗔𝗙𝗦𝗜 𝗬𝗔𝗞𝗢 𝗞𝗔𝗧𝗜𝗞𝗔 𝗠𝗜𝗧𝗔𝗡𝗗𝗔𝗢 𝗬𝗔 𝗞𝗜𝗝𝗔𝗠𝗜𝗜!\n\nBinti zangu wapendwa, mitandao ya kijamii ni sehemu kubwa ya maisha yetu leo, sivyo? Ni rahisi sana kujilinganisha na wengine na hata kuanza kutafuta uthibitisho wa thamani yetu kutokana na idadi ya 'likes' au wafuasi. Jihadharini sana usije ukaanza kuiga maisha ambayo si yako.\n\nLakini kumbuka, utambulisho wako halisi haupatikani huko. Wewe umeumbwa kwa mfano wa Mungu, umetengenezwa kwa makusudi ya kipekee na Yeye anakupenda kama ulivyo, bila kuhitaji vichujio au maoni ya wengine. Thamani yako imekwishakamilika ndani ya Kristo.\n\nUsiache dunia ya kidijitali ififishe nuru yako ya kweli au ibadilishe kile Mungu amekuita kuwa. Simama imara, kuwa wewe mwenyewe halisi, na iwe nuru yako ing'ae mtandaoni na nje ya mtandao. Endelea kuang'aa, binti!\n\nZaburi 139:14\nNitakushukuru kwa kuwa nimeumbwa kwa jinsi ya ajabu ya kutisha; Matendo yako ni ya ajabu, Na nafsi yangu yajua sana.\n\n#UtambulishoWaKweli #MitandaoNaImani #WeweNiWaThaman #LadiesOfDestiny #MabintiWenyeHatima",
         "lang": "sw",
@@ -701,6 +701,10 @@
           "cat": "DIGITAL LIFE & MODERN CULTURE",
           "en": "Social Media Without Losing Your Identity",
           "sw": "Mitandao ya Kijamii bila Kupoteza Utambulisho Wako"
+        },
+        "ig": {
+          "id": "18635847679020242",
+          "permalink": "https://www.instagram.com/p/Devt1LqHfQw/"
         },
         "fb": {
           "id": "122194700216938552"
@@ -1472,6 +1476,13 @@
       "date": "2026-10-23",
       "slot": "09:00",
       "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-10-23T06:00:00.000Z, Kiswahili) — topic #33 \"Loving God With All Your Heart\" / \"Kumpenda Mungu kwa Moyo Wako Wote\" (IDENTITY & RELATIONSHIP WITH GOD); \"IMG-20260803-WA0169.jpg\"; IG half to be posted by a landed run in the catch-up window"
+    },
+    {
+      "ts": "2026-10-21T06:01:30.758Z",
+      "level": "success",
+      "date": "2026-10-21",
+      "slot": "09:00",
+      "message": "09:00 Auto: published — \"pic_f1v9r6659i.jpg\" | sw | no topic | IG ✓ | FB ✓"
     }
   ]
 }
