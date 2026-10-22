@@ -713,9 +713,9 @@
     },
     "2026-10-22": {
       "09:00": {
-        "status": "scheduled",
+        "status": "published",
+        "at": "2026-10-22T07:33:02.526Z",
         "publishTime": "2026-10-22T06:00:00.000Z",
-        "at": "2026-10-19T23:45:41.830Z",
         "photo": "WhatsApp Image 2026-08-0zsczsc2 at 11.50.09 PM.jpeg",
         "caption": "𝗕𝗘 𝗔 𝗕𝗘𝗔𝗖𝗢𝗡 𝗢𝗙 𝗚𝗢𝗗'𝗦 𝗟𝗢𝗩𝗘\n\nMy dearest sisters, God has placed an incredible light within each of you, a light meant to shine brightly not just for yourselves, but for the world around you. When we open our hearts and eyes to those in need, we become vessels of His boundless compassion and grace. It’s in these moments that His love truly flows through us to others.\n\nDon't ever think your acts of kindness are too small or insignificant. A simple helping hand, a listening ear, a shared meal, or a kind word can make a monumental difference in someone's day and even their life. Remember, Jesus Himself came to serve, not to be served, showing us the path of true greatness.\n\nAs Ladies of Destiny, you are called to be agents of hope and healing. Embrace the joy of giving and the beauty of selfless service, knowing that every act of love you offer is an offering to God Himself. Keep shining your light and making a difference.\n\nHebrews 13:16: \"Do not neglect to do good and to share what you have, for such sacrifices are pleasing to God.\"\n\n#ServeWithLove #ActsOfKindness #LoveInAction #LadiesOfDestiny #MabintiWenyeHatima",
         "lang": "en",
@@ -725,8 +725,13 @@
           "en": "Helping Those in Need",
           "sw": "Kusaidia Walio katika Shida"
         },
+        "ig": {
+          "id": "18176332507443417",
+          "permalink": "https://www.instagram.com/p/DeydGQODakr/"
+        },
         "fb": {
-          "id": "122194841282938552"
+          "id": "710815315448548_122194841282938552",
+          "permalink": "https://www.facebook.com/photo.php?fbid=122194841282938552&set=a.122103534068938552&type=3"
         }
       }
     },
@@ -1509,6 +1514,13 @@
       "date": "2026-10-24",
       "slot": "09:00",
       "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-10-24T06:00:00.000Z, English) — topic #34 \"Humility: Strength Under Control\" / \"Unyenyekevu: Nguvu Iliyodhibitiwa\" (CHRISTLIKE CHARACTER); \"WhatsApp Imagsdfsdfe 2026-08-02 at 11.50.04 PM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
+    },
+    {
+      "ts": "2026-10-22T07:33:02.526Z",
+      "level": "success",
+      "date": "2026-10-22",
+      "slot": "09:00",
+      "message": "09:00 Auto: published — \"WhatsApp Image 2026-08-0zsczsc2 at 11.50.09 PM.jpeg\" | en | no topic | IG ✓ | FB ✓"
     }
   ]
 }
