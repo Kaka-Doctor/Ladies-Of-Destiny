@@ -772,11 +772,30 @@
           "id": "122195100938938552"
         }
       }
+    },
+    "2026-10-25": {
+      "09:00": {
+        "status": "scheduled",
+        "publishTime": "2026-10-25T06:00:00.000Z",
+        "at": "2026-10-22T21:33:52.647Z",
+        "photo": "WhatsApp Image 2026-08-0dzcfasdcf2 at 11.50.12 PM.jpeg",
+        "caption": "𝗔𝗖𝗛𝗜𝗟𝗜𝗔 𝗠𝗔𝗖𝗛𝗨𝗡𝗚𝗨, 𝗣𝗢𝗞𝗘𝗔 𝗔𝗠𝗔𝗡𝗜 𝗬𝗔 𝗠𝗨𝗡𝗚𝗨!\n\nMpendwa binti, kuna nyakati maishani tunajikuta tumebeba mizigo mizito ya maumivu na kukatishwa tamaa kutoka kwa wengine. Huenda umeumizwa, umesalitiwa, au umekosewa vibaya. Kumbuka, kuishikilia hasira na uchungu ndani yako ni kama kunywa sumu ukitarajia mwingine afe – inakuumiza wewe zaidi kuliko mtu mwingine.\n\nLeo, tunakuhimiza kuachilia mzigo huo kupitia msamaha. Kusamehe si kusahau au kukubaliana na makosa yaliyofanywa dhidi yako, bali ni uamuzi wa kimungu wa kujiweka huru kutoka minyororo ya uchungu. Ni kumpa Mungu nafasi ya kukuvusha na kukupa amani ya kweli iliyo juu ya ufahamu wote.\n\nUnapochagua kusamehe, unajifungulia mlango wa uponyaji, utulivu, na nguvu mpya kutoka kwa Muumba wako. Hii ni hatua muhimu ya kukua kiroho na kimaisha. Mungu anakutakia amani, na msamaha ndiyo njia mojawapo ya kuifikia. Endelea kuang'aa, binti!\n\nWakolosai 3:13\n\"Mvumiliane, na kusameheana, mtu akiwa na sababu ya kumlaumu mwingine; kama Bwana alivyowasamehe ninyi, vivyo hivyo nanyi fanyeni.\"\n\n#MsamahaWaKweli #AmaniYaMoyo #UhuruKatikaKristo #LadiesOfDestiny #MabintiWenyeHatima",
+        "lang": "sw",
+        "topic": {
+          "n": 35,
+          "cat": "LOVE & RELATIONSHIPS",
+          "en": "Forgiveness: Releasing Offenses",
+          "sw": "Msamaha: Kuachilia Mambo yaliyokuumiza"
+        },
+        "fb": {
+          "id": "122195226026938552"
+        }
+      }
     }
   },
   "rotation": {
     "photo": 10,
-    "topic": 34,
+    "topic": 35,
     "fallbackEn": 2,
     "fallbackSw": 0,
     "deck": [
@@ -997,7 +1016,7 @@
       "WhatsApp Image 2026-08-03 xcbdxfbdat 10.35.48 AM.jpeg",
       "pic_348slr32s1.jpg"
     ],
-    "deckPos": 25,
+    "deckPos": 26,
     "deckEpoch": 1
   },
   "events": [
@@ -1521,6 +1540,13 @@
       "date": "2026-10-22",
       "slot": "09:00",
       "message": "09:00 Auto: published — \"WhatsApp Image 2026-08-0zsczsc2 at 11.50.09 PM.jpeg\" | en | no topic | IG ✓ | FB ✓"
+    },
+    {
+      "ts": "2026-10-22T21:33:52.648Z",
+      "level": "info",
+      "date": "2026-10-25",
+      "slot": "09:00",
+      "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-10-25T06:00:00.000Z, Kiswahili) — topic #35 \"Forgiveness: Releasing Offenses\" / \"Msamaha: Kuachilia Mambo yaliyokuumiza\" (LOVE & RELATIONSHIPS); \"WhatsApp Image 2026-08-0dzcfasdcf2 at 11.50.12 PM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
     }
   ]
 }
