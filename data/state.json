@@ -737,9 +737,9 @@
     },
     "2026-10-23": {
       "09:00": {
-        "status": "scheduled",
+        "status": "published",
+        "at": "2026-10-23T06:29:01.811Z",
         "publishTime": "2026-10-23T06:00:00.000Z",
-        "at": "2026-10-20T22:40:25.586Z",
         "photo": "IMG-20260803-WA0169.jpg",
         "caption": "𝗠𝗣𝗘𝗡𝗭𝗜 𝗪𝗔 𝗞𝗪𝗘𝗟𝗜 𝗔𝗡𝗔𝗧𝗔𝗞𝗔 𝗠𝗢𝗬𝗢 𝗪𝗔𝗞𝗢 𝗪𝗢𝗧𝗘!\n\nBinti yangu mpendwa, umewahi kujiuliza inamaanisha nini kumpenda Mungu kwa moyo wako wote? Sio tu kwa maneno au matendo ya nje, bali upendo ule unaojaza kila kona ya nafsi yako, mawazo yako, na hisia zako zote. Ni kuweka kipaumbele kumpenda Yeye kuliko kitu kingine chochote, kumruhusu upendo Wake uwe mwongozo wako katika kila hatua ya maisha.\n\nWakati tunampenda Mungu kwa moyo wetu wote, tunajisikia salama, tunapata amani ya kweli, na tunapata nguvu ya kushinda changamoto zote. Upendo huu huifanya roho yetu iangaze, ikituwezesha kutembea katika usafi na kutimiza kusudi letu la kimungu bila kuogopa chochote. Tunapojitoa Kwake kikamilifu, Yeye anatujaza upendo Wake usio na kikomo na kutuonyesha njia sahihi. Umekaguliwa!\n\nMathayo 22:37 \"Akamwambia, Mpende Bwana Mungu wako kwa moyo wako wote, na kwa roho yako yote, na kwa akili zako zote.\"\n\n#UpendoWaMungu #MoyoWoteKwaMungu #BintiWaImani #LadiesOfDestiny #MabintiWenyeHatima",
         "lang": "sw",
@@ -749,8 +749,13 @@
           "en": "Loving God With All Your Heart",
           "sw": "Kumpenda Mungu kwa Moyo Wako Wote"
         },
+        "ig": {
+          "id": "18109562995913376",
+          "permalink": "https://www.instagram.com/p/De06jU2jIhn/"
+        },
         "fb": {
-          "id": "122194972016938552"
+          "id": "710815315448548_122194972016938552",
+          "permalink": "https://www.facebook.com/photo.php?fbid=122194972016938552&set=a.122103534068938552&type=3"
         }
       }
     },
@@ -1547,6 +1552,13 @@
       "date": "2026-10-25",
       "slot": "09:00",
       "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-10-25T06:00:00.000Z, Kiswahili) — topic #35 \"Forgiveness: Releasing Offenses\" / \"Msamaha: Kuachilia Mambo yaliyokuumiza\" (LOVE & RELATIONSHIPS); \"WhatsApp Image 2026-08-0dzcfasdcf2 at 11.50.12 PM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
+    },
+    {
+      "ts": "2026-10-23T06:29:01.811Z",
+      "level": "success",
+      "date": "2026-10-23",
+      "slot": "09:00",
+      "message": "09:00 Auto: published — \"IMG-20260803-WA0169.jpg\" | sw | no topic | IG ✓ | FB ✓"
     }
   ]
 }
