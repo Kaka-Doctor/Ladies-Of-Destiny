@@ -820,11 +820,30 @@
           "id": "122195360294938552"
         }
       }
+    },
+    "2026-10-27": {
+      "09:00": {
+        "status": "scheduled",
+        "publishTime": "2026-10-27T06:00:00.000Z",
+        "at": "2026-10-24T22:28:20.386Z",
+        "photo": "pic_tetzaqu9r0.jpg",
+        "caption": "𝗦𝗜𝗠𝗔𝗠𝗔 𝗜𝗠𝗔𝗥𝗔 𝗞𝗔𝗧𝗜𝗞𝗔 𝗞𝗪𝗘𝗟𝗜: 𝗨𝗝𝗔𝗦𝗜𝗥𝗜 𝗪𝗔𝗞𝗢 𝗨𝗡𝗔𝗕𝗔𝗥𝗜𝗞𝗜 𝗞𝗜𝗭𝗔𝗭𝗜!\n\nBinti mpenzi, dunia yetu leo imejaa changamoto nyingi, na wakati mwingine inaweza kuonekana ni vigumu kusimamia kile unachokiamini. Lakini, je, unajua kwamba Mungu amekupa ujasiri wa ajabu ndani yako? Wewe si wa kukaa kimya; sauti yako na msimamo wako vina nguvu ya kubadilisha mazingira.\n\nKusimamia kweli si tu kuhusu kusema ukweli, bali ni kuishi ukweli wa Neno la Mungu katika kila hatua yako. Ni kuwa nuru isiyofichika, na kuonyesha dunia upendo na uadilifu wa Kristo, hata pale ambapo wengine wanatilia shaka. Ujasiri wako unatoa ushuhuda hai kwa ulimwengu unaotazama.\n\nUsogopi kuongea kweli, kutetea haki, na kuishi maisha yanayompa Mungu utukufu. Mungu mwenyewe yuko pamoja nawe, anakupa nguvu na hekima kila wakati kukabiliana na hofu na shinikizo. Endelea kuang'aa!\n\nYoshua 1:9\n\"Je! Sikukuamuru mimi? Uwe hodari na moyo mkuu; usifadhaike wala usishtuke; kwa maana Bwana, Mungu wako, yu pamoja nawe kila uendako.\"\n\n#UjasiriWaKimungu #SimamaKatikaKweli #BintiJasiri #LadiesOfDestiny #MabintiWenyeHatima",
+        "lang": "sw",
+        "topic": {
+          "n": 37,
+          "cat": "LEADERSHIP & INFLUENCE",
+          "en": "Courageous Women Who Stand for Truth",
+          "sw": "Wanawake wenye Ujasiri Wanaosimamia Kweli"
+        },
+        "fb": {
+          "id": "122195496236938552"
+        }
+      }
     }
   },
   "rotation": {
     "photo": 10,
-    "topic": 36,
+    "topic": 37,
     "fallbackEn": 2,
     "fallbackSw": 0,
     "deck": [
@@ -1045,7 +1064,7 @@
       "WhatsApp Image 2026-08-03 xcbdxfbdat 10.35.48 AM.jpeg",
       "pic_348slr32s1.jpg"
     ],
-    "deckPos": 27,
+    "deckPos": 28,
     "deckEpoch": 1
   },
   "events": [
@@ -1597,6 +1616,13 @@
       "date": "2026-10-24",
       "slot": "09:00",
       "message": "09:00 Auto: published — \"WhatsApp Imagsdfsdfe 2026-08-02 at 11.50.04 PM.jpeg\" | en | no topic | IG ✓ | FB ✓"
+    },
+    {
+      "ts": "2026-10-24T22:28:20.387Z",
+      "level": "info",
+      "date": "2026-10-27",
+      "slot": "09:00",
+      "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-10-27T06:00:00.000Z, Kiswahili) — topic #37 \"Courageous Women Who Stand for Truth\" / \"Wanawake wenye Ujasiri Wanaosimamia Kweli\" (LEADERSHIP & INFLUENCE); \"pic_tetzaqu9r0.jpg\"; IG half to be posted by a landed run in the catch-up window"
     }
   ]
 }
