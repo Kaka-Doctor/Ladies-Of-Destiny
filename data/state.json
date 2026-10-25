@@ -844,11 +844,30 @@
           "id": "122195496236938552"
         }
       }
+    },
+    "2026-10-28": {
+      "09:00": {
+        "status": "scheduled",
+        "publishTime": "2026-10-28T06:00:00.000Z",
+        "at": "2026-10-25T23:15:22.779Z",
+        "photo": "WhatsApp Image 2026-08-03 at 10.35.56 AM.jpeg",
+        "caption": "𝗜𝗡𝗩𝗘𝗦𝗧 𝗬𝗢𝗨𝗥 𝗧𝗜𝗠𝗘, 𝗜𝗠𝗣𝗔𝗖𝗧 𝗘𝗧𝗘𝗥𝗡𝗜𝗧𝗬!\n\nMy dearest sisters, have you ever thought about time as a precious gift from God? Each sunrise brings a fresh opportunity, a new set of hours entrusted to our care. God calls us to be good stewards not just of our talents and resources, but also of the very moments He gives us.\n\nThis means being intentional with our days, not letting them slip away without purpose. Ask yourself: how can I use my time to grow closer to Him, to learn, to serve, and to bless others? Prioritize what truly matters, making space for prayer, study, rest, and meaningful connection.\n\nWhen we manage our time wisely, we honor God and create room for His plans to unfold in our lives. It helps us avoid overwhelm and live with greater peace and productivity, stepping closer to our divine calling. You are chosen, my dear sister, to make every moment count for His glory!\n\nEphesians 5:15-16: \"Look carefully then how you walk, not as unwise but as wise, making the best use of the time, because the days are evil.\"\n\n#TimeStewardship #LivePurposefully #GodlyPriorities #LadiesOfDestiny #MabintiWenyeHatima",
+        "lang": "en",
+        "topic": {
+          "n": 38,
+          "cat": "EDUCATION, WORK & PURPOSE",
+          "en": "Time Management and Stewardship",
+          "sw": "Kusimamia Muda na Yote Ulivyokabidhiwa"
+        },
+        "fb": {
+          "id": "122195638850938552"
+        }
+      }
     }
   },
   "rotation": {
     "photo": 10,
-    "topic": 37,
+    "topic": 38,
     "fallbackEn": 2,
     "fallbackSw": 0,
     "deck": [
@@ -1069,7 +1088,7 @@
       "WhatsApp Image 2026-08-03 xcbdxfbdat 10.35.48 AM.jpeg",
       "pic_348slr32s1.jpg"
     ],
-    "deckPos": 28,
+    "deckPos": 29,
     "deckEpoch": 1
   },
   "events": [
@@ -1635,6 +1654,13 @@
       "date": "2026-10-25",
       "slot": "09:00",
       "message": "09:00 Auto: published — \"WhatsApp Image 2026-08-0dzcfasdcf2 at 11.50.12 PM.jpeg\" | sw | no topic | IG ✓ | FB ✓"
+    },
+    {
+      "ts": "2026-10-25T23:15:22.779Z",
+      "level": "info",
+      "date": "2026-10-28",
+      "slot": "09:00",
+      "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-10-28T06:00:00.000Z, English) — topic #38 \"Time Management and Stewardship\" / \"Kusimamia Muda na Yote Ulivyokabidhiwa\" (EDUCATION, WORK & PURPOSE); \"WhatsApp Image 2026-08-03 at 10.35.56 AM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
     }
   ]
 }
