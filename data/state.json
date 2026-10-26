@@ -809,9 +809,9 @@
     },
     "2026-10-26": {
       "09:00": {
-        "status": "scheduled",
+        "status": "published",
+        "at": "2026-10-26T06:14:14.418Z",
         "publishTime": "2026-10-26T06:00:00.000Z",
-        "at": "2026-10-23T22:13:31.405Z",
         "photo": "pic_vci5fgut6v.jpg",
         "caption": "𝗦𝗘𝗘𝗞 𝗪𝗜𝗦𝗗𝗢𝗠, 𝗖𝗛𝗢𝗢𝗦𝗘 𝗟𝗢𝗩𝗘, 𝗣𝗥𝗢𝗧𝗘𝗖𝗧 𝗬𝗢𝗨𝗥 𝗛𝗘𝗔𝗥𝗧\n\nMy dearest sisters, navigating the world of romantic relationships can feel incredibly exciting, yet complex. It's a journey where many young hearts can stumble if not guided by heavenly light. God desires beautiful, pure love for you, a love that honors Him and builds you up, not one that diminishes your spirit or purpose.\n\nTrue wisdom in relationships means inviting God into every single step, seeking His guidance before your heart takes flight. It means choosing discernment over fleeting emotions, prioritizing a partner's character and faith over outward charm, and guarding your heart fiercely for His best. Remember, purity isn't a restriction, but a divine protection for your soul and future.\n\nDon't ever rush into anything or settle for less than God's perfect will for you, my precious ones. He knows the desires of your heart and wants to lead you to a partner who will draw you closer to Him and celebrate your destiny. Trust His timing and His perfect plan for your love story, knowing He has a divine purpose for your entire life, including your relationships. You are chosen, my dear ones!\n\nProverbs 4:23: \"Above all else, guard your heart, for everything you do flows from it.\"\n\n#GodlyRelationships #PurityJourney #WisdomForGirls #LadiesOfDestiny #MabintiWenyeHatima",
         "lang": "en",
@@ -821,8 +821,13 @@
           "en": "Wisdom in Romantic Relationships",
           "sw": "Hekima katika Mahusiano ya Kimapenzi"
         },
+        "ig": {
+          "id": "17998388874047145",
+          "permalink": "https://www.instagram.com/p/De8nQ2AjaNw/"
+        },
         "fb": {
-          "id": "122195360294938552"
+          "id": "710815315448548_122195360294938552",
+          "permalink": "https://www.facebook.com/photo.php?fbid=122195360294938552&set=a.122103534068938552&type=3"
         }
       }
     },
@@ -1661,6 +1666,13 @@
       "date": "2026-10-28",
       "slot": "09:00",
       "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-10-28T06:00:00.000Z, English) — topic #38 \"Time Management and Stewardship\" / \"Kusimamia Muda na Yote Ulivyokabidhiwa\" (EDUCATION, WORK & PURPOSE); \"WhatsApp Image 2026-08-03 at 10.35.56 AM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
+    },
+    {
+      "ts": "2026-10-26T06:14:14.418Z",
+      "level": "success",
+      "date": "2026-10-26",
+      "slot": "09:00",
+      "message": "09:00 Auto: published — \"pic_vci5fgut6v.jpg\" | en | no topic | IG ✓ | FB ✓"
     }
   ]
 }
