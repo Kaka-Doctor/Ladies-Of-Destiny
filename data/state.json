@@ -868,11 +868,30 @@
           "id": "122195638850938552"
         }
       }
+    },
+    "2026-10-29": {
+      "09:00": {
+        "status": "scheduled",
+        "publishTime": "2026-10-29T06:00:00.000Z",
+        "at": "2026-10-27T00:05:13.504Z",
+        "photo": "WhatsApp Image 2026-08kjgi-02 at 11.50.03 PM.jpeg",
+        "caption": "𝗨𝗦𝗜𝗝𝗜𝗟𝗜𝗡𝗚𝗔𝗡𝗜𝗦𝗛𝗘: 𝗪𝗘𝗪𝗘 𝗡𝗜 𝗞𝗜𝗣𝗘𝗞𝗘𝗘, 𝗨𝗠𝗘𝗨𝗠𝗕𝗪𝗔 𝗞𝗪𝗔 𝗠𝗔𝗞𝗨𝗦𝗨𝗗𝗜!\n\nBinti mpendwa, katika ulimwengu huu wa kidijitali, ni rahisi sana kujikuta ukilinganisha maisha yako, muonekano wako, au mafanikio yako na yale unayoyaona kwenye mitandao ya kijamii. Macho yetu yanaweza kudanganywa na picha zilizopangwa kwa umakini na hadithi za mafanikio zinazoonekana kuwa kamilifu, zikisahau kwamba kila mmoja ana safari yake na changamoto zake.\n\nLakini kumbuka, wewe ni uumbaji wa ajabu, wa pekee, uliyebuniwa na Mungu Mwenyewe kwa upendo na kusudi maalum. Thamani yako haipimwi kwa idadi ya 'likes' au umaarufu wa mtandaoni, bali kwa ukweli kwamba umeumbwa kwa sura na mfano wake, na ana mpango wa ajabu kwako. Usiruhusu sauti za ulimwengu zififie ukweli huu mkuu!\n\nJiamini wewe mwenyewe, na ujue kwamba wewe ni mrembo ndani na nje. Kazi yako sio kuiga wengine, bali kuangaza kwa njia yako mwenyewe, ukitumikia kusudi la Mungu. Endelea kuang'aa, binti!\n\nZaburi 139:14 (SUV)\nNitakushukuru kwa kuwa nimeumbwa kwa jinsi ya ajabu ya kutisha; Matendo yako ni ya ajabu, Na nafsi yangu yajua sana.\n\n#Usijilinganishe #WeweNiKipekee #Jithamini #LadiesOfDestiny #MabintiWenyeHatima",
+        "lang": "sw",
+        "topic": {
+          "n": 39,
+          "cat": "DIGITAL LIFE & MODERN CULTURE",
+          "en": "Dealing With Comparison in the Digital Age",
+          "sw": "Kushughulikia Kujilinganisha katika Zama za Kidijitali"
+        },
+        "fb": {
+          "id": "122195766944938552"
+        }
+      }
     }
   },
   "rotation": {
     "photo": 10,
-    "topic": 38,
+    "topic": 39,
     "fallbackEn": 2,
     "fallbackSw": 0,
     "deck": [
@@ -1093,7 +1112,7 @@
       "WhatsApp Image 2026-08-03 xcbdxfbdat 10.35.48 AM.jpeg",
       "pic_348slr32s1.jpg"
     ],
-    "deckPos": 29,
+    "deckPos": 30,
     "deckEpoch": 1
   },
   "events": [
@@ -1673,6 +1692,13 @@
       "date": "2026-10-26",
       "slot": "09:00",
       "message": "09:00 Auto: published — \"pic_vci5fgut6v.jpg\" | en | no topic | IG ✓ | FB ✓"
+    },
+    {
+      "ts": "2026-10-27T00:05:13.504Z",
+      "level": "info",
+      "date": "2026-10-29",
+      "slot": "09:00",
+      "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-10-29T06:00:00.000Z, Kiswahili) — topic #39 \"Dealing With Comparison in the Digital Age\" / \"Kushughulikia Kujilinganisha katika Zama za Kidijitali\" (DIGITAL LIFE & MODERN CULTURE); \"WhatsApp Image 2026-08kjgi-02 at 11.50.03 PM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
     }
   ]
 }
