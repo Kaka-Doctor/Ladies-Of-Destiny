@@ -916,11 +916,30 @@
           "id": "122195910386938552"
         }
       }
+    },
+    "2026-10-31": {
+      "09:00": {
+        "status": "scheduled",
+        "publishTime": "2026-10-31T06:00:00.000Z",
+        "at": "2026-10-28T21:54:09.602Z",
+        "photo": "WhatsApp Image 2026-08-02 atzdvszdv 11.50.26 PM.jpeg",
+        "caption": "𝗠𝗔𝗢𝗠𝗕𝗜 𝗬𝗔𝗡𝗔𝗬𝗢𝗗𝗨𝗠𝗨 𝗛𝗨𝗙𝗨𝗡𝗚𝗨𝗔 𝗠𝗜𝗟𝗔𝗡𝗚𝗢 𝗬𝗔 𝗠𝗕𝗜𝗡𝗚𝗨!\n\nBinti wapendwa, mara nyingi tunajikuta katikati ya changamoto au ndoto kubwa, na tunajiuliza ni wapi tutapata msaada au mwelekeo. Nataka kukukumbusha leo kuhusu nguvu isiyo na kifani ya maisha ya maombi yanayodumu. Kuomba sio tu orodha ya matakwa; ni mazungumzo ya moyo kwa moyo na Baba yetu aliye mbinguni, anayekupenda sana. Je, umeshawahi kuhisi uchovu au kukata tamaa katika kuendelea kuomba?\n\nUsikate tamaa, dada yangu! Mungu husikia kila neno na kilio chako cha moyo. Anaahidi kujibu, kwa wakati wake na kwa njia zake kamilifu, ambazo mara nyingi ni bora kuliko tunavyoweza kuwazia. Endelea kumimina moyo wako kwake bila kuchoka, ukiamini kwamba uaminifu wako katika maombi unakujengea nguvu ya ndani na amani isiyoelezeka.\n\nKumbuka, kila sala ni mbegu unayopanda. Endelea kuipanda na kuitunza kwa imani, na hakika utavuna matunda yake. Mungu anakupenda na anakushughulikia, hajawahi kukusaha. Endelea kuang'aa!\n\nLuka 18:1 \"Akawaambia mfano, ya kwamba imewapasa kumwomba Mungu sikuzote, wala wasikate tamaa.\"\n\n#MaishaYaMaombi\n#NguvuYaMaombi\n#UsiacheKuomba\n#LadiesOfDestiny\n#MabintiWenyeHatima",
+        "lang": "sw",
+        "topic": {
+          "n": 41,
+          "cat": "IDENTITY & RELATIONSHIP WITH GOD",
+          "en": "The Power of a Consistent Prayer Life",
+          "sw": "Nguvu ya Maisha ya Maombi Yanayodumu"
+        },
+        "fb": {
+          "id": "122196037520938552"
+        }
+      }
     }
   },
   "rotation": {
     "photo": 10,
-    "topic": 40,
+    "topic": 41,
     "fallbackEn": 2,
     "fallbackSw": 0,
     "deck": [
@@ -1141,7 +1160,7 @@
       "WhatsApp Image 2026-08-03 xcbdxfbdat 10.35.48 AM.jpeg",
       "pic_348slr32s1.jpg"
     ],
-    "deckPos": 31,
+    "deckPos": 32,
     "deckEpoch": 1
   },
   "events": [
@@ -1749,6 +1768,13 @@
       "date": "2026-10-28",
       "slot": "09:00",
       "message": "09:00 Auto: published — \"WhatsApp Image 2026-08-03 at 10.35.56 AM.jpeg\" | en | no topic | IG ✓ | FB ✓"
+    },
+    {
+      "ts": "2026-10-28T21:54:09.603Z",
+      "level": "info",
+      "date": "2026-10-31",
+      "slot": "09:00",
+      "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-10-31T06:00:00.000Z, Kiswahili) — topic #41 \"The Power of a Consistent Prayer Life\" / \"Nguvu ya Maisha ya Maombi Yanayodumu\" (IDENTITY & RELATIONSHIP WITH GOD); \"WhatsApp Image 2026-08-02 atzdvszdv 11.50.26 PM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
     }
   ]
 }
