@@ -892,11 +892,30 @@
           "id": "122195766944938552"
         }
       }
+    },
+    "2026-10-30": {
+      "09:00": {
+        "status": "scheduled",
+        "publishTime": "2026-10-30T06:00:00.000Z",
+        "at": "2026-10-28T00:03:23.556Z",
+        "photo": "WhatsApp Image 2026-08-02zdczdc at 11.50.10 PM.jpeg",
+        "caption": "𝗬𝗢𝗨𝗥 𝗣𝗥𝗘𝗦𝗘𝗡𝗖𝗘 𝗜𝗦 𝗔 𝗕𝗟𝗘𝗦𝗦𝗜𝗡𝗚!\n\nMy dearest sisters, you carry a beautiful light within you – the light of Christ! God has purposed you not just to exist, but to be a source of encouragement and joy wherever your feet may take you. Imagine the profound impact you can make by simply choosing to radiate His love.\n\nThink about the places you go each day – school, work, home, or even a public space. Every interaction is a divine appointment. Let your actions reflect His love through a kind word, a helping hand, or a listening ear, brightening someone's day and pointing them to His goodness.\n\nEmbrace this incredible call to service, knowing that even the smallest act of love can make an eternal difference. Let your life be a testament to His grace, bringing hope and warmth to every corner of your world. You are chosen to be a blessing!\n\n\"Let your light shine before others, that they may see your good deeds and glorify your Father in heaven.\"\nMatthew 5:16\n\n#BeABlessing #ServeWithLove #ShineHisLight #LadiesOfDestiny #MabintiWenyeHatima",
+        "lang": "en",
+        "topic": {
+          "n": 40,
+          "cat": "SERVICE & GOOD DEEDS",
+          "en": "Being a Blessing Wherever You Go",
+          "sw": "Kuwa Baraka Popote Uendako"
+        },
+        "fb": {
+          "id": "122195910386938552"
+        }
+      }
     }
   },
   "rotation": {
     "photo": 10,
-    "topic": 39,
+    "topic": 40,
     "fallbackEn": 2,
     "fallbackSw": 0,
     "deck": [
@@ -1117,7 +1136,7 @@
       "WhatsApp Image 2026-08-03 xcbdxfbdat 10.35.48 AM.jpeg",
       "pic_348slr32s1.jpg"
     ],
-    "deckPos": 30,
+    "deckPos": 31,
     "deckEpoch": 1
   },
   "events": [
@@ -1711,6 +1730,13 @@
       "date": "2026-10-27",
       "slot": "09:00",
       "message": "09:00 Auto: published — \"pic_tetzaqu9r0.jpg\" | sw | no topic | IG ✓ | FB ✓"
+    },
+    {
+      "ts": "2026-10-28T00:03:23.557Z",
+      "level": "info",
+      "date": "2026-10-30",
+      "slot": "09:00",
+      "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-10-30T06:00:00.000Z, English) — topic #40 \"Being a Blessing Wherever You Go\" / \"Kuwa Baraka Popote Uendako\" (SERVICE & GOOD DEEDS); \"WhatsApp Image 2026-08-02zdczdc at 11.50.10 PM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
     }
   ]
 }
