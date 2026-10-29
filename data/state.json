@@ -881,9 +881,9 @@
     },
     "2026-10-29": {
       "09:00": {
-        "status": "scheduled",
+        "status": "published",
+        "at": "2026-10-29T08:27:29.268Z",
         "publishTime": "2026-10-29T06:00:00.000Z",
-        "at": "2026-10-27T00:05:13.504Z",
         "photo": "WhatsApp Image 2026-08kjgi-02 at 11.50.03 PM.jpeg",
         "caption": "𝗨𝗦𝗜𝗝𝗜𝗟𝗜𝗡𝗚𝗔𝗡𝗜𝗦𝗛𝗘: 𝗪𝗘𝗪𝗘 𝗡𝗜 𝗞𝗜𝗣𝗘𝗞𝗘𝗘, 𝗨𝗠𝗘𝗨𝗠𝗕𝗪𝗔 𝗞𝗪𝗔 𝗠𝗔𝗞𝗨𝗦𝗨𝗗𝗜!\n\nBinti mpendwa, katika ulimwengu huu wa kidijitali, ni rahisi sana kujikuta ukilinganisha maisha yako, muonekano wako, au mafanikio yako na yale unayoyaona kwenye mitandao ya kijamii. Macho yetu yanaweza kudanganywa na picha zilizopangwa kwa umakini na hadithi za mafanikio zinazoonekana kuwa kamilifu, zikisahau kwamba kila mmoja ana safari yake na changamoto zake.\n\nLakini kumbuka, wewe ni uumbaji wa ajabu, wa pekee, uliyebuniwa na Mungu Mwenyewe kwa upendo na kusudi maalum. Thamani yako haipimwi kwa idadi ya 'likes' au umaarufu wa mtandaoni, bali kwa ukweli kwamba umeumbwa kwa sura na mfano wake, na ana mpango wa ajabu kwako. Usiruhusu sauti za ulimwengu zififie ukweli huu mkuu!\n\nJiamini wewe mwenyewe, na ujue kwamba wewe ni mrembo ndani na nje. Kazi yako sio kuiga wengine, bali kuangaza kwa njia yako mwenyewe, ukitumikia kusudi la Mungu. Endelea kuang'aa, binti!\n\nZaburi 139:14 (SUV)\nNitakushukuru kwa kuwa nimeumbwa kwa jinsi ya ajabu ya kutisha; Matendo yako ni ya ajabu, Na nafsi yangu yajua sana.\n\n#Usijilinganishe #WeweNiKipekee #Jithamini #LadiesOfDestiny #MabintiWenyeHatima",
         "lang": "sw",
@@ -893,8 +893,13 @@
           "en": "Dealing With Comparison in the Digital Age",
           "sw": "Kushughulikia Kujilinganisha katika Zama za Kidijitali"
         },
+        "ig": {
+          "id": "17922697038455073",
+          "permalink": "https://www.instagram.com/p/DfEk5PxnNCe/"
+        },
         "fb": {
-          "id": "122195766944938552"
+          "id": "710815315448548_122195766944938552",
+          "permalink": "https://www.facebook.com/photo.php?fbid=122195766944938552&set=a.122103534068938552&type=3"
         }
       }
     },
@@ -1775,6 +1780,13 @@
       "date": "2026-10-31",
       "slot": "09:00",
       "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-10-31T06:00:00.000Z, Kiswahili) — topic #41 \"The Power of a Consistent Prayer Life\" / \"Nguvu ya Maisha ya Maombi Yanayodumu\" (IDENTITY & RELATIONSHIP WITH GOD); \"WhatsApp Image 2026-08-02 atzdvszdv 11.50.26 PM.jpeg\"; IG half to be posted by a landed run in the catch-up window"
+    },
+    {
+      "ts": "2026-10-29T08:27:29.269Z",
+      "level": "success",
+      "date": "2026-10-29",
+      "slot": "09:00",
+      "message": "09:00 Auto: published — \"WhatsApp Image 2026-08kjgi-02 at 11.50.03 PM.jpeg\" | sw | no topic | IG ✓ | FB ✓"
     }
   ]
 }
