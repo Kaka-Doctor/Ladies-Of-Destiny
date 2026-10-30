@@ -964,13 +964,32 @@
           "id": "122196185408938552"
         }
       }
+    },
+    "2026-11-02": {
+      "09:00": {
+        "status": "scheduled",
+        "publishTime": "2026-11-02T06:00:00.000Z",
+        "at": "2026-10-30T22:57:25.590Z",
+        "photo": "pic_ai9bmk76sh.jpg",
+        "caption": "𝗨𝗠𝗘𝗖𝗛𝗔𝗚𝗨𝗟𝗜𝗪𝗔 𝗞𝗪𝗔 𝗦𝗔𝗕𝗔𝗕𝗨 𝗬𝗔 𝗪𝗔𝗞𝗔𝗧𝗜 𝗞𝗔𝗠𝗔 𝗛𝗨𝗨\n\nEstera alikuwa binti wa kawaida, lakini Mungu alimweka katika ikulu kwa wakati wa kimungu. Na wewe, unaweza kujiona mdogo au hutambuliwi — mbingu imelikweka mahali ulipo kwa lenzo kubwa kuliko unavyoiona.\n\nShule yako, nyumba yako, ofisi yako — hiyo ni ikulu yako. Ushawishi wako ni taji lako. Usijifanye mdogo wala kukaa kimya Mungu anapokuita kuang'aa.\n\n\"…nani anajua kama huu si wakati wewe kuwa katika cheo cha ufalme, kwa sababu ya wakati kama huu?\" — Estera 4:14\n\nUmekaguliwa, binti wa Mfalme. Simama ukiwa imara.\n\n#Umechaguliwa #Lenzo #Ujasiri #LadiesOfDestiny #MabintiWenyeHatima",
+        "lang": "sw",
+        "topic": {
+          "n": 43,
+          "cat": "LOVE & RELATIONSHIPS",
+          "en": "Dealing With Jealousy and Envy",
+          "sw": "Kushughulikia Wivu na Hasi"
+        },
+        "fb": {
+          "id": "122196315164938552"
+        }
+      }
     }
   },
   "rotation": {
     "photo": 10,
-    "topic": 42,
+    "topic": 43,
     "fallbackEn": 2,
-    "fallbackSw": 0,
+    "fallbackSw": 1,
     "deck": [
       "pic_firy9tzit5.jpg",
       "WhatsApp Image 202zdcsdfs6-08-02 at 11.50.05 PM.jpeg",
@@ -1189,7 +1208,7 @@
       "WhatsApp Image 2026-08-03 xcbdxfbdat 10.35.48 AM.jpeg",
       "pic_348slr32s1.jpg"
     ],
-    "deckPos": 33,
+    "deckPos": 34,
     "deckEpoch": 1
   },
   "events": [
@@ -1825,6 +1844,13 @@
       "date": "2026-10-30",
       "slot": "09:00",
       "message": "09:00 Auto: published — \"WhatsApp Image 2026-08-02zdczdc at 11.50.10 PM.jpeg\" | en | no topic | IG ✓ | FB ✓"
+    },
+    {
+      "ts": "2026-10-30T22:57:25.590Z",
+      "level": "info",
+      "date": "2026-11-02",
+      "slot": "09:00",
+      "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-11-02T06:00:00.000Z, Kiswahili) — topic #43 \"Dealing With Jealousy and Envy\" / \"Kushughulikia Wivu na Hasi\" (LOVE & RELATIONSHIPS); \"pic_ai9bmk76sh.jpg\"; IG half to be posted by a landed run in the catch-up window"
     }
   ]
 }
