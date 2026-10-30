@@ -940,11 +940,30 @@
           "id": "122196037520938552"
         }
       }
+    },
+    "2026-11-01": {
+      "09:00": {
+        "status": "scheduled",
+        "publishTime": "2026-11-01T06:00:00.000Z",
+        "at": "2026-10-30T00:23:59.682Z",
+        "photo": "pic_htctz77hnp.jpg",
+        "caption": "𝗖𝗨𝗟𝗧𝗜𝗩𝗔𝗧𝗘 𝗦𝗘𝗟𝗙-𝗖𝗢𝗡𝗧𝗥𝗢𝗟, 𝗨𝗡𝗟𝗢𝗖𝗞 𝗬𝗢𝗨𝗥 𝗗𝗜𝗩𝗜𝗡𝗘 𝗣𝗢𝗧𝗘𝗡𝗧𝗜𝗔𝗟\n\nMy dear sisters, we live in a world that constantly whispers for instant gratification. It’s easy to get caught in the trap of wanting everything right now – the immediate pleasure, the quick fix, the effortless gain. But God calls us to something higher, a path of intentional living and lasting fulfillment.\n\nEmbracing self-control means choosing God’s best for your life over fleeting desires. It’s allowing the Holy Spirit to guide your thoughts, words, and actions, empowering you to say \"no\" to temptations and \"yes\" to His righteous ways. This discipline isn't about restriction; it's about freedom from anything that would hinder your divine purpose.\n\nAs you practice self-control, you build strength of character and deepen your walk with Christ. It allows you to invest in what truly matters, fostering wisdom, purity, and perseverance. Remember, the greatest joys often come from patient endurance and waiting on God's perfect timing. You are capable of amazing things through Him!\n\n\"But the fruit of the Spirit is love, joy, peace, forbearance, kindness, goodness, faithfulness, gentleness and self-control. Against such things there is no law.\"\nGalatians 5:22-23 (NIV)\n\n#SelfControl #ChristlikeCharacter #FaithJourney #LadiesOfDestiny #MabintiWenyeHatima",
+        "lang": "en",
+        "topic": {
+          "n": 42,
+          "cat": "CHRISTLIKE CHARACTER",
+          "en": "Self-Control in a World of Instant Gratification",
+          "sw": "Kujidhibiti katika Dunia ya Vitu vya Haraka"
+        },
+        "fb": {
+          "id": "122196185408938552"
+        }
+      }
     }
   },
   "rotation": {
     "photo": 10,
-    "topic": 41,
+    "topic": 42,
     "fallbackEn": 2,
     "fallbackSw": 0,
     "deck": [
@@ -1165,7 +1184,7 @@
       "WhatsApp Image 2026-08-03 xcbdxfbdat 10.35.48 AM.jpeg",
       "pic_348slr32s1.jpg"
     ],
-    "deckPos": 32,
+    "deckPos": 33,
     "deckEpoch": 1
   },
   "events": [
@@ -1787,6 +1806,13 @@
       "date": "2026-10-29",
       "slot": "09:00",
       "message": "09:00 Auto: published — \"WhatsApp Image 2026-08kjgi-02 at 11.50.03 PM.jpeg\" | sw | no topic | IG ✓ | FB ✓"
+    },
+    {
+      "ts": "2026-10-30T00:23:59.682Z",
+      "level": "info",
+      "date": "2026-11-01",
+      "slot": "09:00",
+      "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-11-01T06:00:00.000Z, English) — topic #42 \"Self-Control in a World of Instant Gratification\" / \"Kujidhibiti katika Dunia ya Vitu vya Haraka\" (CHRISTLIKE CHARACTER); \"pic_htctz77hnp.jpg\"; IG half to be posted by a landed run in the catch-up window"
     }
   ]
 }
