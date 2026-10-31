@@ -929,9 +929,9 @@
     },
     "2026-10-31": {
       "09:00": {
-        "status": "scheduled",
+        "status": "published",
+        "at": "2026-10-31T06:58:48.167Z",
         "publishTime": "2026-10-31T06:00:00.000Z",
-        "at": "2026-10-28T21:54:09.602Z",
         "photo": "WhatsApp Image 2026-08-02 atzdvszdv 11.50.26 PM.jpeg",
         "caption": "𝗠𝗔𝗢𝗠𝗕𝗜 𝗬𝗔𝗡𝗔𝗬𝗢𝗗𝗨𝗠𝗨 𝗛𝗨𝗙𝗨𝗡𝗚𝗨𝗔 𝗠𝗜𝗟𝗔𝗡𝗚𝗢 𝗬𝗔 𝗠𝗕𝗜𝗡𝗚𝗨!\n\nBinti wapendwa, mara nyingi tunajikuta katikati ya changamoto au ndoto kubwa, na tunajiuliza ni wapi tutapata msaada au mwelekeo. Nataka kukukumbusha leo kuhusu nguvu isiyo na kifani ya maisha ya maombi yanayodumu. Kuomba sio tu orodha ya matakwa; ni mazungumzo ya moyo kwa moyo na Baba yetu aliye mbinguni, anayekupenda sana. Je, umeshawahi kuhisi uchovu au kukata tamaa katika kuendelea kuomba?\n\nUsikate tamaa, dada yangu! Mungu husikia kila neno na kilio chako cha moyo. Anaahidi kujibu, kwa wakati wake na kwa njia zake kamilifu, ambazo mara nyingi ni bora kuliko tunavyoweza kuwazia. Endelea kumimina moyo wako kwake bila kuchoka, ukiamini kwamba uaminifu wako katika maombi unakujengea nguvu ya ndani na amani isiyoelezeka.\n\nKumbuka, kila sala ni mbegu unayopanda. Endelea kuipanda na kuitunza kwa imani, na hakika utavuna matunda yake. Mungu anakupenda na anakushughulikia, hajawahi kukusaha. Endelea kuang'aa!\n\nLuka 18:1 \"Akawaambia mfano, ya kwamba imewapasa kumwomba Mungu sikuzote, wala wasikate tamaa.\"\n\n#MaishaYaMaombi\n#NguvuYaMaombi\n#UsiacheKuomba\n#LadiesOfDestiny\n#MabintiWenyeHatima",
         "lang": "sw",
@@ -941,8 +941,13 @@
           "en": "The Power of a Consistent Prayer Life",
           "sw": "Nguvu ya Maisha ya Maombi Yanayodumu"
         },
+        "ig": {
+          "id": "18124431808933245",
+          "permalink": "https://www.instagram.com/p/DfJkVELmF1U/"
+        },
         "fb": {
-          "id": "122196037520938552"
+          "id": "710815315448548_122196037520938552",
+          "permalink": "https://www.facebook.com/photo.php?fbid=122196037520938552&set=a.122103534068938552&type=3"
         }
       }
     },
@@ -1851,6 +1856,13 @@
       "date": "2026-11-02",
       "slot": "09:00",
       "message": "09:00 FB half pre-scheduled via Meta (publishes 2026-11-02T06:00:00.000Z, Kiswahili) — topic #43 \"Dealing With Jealousy and Envy\" / \"Kushughulikia Wivu na Hasi\" (LOVE & RELATIONSHIPS); \"pic_ai9bmk76sh.jpg\"; IG half to be posted by a landed run in the catch-up window"
+    },
+    {
+      "ts": "2026-10-31T06:58:48.167Z",
+      "level": "success",
+      "date": "2026-10-31",
+      "slot": "09:00",
+      "message": "09:00 Auto: published — \"WhatsApp Image 2026-08-02 atzdvszdv 11.50.26 PM.jpeg\" | sw | no topic | IG ✓ | FB ✓"
     }
   ]
 }
